@@ -1,0 +1,311 @@
+/* ===== Cases Grid ===== */
+.cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Case Cards ===== */
+.case-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    border-top: 6px solid transparent;
+    cursor: pointer;
+}
+
+.case-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.case-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.case-card .questions {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.case-card .usage {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===== Color-coded Borders for Case Cards ===== */
+.nominative {
+    border-top-color: #28a745;
+}
+
+.genitive {
+    border-top-color: #ff4757;
+}
+
+.dative {
+    border-top-color: #1e90ff;
+}
+
+.accusative {
+    border-top-color: #ffa502;
+}
+
+.instrumental {
+    border-top-color: #6f42c1;
+}
+
+.locative {
+    border-top-color: #20c997;
+}
+
+.vocative {
+    border-top-color: #e83e8c;
+}
+
+/* ===== Numbers Grid ===== */
+.numbers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Number Cards ===== */
+.number-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-top: 6px solid #b30059;
+    cursor: pointer;
+}
+
+.number-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.number-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.number-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===== Modal Base ===== */
+.modal {
+    display: none;
+    /* hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 700px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* ===== Case Tables in Modals ===== */
+.case-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+.case-table.nominative th {
+    background-color: #28a745;
+}
+
+.case-table.genitive th {
+    background-color: #ff4757;
+}
+
+.case-table.dative th {
+    background-color: #1e90ff;
+}
+
+.case-table.accusative th {
+    background-color: #ffa502;
+}
+
+.case-table.instrumental th {
+    background-color: #6f42c1;
+}
+
+.case-table.locative th {
+    background-color: #20c997;
+}
+
+.case-table.vocative th {
+    background-color: #e83e8c;
+}
+
+.case-table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.case-table tr:hover {
+    background: #f1f1f1;
+}
+
+/* Modal Titles by Case */
+.modal-content.nominative h2 {
+    color: #28a745;
+}
+
+.modal-content.genitive h2 {
+    color: #ff4757;
+}
+
+.modal-content.dative h2 {
+    color: #1e90ff;
+}
+
+.modal-content.accusative h2 {
+    color: #ffa502;
+}
+
+.modal-content.instrumental h2 {
+    color: #6f42c1;
+}
+
+.modal-content.locative h2 {
+    color: #20c997;
+}
+
+.modal-content.vocative h2 {
+    color: #e83e8c;
+}
+
+/* ===== Case Tables Alternating Rows by Case ===== */
+.case-table.nominative tr:nth-child(even) {
+    background-color: #d4f7d4;
+    /* light green */
+}
+
+.case-table.nominative tr:nth-child(odd) {
+    background-color: #f0fff0;
+    /* slightly lighter green */
+}
+
+.case-table.genitive tr:nth-child(even) {
+    background-color: #ffd6d6;
+    /* light red */
+}
+
+.case-table.genitive tr:nth-child(odd) {
+    background-color: #fff0f0;
+    /* slightly lighter red */
+}
+
+.case-table.dative tr:nth-child(even) {
+    background-color: #cce5ff;
+    /* light blue */
+}
+
+.case-table.dative tr:nth-child(odd) {
+    background-color: #e6f2ff;
+    /* slightly lighter blue */
+}
+
+.case-table.accusative tr:nth-child(even) {
+    background-color: #ffe6b3;
+    /* light orange */
+}
+
+.case-table.accusative tr:nth-child(odd) {
+    background-color: #fff7e6;
+    /* slightly lighter orange */
+}
+
+.case-table.instrumental tr:nth-child(even) {
+    background-color: #d9ccff;
+    /* light purple */
+}
+
+.case-table.instrumental tr:nth-child(odd) {
+    background-color: #f2e6ff;
+    /* slightly lighter purple */
+}
+
+.case-table.locative tr:nth-child(even) {
+    background-color: #b3f0e6;
+    /* light teal */
+}
+
+.case-table.locative tr:nth-child(odd) {
+    background-color: #e6fbf8;
+    /* slightly lighter teal */
+}
+
+.case-table.vocative tr:nth-child(even) {
+    background-color: #ffccf0;
+    /* light pink */
+}
+
+.case-table.vocative tr:nth-child(odd) {
+    background-color: #ffe6f7;
+    /* slightly lighter pink */
+}

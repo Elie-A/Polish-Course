@@ -1,0 +1,79 @@
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #DC143C 0%, #B91C3C 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero h2 {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+/* Exercise Cards */
+.exercise-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    color: #DC143C;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+    color: #495057;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background: #DC143C;
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.card .btn:hover {
+    background: #B91C3C;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-top: 3px solid #DC143C;
+    margin-top: 50px;
+    font-size: 0.9rem;
+    color: #495057;
+}

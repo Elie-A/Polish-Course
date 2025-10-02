@@ -1,0 +1,264 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #212529;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #DC143C 0%, #B91C3C 100%);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(220, 20, 60, 0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+/* Main container */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Collapse sections */
+.collapse {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+}
+
+.collapse-header {
+    background: linear-gradient(135deg, #DC143C, #B91C3C);
+    color: white;
+    padding: 16px 20px;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    font-size: 1.3rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 10px 10px 0 0;
+    transition: all 0.3s ease;
+}
+
+.collapse-header:hover {
+    background: linear-gradient(135deg, #B91C3C, #A01A3A);
+}
+
+.collapse-content {
+    background: white;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e9ecef;
+    border-top: none;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.4s ease, padding 0.4s ease;
+    padding: 0 20px;
+}
+
+.collapse-content.active {
+    max-height: none;
+    opacity: 1;
+    padding: 20px;
+}
+
+/* Exercise card - FIXED CENTERING */
+.exercise {
+    background: transparent;
+    margin: 30px auto;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    border: none;
+    overflow: visible;
+    animation: slideUp 0.6s ease-out;
+}
+
+.exercise h2 {
+    background: linear-gradient(135deg, #DC143C, #B91C3C);
+    color: white;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Table styling */
+.exercise-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 0 0 8px 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.exercise-table th,
+.exercise-table td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.exercise-table th {
+    background: #f8f9fa;
+    font-size: 0.95rem;
+    color: #495057;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.exercise-table tr:nth-child(even) {
+    background-color: #fdfdfd;
+}
+
+.exercise-table tr:hover {
+    background-color: #fff5f5;
+    transition: all 0.2s ease;
+}
+
+/* Highlight classes */
+.polish {
+    color: #212529;
+    font-weight: normal;
+}
+
+.stem {
+    color: #0066CC;
+    font-weight: 600;
+    background: rgba(0, 102, 204, 0.1);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.ending-present {
+    color: #28a745;
+    font-weight: 600;
+    background: rgba(40, 167, 69, 0.12);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.ending-past {
+    color: #FF8C00;
+    font-weight: 600;
+    background: rgba(255, 140, 0, 0.15);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.ending-future {
+    color: #8B008B;
+    font-weight: 600;
+    background: rgba(40, 167, 69, 0.12);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.impf {
+    color: #004C4C;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.pf {
+    color: #FF1493;
+    font-weight: 600;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.toggle-btn {
+    float: right;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.toggle-btn.rotated {
+    transform: rotate(45deg);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .collapse {
+        width: 98%;
+    }
+
+    .exercise-table th,
+    .exercise-table td {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .exercise-table th,
+    .exercise-table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+
+    header h1 {
+        font-size: 1.6rem;
+    }
+
+    .exercise h2 {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .collapse-header {
+        font-size: 1.1rem;
+        padding: 12px 16px;
+    }
+}
+
+/* Animation */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
