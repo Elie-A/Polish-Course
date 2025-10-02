@@ -1,0 +1,180 @@
+/* ===== Alphabet Grid ===== */
+.alphabet-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Alphabet Cards ===== */
+.alphabet-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-top: 6px solid #6f42c1;
+    /* default purple */
+    cursor: pointer;
+}
+
+.alphabet-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.alphabet-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.alphabet-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===== Color-coded Cards ===== */
+.letters {
+    border-top-color: #6f42c1;
+}
+
+.digraphs {
+    border-top-color: #1e90ff;
+}
+
+.trigraphs {
+    border-top-color: #28a745;
+}
+
+/* ===== Modals ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 700px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    position: relative;
+    border-top: 6px solid #6f42c1;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+/* ===== Close Button ===== */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #888;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* ===== Alphabet Tables ===== */
+.alphabet-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header colors based on type */
+.alphabet-table.letters th {
+    background: #6f42c1;
+    color: white;
+}
+
+.alphabet-table.digraphs th {
+    background: #1e90ff;
+    color: white;
+}
+
+.alphabet-table.trigraphs th {
+    background: #28a745;
+    color: white;
+}
+
+.alphabet-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.alphabet-table tr:nth-child(even) td {
+    background: #f7f5fc;
+}
+
+.alphabet-table tr:hover td {
+    background: #eae6f7;
+}
+
+/* ===== Modal Type Colors ===== */
+.modal-content.letters {
+    border-top-color: #6f42c1;
+}
+
+.modal-content.digraphs {
+    border-top-color: #1e90ff;
+}
+
+.modal-content.trigraphs {
+    border-top-color: #28a745;
+}
+
+.modal-content.letters h2 {
+    color: #6f42c1;
+}
+
+.modal-content.digraphs h2 {
+    color: #1e90ff;
+}
+
+.modal-content.trigraphs h2 {
+    color: #28a745;
+}

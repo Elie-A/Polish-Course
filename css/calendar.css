@@ -1,0 +1,103 @@
+/* ===== Calendar Grid ===== */
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Calendar Cards ===== */
+.calendar-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    text-align: center;
+    border-top: 6px solid #ff8c00;
+    /* default orange for days */
+    cursor: pointer;
+}
+
+.calendar-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.calendar-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.calendar-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===== Color-coded Cards ===== */
+.days {
+    border-top-color: #ff8c00;
+    /* orange */
+}
+
+.months {
+    border-top-color: #20b2aa;
+    /* teal */
+}
+
+/* ===== Calendar Tables ===== */
+.calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.calendar-table.days th {
+    background: #ff8c00;
+    color: white;
+}
+
+.calendar-table.months th {
+    background: #20b2aa;
+    color: white;
+}
+
+.calendar-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.calendar-table tr:nth-child(even) td {
+    background: #f7f5fc;
+}
+
+.calendar-table tr:hover td {
+    background: #f0f8ff;
+    /* lighter hover for days/months */
+}
+
+/* ===== Modals ===== */
+.modal-content.days {
+    border-top-color: #ff8c00;
+}
+
+.modal-content.months {
+    border-top-color: #20b2aa;
+}
+
+.modal-content.calendar-days-modal h2 {
+    color: #ff8c00;
+}
+
+.modal-content.calendar-months-modal h2 {
+    color: #20b2aa;
+}

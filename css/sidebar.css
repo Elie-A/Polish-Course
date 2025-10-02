@@ -1,0 +1,120 @@
+/* =======================
+   Sidebar Container
+   ======================= */
+.quick-jump-sidebar {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #fff;
+    border: 2px solid #d81b3e;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 40px;
+    /* default collapsed width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    padding: 5px 0;
+    overflow: hidden;
+    transition: width 0.3s ease, box-shadow 0.2s ease;
+}
+
+/* =======================
+   Collapsed & Expanded States
+   ======================= */
+.quick-jump-sidebar.collapsed {
+    width: 40px;
+    /* only toggle button visible */
+}
+
+/* =======================
+   Toggle Button
+   ======================= */
+.toggle-btn {
+    font-size: 24px;
+    color: #d81b3e;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.toggle-btn:hover {
+    color: #b0172d;
+    transform: scale(1.2);
+}
+
+/* =======================
+   Sidebar Menu
+   ======================= */
+.quick-jump-sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    align-items: center;
+    /* center icons in compact width */
+}
+
+/* Hide menu items when collapsed */
+.quick-jump-sidebar.collapsed ul {
+    display: none;
+}
+
+/* =======================
+   Icon Links
+   ======================= */
+.quick-jump-sidebar ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #d81b3e;
+    text-decoration: none;
+    position: relative;
+    padding: 5px;
+    /* compact padding */
+    border-radius: 8px;
+    transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect on icons */
+.quick-jump-sidebar ul li a:hover {
+    background: #f8d3da;
+    color: #b0172d;
+    transform: scale(1.1);
+}
+
+/* =======================
+   Tooltips
+   ======================= */
+.quick-jump-sidebar ul li a::after {
+    content: attr(title);
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translate(-100%, -50%);
+    background: #d81b3e;
+    color: #fff;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.quick-jump-sidebar ul li a:hover::after {
+    opacity: 1;
+    transform: translate(-100%, -50%) scale(1.05);
+}
+
+/* =======================
+   Sidebar Hover Effect
+   ======================= */
+.quick-jump-sidebar:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}

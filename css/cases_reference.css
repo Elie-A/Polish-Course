@@ -176,30 +176,37 @@
 
 .case-table.nominative th {
     background-color: #28a745;
+    color: white;
 }
 
 .case-table.genitive th {
     background-color: #ff4757;
+    color: white;
 }
 
 .case-table.dative th {
     background-color: #1e90ff;
+    color: white;
 }
 
 .case-table.accusative th {
     background-color: #ffa502;
+    color: white;
 }
 
 .case-table.instrumental th {
     background-color: #6f42c1;
+    color: white;
 }
 
 .case-table.locative th {
     background-color: #20c997;
+    color: white;
 }
 
 .case-table.vocative th {
     background-color: #e83e8c;
+    color: white;
 }
 
 .case-table tr:nth-child(even) {

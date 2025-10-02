@@ -3,13 +3,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Polish References</title>
+    <title>Polish Course References</title>
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/references.css">
     <link rel="stylesheet" href="css/numbers_reference.css">
     <link rel="stylesheet" href="css/cases_reference.css">
+    <link rel="stylesheet" href="css/alphabet_reference.css">
+    <link rel="stylesheet" href="css/calendar.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <script defer src="script.js"></script>
+    <script defer src="script/script.js"></script>
+    <script defer src="script/sidebar.js"></script>
 </head>
 
 <body>
@@ -29,8 +33,317 @@
         <a href="references.html">References</a>
     </nav>
 
+    <!-- Quick Jump Sidebar -->
+    <div class="quick-jump-sidebar collapsed" id="quickJumpSidebar">
+        <div class="toggle-btn" id="sidebarToggle">☰</div>
+        <ul>
+            <li><a href="#alphabet-hero" title="Alphabet Letters">🔤</a></li>
+            <li><a href="#numbers-hero" title="Numbers">🔢</a></li>
+            <li><a href="#calendar-hero" title="Calendar">📅</a></li>
+            <li><a href="#cases-hero" title="Cases">📝</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Alphabet Hero Section -->
+    <section id="alphabet-hero" class="alphabet-hero hero">
+        <h2>Polish Alphabet</h2>
+        <p>Letters, pronunciation hints, and digraphs/trigraphs</p>
+    </section>
+
+    <!-- Alphabet Grid -->
+    <section class="alphabet-grid">
+        <div class="alphabet-card letters" data-modal="modal-alphabet-letters">
+            <h3>Letters A–Ż</h3>
+            <p>Polish letters and pronunciation</p>
+        </div>
+
+        <div class="alphabet-card digraphs" data-modal="modal-alphabet-digraphs">
+            <h3>Digraphs</h3>
+            <p>Letter combinations & pronunciation</p>
+        </div>
+
+        <div class="alphabet-card trigraphs" data-modal="modal-alphabet-trigraphs">
+            <h3>Trigraphs</h3>
+            <p>Common 3-letter combinations</p>
+        </div>
+    </section>
+
+    <!-- Letters Modal -->
+    <div id="modal-alphabet-letters" class="modal">
+        <div class="modal-content letters">
+            <span class="close">&times;</span>
+            <h2>Polish Alphabet Letters</h2>
+            <table class="alphabet-table letters">
+                <tr>
+                    <th>Letter</th>
+                    <th>Name</th>
+                    <th>Pronunciation Hint</th>
+                </tr>
+                <tr>
+                    <td>A</td>
+                    <td>a</td>
+                    <td>like “a” in car</td>
+                </tr>
+                <tr>
+                    <td>Ą</td>
+                    <td>ą</td>
+                    <td>nasal "o", like own</td>
+                </tr>
+                <tr>
+                    <td>B</td>
+                    <td>be</td>
+                    <td>like English b</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>ce</td>
+                    <td>like ts in cats</td>
+                </tr>
+                <tr>
+                    <td>Ć</td>
+                    <td>cie</td>
+                    <td>soft "ch", like cheese</td>
+                </tr>
+                <tr>
+                    <td>D</td>
+                    <td>de</td>
+                    <td>like English d</td>
+                </tr>
+                <tr>
+                    <td>E</td>
+                    <td>e</td>
+                    <td>like e in pet</td>
+                </tr>
+                <tr>
+                    <td>Ę</td>
+                    <td>ę</td>
+                    <td>nasal e, like end</td>
+                </tr>
+                <tr>
+                    <td>F</td>
+                    <td>ef</td>
+                    <td>like English f</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>ge</td>
+                    <td>hard "g", like go</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td>ha</td>
+                    <td>like English h</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>i</td>
+                    <td>like ee in see</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>jot</td>
+                    <td>like y in yes</td>
+                </tr>
+                <tr>
+                    <td>K</td>
+                    <td>ka</td>
+                    <td>like English k</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>el</td>
+                    <td>like English l</td>
+                </tr>
+                <tr>
+                    <td>Ł</td>
+                    <td>eł</td>
+                    <td>like w in water</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>em</td>
+                    <td>like English m</td>
+                </tr>
+                <tr>
+                    <td>N</td>
+                    <td>en</td>
+                    <td>like English n</td>
+                </tr>
+                <tr>
+                    <td>Ń</td>
+                    <td>eń</td>
+                    <td>like Spanish ñ, soft ny</td>
+                </tr>
+                <tr>
+                    <td>O</td>
+                    <td>o</td>
+                    <td>like o in order</td>
+                </tr>
+                <tr>
+                    <td>Ó</td>
+                    <td>ó</td>
+                    <td>like oo in boot</td>
+                </tr>
+                <tr>
+                    <td>P</td>
+                    <td>pe</td>
+                    <td>like English p</td>
+                </tr>
+                <tr>
+                    <td>R</td>
+                    <td>er</td>
+                    <td>rolled “r”</td>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>es</td>
+                    <td>like s in see</td>
+                </tr>
+                <tr>
+                    <td>Ś</td>
+                    <td>eś</td>
+                    <td>soft sh</td>
+                </tr>
+                <tr>
+                    <td>T</td>
+                    <td>te</td>
+                    <td>like English t</td>
+                </tr>
+                <tr>
+                    <td>U</td>
+                    <td>u</td>
+                    <td>like oo in boot</td>
+                </tr>
+                <tr>
+                    <td>W</td>
+                    <td>wu</td>
+                    <td>like English v</td>
+                </tr>
+                <tr>
+                    <td>Y</td>
+                    <td>y</td>
+                    <td>like i in bit (deeper)</td>
+                </tr>
+                <tr>
+                    <td>Z</td>
+                    <td>zet</td>
+                    <td>like z in zoo</td>
+                </tr>
+                <tr>
+                    <td>Ź</td>
+                    <td>źe</td>
+                    <td>soft zh, like vision</td>
+                </tr>
+                <tr>
+                    <td>Ż</td>
+                    <td>żet</td>
+                    <td>hard zh, like treasure</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Digraphs Modal -->
+    <div id="modal-alphabet-digraphs" class="modal">
+        <div class="modal-content digraphs">
+            <span class="close">&times;</span>
+            <h2>Polish Digraphs</h2>
+            <table class="alphabet-table digraphs">
+                <tr>
+                    <th>Combination</th>
+                    <th>Pronunciation Hint</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Ch</td>
+                    <td>like English h</td>
+                    <td>Phonetically identical to h</td>
+                </tr>
+                <tr>
+                    <td>Cz</td>
+                    <td>like ch in chocolate</td>
+                    <td>Harder than ć</td>
+                </tr>
+                <tr>
+                    <td>Dz</td>
+                    <td>like ds in kids</td>
+                    <td>Only before vowels</td>
+                </tr>
+                <tr>
+                    <td>Dź</td>
+                    <td>soft j, like jeans</td>
+                    <td>Softer than dz</td>
+                </tr>
+                <tr>
+                    <td>Dż</td>
+                    <td>like j in jungle</td>
+                    <td>Hard version of dź</td>
+                </tr>
+                <tr>
+                    <td>Rz</td>
+                    <td>like ż (hard zh)</td>
+                    <td>Different spelling contexts</td>
+                </tr>
+                <tr>
+                    <td>Sz</td>
+                    <td>like sh in shut</td>
+                    <td>Harder than ś</td>
+                </tr>
+            </table>
+            <p><strong>Important distinctions:</strong> Ś vs Sz, Ć vs Cz, Ź vs Ż, Dź vs Dż — the first is softer, the
+                second harder.</p>
+        </div>
+    </div>
+
+    <!-- Trigraphs Modal -->
+    <div id="modal-alphabet-trigraphs" class="modal">
+        <div class="modal-content trigraphs">
+            <span class="close">&times;</span>
+            <h2>Polish Trigraphs</h2>
+            <table class="alphabet-table trigraphs">
+                <tr>
+                    <th>Trigraph</th>
+                    <th>Pronunciation Hint</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Dzi</td>
+                    <td>like dź + i, sounds like jeans</td>
+                    <td>Soft, behaves like dź</td>
+                </tr>
+                <tr>
+                    <td>Rze</td>
+                    <td>like ż or rz</td>
+                    <td>Occurs in words like rzeka</td>
+                </tr>
+                <tr>
+                    <td>Się</td>
+                    <td>like ś + e, sh-eh</td>
+                    <td>Common reflexive particle</td>
+                </tr>
+                <tr>
+                    <td>Cie</td>
+                    <td>like ć + e, cheh</td>
+                    <td>Seen in words like ciepło</td>
+                </tr>
+                <tr>
+                    <td>Nie</td>
+                    <td>like ń + e, nyeh</td>
+                    <td>From niebo ("sky"), nie ("not")</td>
+                </tr>
+                <tr>
+                    <td>Zie</td>
+                    <td>like ź + e, zh-eh</td>
+                    <td>In words like ziemia</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
     <!-- Hero Section -->
-    <section class="numbers-hero hero">
+    <section id="numbers-hero" class="numbers-hero hero">
         <h2>Polish Numbers</h2>
         <p>Numbers from 1 to 1,000,000 with examples</p>
     </section>
@@ -257,8 +570,152 @@
         </div>
     </div>
 
+    <!-- Calendar Hero Section -->
+    <section id="calendar-hero" class="calendar-hero hero">
+        <h2>Days & Months in Polish</h2>
+        <p>Polish names with pronunciation and English equivalents</p>
+    </section>
+
+    <!-- Calendar Grid -->
+    <section class="calendar-grid">
+        <div class="calendar-card days" data-modal="modal-days-of-week">
+            <h3>Days of the Week</h3>
+            <p>Polish days with pronunciation</p>
+        </div>
+
+        <div class="calendar-card months" data-modal="modal-months">
+            <h3>Months</h3>
+            <p>Polish months with pronunciation</p>
+        </div>
+    </section>
+
+    <!-- Days Modal -->
+    <div id="modal-days-of-week" class="modal">
+        <div class="modal-content calendar-days-modal">
+            <span class="close">&times;</span>
+            <h2>Days of the Week</h2>
+            <table class="calendar-table days">
+                <tr>
+                    <th>Polish</th>
+                    <th>Pronunciation</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>poniedziałek</td>
+                    <td>poh-nyeh-jah-wek</td>
+                    <td>Monday</td>
+                </tr>
+                <tr>
+                    <td>wtorek</td>
+                    <td>fto-rek</td>
+                    <td>Tuesday</td>
+                </tr>
+                <tr>
+                    <td>środa</td>
+                    <td>shroh-dah</td>
+                    <td>Wednesday</td>
+                </tr>
+                <tr>
+                    <td>czwartek</td>
+                    <td>chvahr-tek</td>
+                    <td>Thursday</td>
+                </tr>
+                <tr>
+                    <td>piątek</td>
+                    <td>pyawn-tek</td>
+                    <td>Friday</td>
+                </tr>
+                <tr>
+                    <td>sobota</td>
+                    <td>soh-boh-tah</td>
+                    <td>Saturday</td>
+                </tr>
+                <tr>
+                    <td>niedziela</td>
+                    <td>nyeh-jel-ah</td>
+                    <td>Sunday</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Months Modal -->
+    <div id="modal-months" class="modal">
+        <div class="modal-content calendar-months-modal">
+            <span class="close">&times;</span>
+            <h2>Months</h2>
+            <table class="calendar-table months">
+                <tr>
+                    <th>Polish</th>
+                    <th>Pronunciation</th>
+                    <th>English</th>
+                </tr>
+                <tr>
+                    <td>styczeń</td>
+                    <td>stih-chen</td>
+                    <td>January</td>
+                </tr>
+                <tr>
+                    <td>luty</td>
+                    <td>loo-tih</td>
+                    <td>February</td>
+                </tr>
+                <tr>
+                    <td>marzec</td>
+                    <td>mah-zhets</td>
+                    <td>March</td>
+                </tr>
+                <tr>
+                    <td>kwiecień</td>
+                    <td>kvye-chen</td>
+                    <td>April</td>
+                </tr>
+                <tr>
+                    <td>maj</td>
+                    <td>mai</td>
+                    <td>May</td>
+                </tr>
+                <tr>
+                    <td>czerwiec</td>
+                    <td>chehr-vyets</td>
+                    <td>June</td>
+                </tr>
+                <tr>
+                    <td>lipiec</td>
+                    <td>lee-pyets</td>
+                    <td>July</td>
+                </tr>
+                <tr>
+                    <td>sierpień</td>
+                    <td>shyer-pyen</td>
+                    <td>August</td>
+                </tr>
+                <tr>
+                    <td>wrzesień</td>
+                    <td>v-zhe-shyen</td>
+                    <td>September</td>
+                </tr>
+                <tr>
+                    <td>październik</td>
+                    <td>pahzh-jyer-neek</td>
+                    <td>October</td>
+                </tr>
+                <tr>
+                    <td>listopad</td>
+                    <td>leesto-pahd</td>
+                    <td>November</td>
+                </tr>
+                <tr>
+                    <td>grudzień</td>
+                    <td>groo-djen</td>
+                    <td>December</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
     <!-- Hero -->
-    <section class="hero cases-hero">
+    <section id="cases-hero" class="hero cases-hero">
         <h2>The 7 Polish Grammar Cases</h2>
         <p>Key questions, usage, and details with examples</p>
     </section>

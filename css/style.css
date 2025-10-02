@@ -250,6 +250,16 @@ main {
     }
 }
 
+.collapsible-content {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapsible-section.active .collapsible-content {
+    display: block;
+}
+
 /* Animation */
 @keyframes slideUp {
     from {
