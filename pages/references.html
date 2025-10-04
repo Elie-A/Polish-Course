@@ -4,16 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Polish Course References</title>
-    <link rel="stylesheet" href="css/sidebar.css">
-    <link rel="stylesheet" href="css/navigation.css">
-    <link rel="stylesheet" href="css/references.css">
-    <link rel="stylesheet" href="css/numbers_reference.css">
-    <link rel="stylesheet" href="css/cases_reference.css">
-    <link rel="stylesheet" href="css/alphabet_reference.css">
-    <link rel="stylesheet" href="css/calendar.css">
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="script/script.js"></script>
-    <script defer src="script/sidebar.js"></script>
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/references.css">
+    <link rel="stylesheet" href="../css/numbers_reference.css">
+    <link rel="stylesheet" href="../css/cases_reference.css">
+    <link rel="stylesheet" href="../css/alphabet_reference.css">
+    <link rel="stylesheet" href="../css/calendar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../script/script.js"></script>
+    <script defer src="../script/sidebar.js"></script>
+    <script defer src="../script/reference_grammar_note.js"></script>
 </head>
 
 <body>
@@ -23,14 +24,14 @@
 
     <nav>
         <div class="polish-flag"></div>
-        <a href="index.html">Home</a>
-        <a href="present.html">Present Tense</a>
-        <a href="past.html">Past Tense</a>
-        <a href="future.html">Future Tense</a>
-        <a href="cases.html">Cases</a>
-        <a href="grammar.html">Grammar & Gender</a>
-        <a href="vocabulary.html">Verbs & Vocabulary</a>
-        <a href="references.html">References</a>
+        <a href="../index.html">Home</a>
+        <a href="pages/present.html">Present Tense</a>
+        <a href="pages/past.html">Past Tense</a>
+        <a href="pages/future.html">Future Tense</a>
+        <a href="pages/cases.html">Cases</a>
+        <a href="pages/grammar.html">Grammar & Gender</a>
+        <a href="pages/vocabulary.html">Verbs & Vocabulary</a>
+        <a href="pages/references.html">References</a>
     </nav>
 
     <!-- Quick Jump Sidebar -->
@@ -567,6 +568,77 @@
                     <td>milion</td>
                 </tr>
             </table>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin: 30px 0;">
+        <button id="grammarNoteBtn" class="grammar-note-btn">📘 Grammar Note: Polish Numbers & Cases</button>
+    </div>
+
+    <div id="grammarNoteModal" class="grammar-note-modal">
+        <div class="grammar-note-card">
+            <span class="grammar-note-close">&times;</span>
+            <div class="grammar-note-content">
+                <h2 style="text-align:center; color:#b30059; margin-bottom:20px;">Grammar Note: Polish Numbers & Cases
+                </h2>
+
+                <!-- Sections -->
+                <div class="grammar-section">
+                    <h3 class="case-nominative">🔹 Why 1 → nominative singular</h3>
+                    <p>In Polish (and other Slavic languages), the number 1 behaves like an adjective:<br>
+                        <em>jeden kot</em> = "one cat" → "kot" stays in <strong>nominative singular</strong>, just like
+                        it would without a number.<br>
+                        It agrees directly with the noun, like <em>ten kot</em> ("this cat").
+                    </p>
+                </div>
+
+                <div class="grammar-section">
+                    <h3 class="case-nominative">🔹 Why 2, 3, 4 → nominative plural</h3>
+                    <p>Originally in Old Slavic, small numbers like 2, 3, 4 had a dual form (between singular &
+                        plural).<br>
+                        Polish lost the dual, but the pattern stayed: Numbers 2, 3, 4 behave as "close to singular", so
+                        the noun looks like <strong>nominative plural</strong>.<br>
+                        Example: <em>trzy psy</em> ("three dogs") → normal plural.</p>
+                </div>
+
+                <div class="grammar-section">
+                    <h3 class="case-genitive">🔺 Why 5 and above → genitive plural</h3>
+                    <p>Numbers ≥5 were treated as a collective quantifier (“a group of X”), not a direct count.<br>
+                        So instead of agreeing like an adjective, they govern the <strong>genitive case</strong>, like
+                        “many”:<br>
+                        <em>wiele psów</em> = "many dogs"<br>
+                        <em>pięć psów</em> = "five dogs"<br>
+                        Literally: “a group of 5 (of) cats” → genitive plural.
+                    </p>
+                </div>
+
+                <div class="grammar-section">
+                    <h3 class="case-genitive">🔺 Why 0 → genitive plural</h3>
+                    <p>Zero is treated like "none of", which also uses the <strong>genitive</strong>.<br>
+                        Example: <em>zero problemów</em> = "zero problems".</p>
+                </div>
+
+                <div class="grammar-section">
+                    <h3 class="case-genitive">🔺 Why 12, 13, 14 are exceptions</h3>
+                    <p>Although ending in 2, 3, 4, these are teen numbers (from <em>dwa-naście</em>,
+                        <em>trzy-naście</em>).<br>
+                        “Naście” numbers behave like ≥5 → force genitive plural:<br>
+                        <em>12 psów</em>, <em>13 psów</em>, <em>14 psów</em>.
+                    </p>
+                </div>
+
+                <hr>
+
+                <div class="grammar-summary">
+                    <h3>📌 Summary</h3>
+                    <ul>
+                        <li class="case-nominative">1 → nominative singular</li>
+                        <li class="case-nominative">2, 3, 4 → nominative plural</li>
+                        <li class="case-genitive">5+ and 0 → genitive plural</li>
+                        <li class="case-genitive">12–14 → genitive plural (exception)</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 

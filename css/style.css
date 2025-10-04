@@ -175,6 +175,16 @@ main {
     border-radius: 4px;
 }
 
+.ending-nominative {
+    color: #DC143C;
+    font-weight: 600;
+    background: rgba(139, 32, 0, 0.15);
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+
+
 .impf {
     color: #004C4C;
     font-weight: 600;

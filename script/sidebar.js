@@ -5,7 +5,7 @@ toggleBtn.addEventListener("click", () => {
   if (sidebar.classList.contains("collapsed")) {
     sidebar.classList.remove("collapsed");
     sidebar.classList.add("expanded");
-    toggleBtn.textContent = "↓";
+    toggleBtn.textContent = "▼";
   } else {
     sidebar.classList.remove("expanded");
     sidebar.classList.add("collapsed");

@@ -9,11 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
       if (content.classList.contains("active")) {
         content.classList.remove("active");
         toggleBtn.textContent = "+";
-        toggleBtn.classList.remove("rotated");
       } else {
         content.classList.add("active");
-        toggleBtn.textContent = "−";
-        toggleBtn.classList.add("rotated");
+        toggleBtn.textContent = "-";
       }
     });
   });
