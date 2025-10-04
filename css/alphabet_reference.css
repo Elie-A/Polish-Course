@@ -51,6 +51,10 @@
     border-top-color: #28a745;
 }
 
+.hardsoftconsonants {
+    border-top-color: #daa520;
+}
+
 /* ===== Modals ===== */
 .modal {
     display: none;
@@ -167,6 +171,10 @@
     border-top-color: #28a745;
 }
 
+.modal-content.hardsoftconsonants {
+    border-top-color: #daa520;
+}
+
 .modal-content.letters h2 {
     color: #6f42c1;
 }
@@ -177,4 +185,55 @@
 
 .modal-content.trigraphs h2 {
     color: #28a745;
+}
+
+.modal-content.hardsoftconsonants h2 {
+    color: #daa520;
+}
+
+/* ===== Hard & Soft Consonants Table Styling ===== */
+.alphabet-table.hardsoftconsonants th {
+    background: #daa520;
+    /* golden header */
+    color: #fff;
+    text-align: left;
+}
+
+.alphabet-table.hardsoftconsonants td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+}
+
+.alphabet-table.hardsoftconsonants tr:nth-child(even) td {
+    background: #fff8e1;
+    /* light golden for even rows */
+}
+
+.alphabet-table.hardsoftconsonants tr:hover td {
+    background: #ffeeba;
+    /* highlight on hover */
+}
+
+/* Color coding rows */
+.hard-row td:first-child {
+    font-weight: bold;
+    color: #b8860b;
+    /* dark goldenrod for hard */
+}
+
+.soft-row td:first-child {
+    font-weight: bold;
+    color: #7b3f00;
+}
+
+/* Optional: add subtle border-left color for categories */
+.hard-row td:first-child {
+    border-left: 4px solid #b8860b;
+    padding-left: 11px;
+}
+
+.soft-row td:first-child {
+    border-left: 4px solid #daa520;
+    padding-left: 11px;
 }

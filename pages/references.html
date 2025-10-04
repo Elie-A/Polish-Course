@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/numbers_reference.css">
     <link rel="stylesheet" href="../css/cases_reference.css">
     <link rel="stylesheet" href="../css/alphabet_reference.css">
+    <link rel="stylesheet" href="../css/pronouns_reference.css">
     <link rel="stylesheet" href="../css/calendar.css">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../script/script.js"></script>
@@ -25,13 +26,13 @@
     <nav>
         <div class="polish-flag"></div>
         <a href="../index.html">Home</a>
-        <a href="pages/present.html">Present Tense</a>
-        <a href="pages/past.html">Past Tense</a>
-        <a href="pages/future.html">Future Tense</a>
-        <a href="pages/cases.html">Cases</a>
-        <a href="pages/grammar.html">Grammar & Gender</a>
-        <a href="pages/vocabulary.html">Verbs & Vocabulary</a>
-        <a href="pages/references.html">References</a>
+        <a href="present.html">Present Tense</a>
+        <a href="past.html">Past Tense</a>
+        <a href="future.html">Future Tense</a>
+        <a href="cases.html">Cases</a>
+        <a href="grammar.html">Grammar & Gender</a>
+        <a href="vocabulary.html">Verbs & Vocabulary</a>
+        <a href="references.html">References</a>
     </nav>
 
     <!-- Quick Jump Sidebar -->
@@ -42,10 +43,9 @@
             <li><a href="#numbers-hero" title="Numbers">🔢</a></li>
             <li><a href="#calendar-hero" title="Calendar">📅</a></li>
             <li><a href="#cases-hero" title="Cases">📝</a></li>
+            <li><a href="#possessives-hero" title="Possessive/Reflexive">🏷️</a></li>
         </ul>
     </div>
-
-
 
     <!-- Alphabet Hero Section -->
     <section id="alphabet-hero" class="alphabet-hero hero">
@@ -68,6 +68,11 @@
         <div class="alphabet-card trigraphs" data-modal="modal-alphabet-trigraphs">
             <h3>Trigraphs</h3>
             <p>Common 3-letter combinations</p>
+        </div>
+
+        <div class="alphabet-card hardsoftconsonants" data-modal="modal-alphabet-hard-soft-consonants">
+            <h3>Hard & Soft Consonants</h3>
+            <p>Differentiate between hard & soft consonants</p>
         </div>
     </section>
 
@@ -338,6 +343,44 @@
                     <td>Zie</td>
                     <td>like ź + e, zh-eh</td>
                     <td>In words like ziemia</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Hard & Soft Consonants Modal -->
+    <div id="modal-alphabet-hard-soft-consonants" class="modal">
+        <div class="modal-content hardsoftconsonants">
+            <span class="close">&times;</span>
+            <h2>Polish Hard & Soft Consonants</h2>
+            <table class="alphabet-table hardsoftconsonants">
+                <tr>
+                    <th>Category</th>
+                    <th>Consonants</th>
+                    <th>Notes & Examples</th>
+                </tr>
+                <tr class="hard-row">
+                    <td>Hard Consonants</td>
+                    <td>p, b, f, w, m, t, d, s, z, n, ł, r, k, g, ch, cz, dz, sz, ż</td>
+                    <td>
+                        Do not change before endings.<br>
+                        Examples:<br>
+                        • dom → domu<br>
+                        • kot → koty<br>
+                        • most → mosty
+                    </td>
+                </tr>
+                <tr class="soft-row">
+                    <td>Soft Consonants / Palatalized Stems</td>
+                    <td>ć, dź, ś, ź, ń, l, j</td>
+                    <td>
+                        Soft stems often change before endings: -i, -e, -y.<br>
+                        Examples:<br>
+                        • kaczka → kaczki (ć → ci)<br>
+                        • liść → liście (ś → si)<br>
+                        • dzień → dni (ń → ni)<br>
+                        Often affects diminutives, adjectives, and verb conjugations.
+                    </td>
                 </tr>
             </table>
         </div>
@@ -1681,6 +1724,1144 @@
         </div>
     </div>
 
+    <!-- Hero -->
+    <section id="possessives-hero" class="hero pronouns-cases-hero">
+        <h2>Polish Possessive Pronouns: Full Declensions</h2>
+        <p>See how possessive pronouns change in all 7 cases with gender and number.</p>
+    </section>
+
+    <!-- Pronouns Grid -->
+    <section class="pronouns-cases-grid">
+        <div class="pronouns-case-card moj" data-modal="modal-moj">
+            <h3>Mój (First Person)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by the speaker</p>
+        </div>
+        <div class="pronouns-case-card twoj" data-modal="modal-twoj">
+            <h3>Twój (Second Person)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by the person addressed</p>
+        </div>
+        <div class="pronouns-case-card jego-jej" data-modal="modal-jego-jej">
+            <h3>Jego/Jej (Third Person)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by he/she</p>
+        </div>
+        <div class="pronouns-case-card nasz" data-modal="modal-nasz">
+            <h3>Nasz (First Person Plural)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by we/us</p>
+        </div>
+        <div class="pronouns-case-card wasz" data-modal="modal-wasz">
+            <h3>Wasz (Second Person Plural)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by you (plural)</p>
+        </div>
+        <div class="pronouns-case-card ich" data-modal="modal-ich">
+            <h3>Ich (Third Person Plural)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Indicates possession by they</p>
+        </div>
+        <div class="pronouns-case-card swoj" data-modal="modal-swoj">
+            <h3>Swój (Reflexive)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Reflexive possession (own)</p>
+        </div>
+        <div class="pronouns-case-card reflexive-personal" data-modal="modal-reflexive-personal">
+            <h3>Się / Sobie / Siebie (Reflexive Personal)</h3>
+            <p class="questions">Kogo? Komu? Co?</p>
+            <p class="usage">Reflexive actions (verbs acting on the subject themselves)</p>
+        </div>
+        <div class="pronouns-case-card reflexive-intensifier" data-modal="modal-reflexive-intensifier">
+            <h3>Sam / Sama / Samo / Sami / Same (Reflexive Intensifier)</h3>
+            <p class="questions">Kto? Co?</p>
+            <p class="usage">Emphasizes “by oneself / alone”</p>
+        </div>
+    </section>
+
+    <!-- Modal Template Example: Mój -->
+    <div id="modal-moj" class="modal">
+        <div class="modal-content moj">
+            <span class="close">&times;</span>
+            <h2>Mój – First Person Singular / Plural</h2>
+            <p><b>Usage:</b> Shows possession by the speaker.</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> ja (singular), my (plural)</p>
+            <table class="pronouns-case-table moj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>mój</td>
+                    <td>moi</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>mojego</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>mojemu</td>
+                    <td>moim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>mój / mojego</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>moim</td>
+                    <td>moimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>moim</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>mój</td>
+                    <td>moi</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> ja (singular), my (plural)</p>
+            <table class="pronouns-case-table moj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>moja</td>
+                    <td>moje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>mojej</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>mojej</td>
+                    <td>moim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>moją</td>
+                    <td>moje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>moją</td>
+                    <td>moimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>mojej</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>moja</td>
+                    <td>moje</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> ja (singular), my (plural)</p>
+            <table class="pronouns-case-table moj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>moje</td>
+                    <td>moje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>mojego</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>mojemu</td>
+                    <td>moim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>moje</td>
+                    <td>moje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>moim</td>
+                    <td>moimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>moim</td>
+                    <td>moich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>moje</td>
+                    <td>moje</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Twój -->
+    <div id="modal-twoj" class="modal">
+        <div class="modal-content twoj">
+            <span class="close">&times;</span>
+            <h2>Twój – Second Person Singular / Plural</h2>
+            <p><b>Usage:</b> Shows possession by the person you are addressing.</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> ty (singular), wy (plural)</p>
+            <table class="pronouns-case-table twoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>twój</td>
+                    <td>twoi</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>twojego</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>twojemu</td>
+                    <td>twoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>twój / twojego</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>twoim</td>
+                    <td>twoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>twoim</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>twój</td>
+                    <td>twoi</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> ty (singular), wy (plural)</p>
+            <table class="pronouns-case-table twoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>twoja</td>
+                    <td>twoje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>twojej</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>twojej</td>
+                    <td>twoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>twoją</td>
+                    <td>twoje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>twoją</td>
+                    <td>twoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>twojej</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>twoja</td>
+                    <td>twoje</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> ty (singular), wy (plural)</p>
+            <table class="pronouns-case-table twoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>twoje</td>
+                    <td>twoje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>twojego</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>twojemu</td>
+                    <td>twoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>twoje</td>
+                    <td>twoje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>twoim</td>
+                    <td>twoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>twoim</td>
+                    <td>twoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>twoje</td>
+                    <td>twoje</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Jego / Jej -->
+    <div id="modal-jego-jej" class="modal">
+        <div class="modal-content jego-jej">
+            <span class="close">&times;</span>
+            <h2>Jego / Jej – Third Person Singular</h2>
+            <p><b>Usage:</b> Shows possession by a third person (male, female, or object).</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> on (he), ono (it)</p>
+            <table class="pronouns-case-table jego-jej">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>jemu</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nim</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>nim</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>jego</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> ona (she)</p>
+            <table class="pronouns-case-table jego-jej">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>jej</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>jej</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>jej</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>ją</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nią</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>niej</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>jej</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> ono (it)</p>
+            <table class="pronouns-case-table jego-jej">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>jemu</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>jego</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nim</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>nim</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>jego</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Nasz -->
+    <div id="modal-nasz" class="modal">
+        <div class="modal-content nasz">
+            <span class="close">&times;</span>
+            <h2>Nasz – First Person Plural</h2>
+            <p><b>Usage:</b> Shows possession by the speaker and others (we / us).</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> my (we)</p>
+            <table class="pronouns-case-table nasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>nasz</td>
+                    <td>nasi</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>naszego</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>naszemu</td>
+                    <td>naszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>nasz / naszego</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>naszym</td>
+                    <td>naszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>naszym</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>nasz</td>
+                    <td>nasi</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> my (we)</p>
+            <table class="pronouns-case-table nasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>nasza</td>
+                    <td>nasze</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>naszej</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>naszej</td>
+                    <td>naszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>naszą</td>
+                    <td>nasze</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>naszą</td>
+                    <td>naszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>naszej</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>nasza</td>
+                    <td>nasze</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> my (we)</p>
+            <table class="pronouns-case-table nasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>nasze</td>
+                    <td>nasze</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>naszego</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>naszemu</td>
+                    <td>naszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>nasze</td>
+                    <td>nasze</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>naszym</td>
+                    <td>naszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>naszym</td>
+                    <td>naszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>nasze</td>
+                    <td>nasze</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Wasz -->
+    <div id="modal-wasz" class="modal">
+        <div class="modal-content wasz">
+            <span class="close">&times;</span>
+            <h2>Wasz – Second Person Plural</h2>
+            <p><b>Usage:</b> Shows possession by the people you are addressing (you all / you plural).</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> wy (you plural)</p>
+            <table class="pronouns-case-table wasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>wasz</td>
+                    <td>wasi</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>waszego</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>waszemu</td>
+                    <td>waszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>wasz / waszego</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>waszym</td>
+                    <td>waszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>waszym</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>wasz</td>
+                    <td>wasi</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> wy (you plural)</p>
+            <table class="pronouns-case-table wasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>wasza</td>
+                    <td>wasze</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>waszej</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>waszej</td>
+                    <td>waszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>waszą</td>
+                    <td>wasze</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>waszą</td>
+                    <td>waszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>waszej</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>wasza</td>
+                    <td>wasze</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> wy (you plural)</p>
+            <table class="pronouns-case-table wasz">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>wasze</td>
+                    <td>wasze</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>waszego</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>waszemu</td>
+                    <td>waszym</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>wasze</td>
+                    <td>wasze</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>waszym</td>
+                    <td>waszymi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>waszym</td>
+                    <td>waszych</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>wasze</td>
+                    <td>wasze</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Ich -->
+    <div id="modal-ich" class="modal">
+        <div class="modal-content ich">
+            <span class="close">&times;</span>
+            <h2>Ich – Third Person Plural</h2>
+            <p><b>Usage:</b> Shows possession by third person plural (they / them).</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> oni (they, masculine personal)</p>
+            <table class="pronouns-case-table ich">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>im</td>
+                    <td>im</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nimi</td>
+                    <td>nimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>nich</td>
+                    <td>nich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> one (they, feminine)</p>
+            <table class="pronouns-case-table ich">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>im</td>
+                    <td>im</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>je</td>
+                    <td>je</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nimi</td>
+                    <td>nimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>nich</td>
+                    <td>nich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> one (they, neuter)</p>
+            <table class="pronouns-case-table ich">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>im</td>
+                    <td>im</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>je</td>
+                    <td>je</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>nimi</td>
+                    <td>nimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>nich</td>
+                    <td>nich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>ich</td>
+                    <td>ich</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Swój -->
+    <div id="modal-swoj" class="modal">
+        <div class="modal-content swoj">
+            <span class="close">&times;</span>
+            <h2>Swój – Reflexive Possessive</h2>
+            <p><b>Usage:</b> Shows possession referring back to the subject of the sentence.
+                Can be used with all persons (first, second, third) and both singular and plural.</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, on, my, wy, oni</p>
+            <table class="pronouns-case-table swoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>swój</td>
+                    <td>swoi</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>swojego</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>swojemu</td>
+                    <td>swoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>swój / swojego</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>swoim</td>
+                    <td>swoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>swoim</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>swój</td>
+                    <td>swoi</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, ona, my, wy, one</p>
+            <table class="pronouns-case-table swoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>swoja</td>
+                    <td>swoje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>swojej</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>swojej</td>
+                    <td>swoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>swoją</td>
+                    <td>swoje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>swoją</td>
+                    <td>swoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>swojej</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>swoja</td>
+                    <td>swoje</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, ono, my, wy, one</p>
+            <table class="pronouns-case-table swoj">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Nominative</td>
+                    <td>swoje</td>
+                    <td>swoje</td>
+                </tr>
+                <tr>
+                    <td>Genitive</td>
+                    <td>swojego</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>swojemu</td>
+                    <td>swoim</td>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>swoje</td>
+                    <td>swoje</td>
+                </tr>
+                <tr>
+                    <td>Instrumental</td>
+                    <td>swoim</td>
+                    <td>swoimi</td>
+                </tr>
+                <tr>
+                    <td>Locative</td>
+                    <td>swoim</td>
+                    <td>swoich</td>
+                </tr>
+                <tr>
+                    <td>Vocative</td>
+                    <td>swoje</td>
+                    <td>swoje</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Reflexive Personal -->
+    <div id="modal-reflexive-personal" class="modal">
+        <div class="modal-content reflexive-personal">
+            <span class="close">&times;</span>
+            <h2>Się / Sobie / Siebie – Reflexive Personal Pronouns</h2>
+            <p><b>Usage:</b> Used with verbs to indicate the action refers back to the subject.</p>
+
+            <table class="pronouns-case-table reflexive-personal">
+                <tr>
+                    <th>Case</th>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>Accusative</td>
+                    <td>się / siebie</td>
+                    <td>się / siebie</td>
+                </tr>
+                <tr>
+                    <td>Dative</td>
+                    <td>sobie</td>
+                    <td>sobie</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <!-- Modal Template Example: Reflexive Intensifier -->
+    <div id="modal-reflexive-intensifier" class="modal">
+        <div class="modal-content reflexive-intensifier">
+            <span class="close">&times;</span>
+            <h2>Sam / Sama / Samo / Sami / Same – Reflexive Intensifiers</h2>
+            <p><b>Usage:</b> Used to emphasize that the subject performs the action alone or personally.</p>
+
+            <!-- Masculine -->
+            <h3>Masculine</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, on, my, wy, oni</p>
+            <table class="pronouns-case-table reflexive-intensifier">
+                <tr>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>sam</td>
+                    <td>sami</td>
+                </tr>
+            </table>
+
+            <!-- Feminine -->
+            <h3>Feminine</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, ona, my, wy, one</p>
+            <table class="pronouns-case-table reflexive-intensifier">
+                <tr>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>sama</td>
+                    <td>same</td>
+                </tr>
+            </table>
+
+            <!-- Neuter -->
+            <h3>Neuter</h3>
+            <p><b>Used with subject pronouns:</b> ja, ty, ono, my, wy, one</p>
+            <table class="pronouns-case-table reflexive-intensifier">
+                <tr>
+                    <th>Singular</th>
+                    <th>Plural</th>
+                </tr>
+                <tr>
+                    <td>samo</td>
+                    <td>same</td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>

@@ -1,0 +1,325 @@
+/* ===== Pronouns Grid ===== */
+.pronouns-cases-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Pronouns Cards ===== */
+.pronouns-case-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    border-top: 6px solid transparent;
+}
+
+.pronouns-case-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.pronouns-case-card h3 {
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.pronouns-case-card .questions {
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+.pronouns-case-card .usage {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* ===== Color-coded Borders for Pronouns Cards ===== */
+.pronouns-case-card.moj {
+    border-top-color: #28a745;
+}
+
+.pronouns-case-card.twoj {
+    border-top-color: #ff4757;
+}
+
+.pronouns-case-card.jego-jej {
+    border-top-color: #1e90ff;
+}
+
+.pronouns-case-card.nasz {
+    border-top-color: #ffa502;
+}
+
+.pronouns-case-card.wasz {
+    border-top-color: #6f42c1;
+}
+
+.pronouns-case-card.ich {
+    border-top-color: #20c997;
+}
+
+.pronouns-case-card.swoj {
+    border-top-color: #e83e8c;
+}
+
+.pronouns-case-card.reflexive-personal {
+    border-top-color: #800080;
+}
+
+.pronouns-case-card.reflexive-intensifier {
+    border-top-color: #adff2f;
+}
+
+
+/* ===== Modal Base ===== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(2px);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.show {
+    display: flex;
+    opacity: 1;
+}
+
+/* ===== Modal Content ===== */
+.modal-content {
+    background: #fff;
+    margin: 5% auto;
+    padding: 25px;
+    border-radius: 15px;
+    width: 85%;
+    max-width: 700px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.modal.show .modal-content {
+    transform: scale(1);
+}
+
+/* Close button */
+.modal-content .close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.modal-content .close:hover {
+    color: #000;
+}
+
+/* ===== Modal Titles by Pronoun Case ===== */
+.modal-content.moj h2 {
+    color: #28a745;
+}
+
+.modal-content.twoj h2 {
+    color: #ff4757;
+}
+
+.modal-content.jego-jej h2 {
+    color: #1e90ff;
+}
+
+.modal-content.nasz h2 {
+    color: #ffa502;
+}
+
+.modal-content.wasz h2 {
+    color: #6f42c1;
+}
+
+.modal-content.ich h2 {
+    color: #20c997;
+}
+
+.modal-content.swoj h2 {
+    color: #e83e8c;
+}
+
+.modal-content.reflexive-personal h2 {
+    color: #800080;
+}
+
+.modal-content.reflexive-intensifier h2 {
+    color: #adff2f;
+}
+
+/* ===== Pronouns Tables Styling ===== */
+.pronouns-case-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+.pronouns-case-table th,
+.pronouns-case-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+/* Table Headers by Pronoun (match modal color) */
+.pronouns-case-table.moj th {
+    background-color: #28a745;
+    color: white;
+}
+
+.pronouns-case-table.twoj th {
+    background-color: #ff4757;
+    color: white;
+}
+
+.pronouns-case-table.jego-jej th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.pronouns-case-table.nasz th {
+    background-color: #ffa502;
+    color: white;
+}
+
+.pronouns-case-table.wasz th {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.pronouns-case-table.ich th {
+    background-color: #20c997;
+    color: white;
+}
+
+.pronouns-case-table.swoj th {
+    background-color: #e83e8c;
+    color: white;
+}
+
+.pronouns-case-table.reflexive-personal th {
+    background-color: #800080;
+    color: white;
+}
+
+.pronouns-case-table.reflexive-intensifier th {
+    background-color: #adff2f;
+    color: white;
+}
+
+/* Alternating row colors per pronoun (light shades) */
+.pronouns-case-table.moj tr:nth-child(even) {
+    background-color: #d4f7d4;
+}
+
+.pronouns-case-table.moj tr:nth-child(odd) {
+    background-color: #f0fff0;
+}
+
+.pronouns-case-table.twoj tr:nth-child(even) {
+    background-color: #ffd6d6;
+}
+
+.pronouns-case-table.twoj tr:nth-child(odd) {
+    background-color: #fff0f0;
+}
+
+.pronouns-case-table.jego-jej tr:nth-child(even) {
+    background-color: #cce5ff;
+}
+
+.pronouns-case-table.jego-jej tr:nth-child(odd) {
+    background-color: #e6f2ff;
+}
+
+.pronouns-case-table.nasz tr:nth-child(even) {
+    background-color: #ffe6b3;
+}
+
+.pronouns-case-table.nasz tr:nth-child(odd) {
+    background-color: #fff7e6;
+}
+
+.pronouns-case-table.wasz tr:nth-child(even) {
+    background-color: #d9ccff;
+}
+
+.pronouns-case-table.wasz tr:nth-child(odd) {
+    background-color: #f2e6ff;
+}
+
+.pronouns-case-table.ich tr:nth-child(even) {
+    background-color: #b3f0e6;
+}
+
+.pronouns-case-table.ich tr:nth-child(odd) {
+    background-color: #e6fbf8;
+}
+
+.pronouns-case-table.swoj tr:nth-child(even) {
+    background-color: #ffccf0;
+}
+
+.pronouns-case-table.swoj tr:nth-child(odd) {
+    background-color: #ffe6f7;
+}
+
+.pronouns-case-table.reflexive-personal tr:nth-child(even) {
+    background-color: #f2e6f7;
+    /* light lavender */
+}
+
+.pronouns-case-table.reflexive-personal tr:nth-child(odd) {
+    background-color: #ecd9f3;
+    /* slightly lighter lavender */
+}
+
+.pronouns-case-table.reflexive-intensifier tr:nth-child(even) {
+    background-color: #f7ffe6;
+    /* very light lime */
+}
+
+.pronouns-case-table.reflexive-intensifier tr:nth-child(odd) {
+    background-color: #f3ffc0;
+    /* slightly darker light green */
+}
+
+/* Responsive tables */
+@media (max-width: 600px) {
+    .pronouns-case-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
