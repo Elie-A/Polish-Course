@@ -2,16 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polish Verbs & Vocabulary Exercises</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navigation.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polish Vocabulary</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/vocabulary.css" />
+    <script src="../script/vocabulary.js"></script>
 </head>
 
 <body>
     <header>
-        <h1>Polish Verbs & Vocabulary Exercises</h1>
+        <h1>Polish Vocabulary</h1>
     </header>
 
     <nav>
@@ -28,115 +30,45 @@
     </nav>
 
     <main>
-        <div class="exercise">
-            <h2>Past Tense — Masculine Examples</h2>
-            <table>
-                <tr>
-                    <th>Infinitive</th>
-                    <th>English</th>
-                    <th>Polish</th>
-                </tr>
-                <tr>
-                    <td>wyjechać</td>
-                    <td>to leave</td>
-                    <td><span class="stem">wyjecha</span><span class="ending1">łem</span> na wakacje</td>
-                </tr>
-                <tr>
-                    <td>umyć</td>
-                    <td>to wash</td>
-                    <td><span class="stem">umy</span><span class="ending1">łem</span> samochód</td>
-                </tr>
-                <tr>
-                    <td>zrobić</td>
-                    <td>to do</td>
-                    <td><span class="stem">zrobi</span><span class="ending1">liśmy</span> zakupy na cały tydzień</td>
-                </tr>
-                <tr>
-                    <td>zasłużyć</td>
-                    <td>to earn</td>
-                    <td><span class="stem">zasłuży</span><span class="ending1">liśmy</span> na nagrodę</td>
-                </tr>
-                <tr>
-                    <td>nauczyć się</td>
-                    <td>to learn</td>
-                    <td><span class="stem">nauczy</span><span class="ending1">łem</span> się grać na gitarze
-                        elektrycznej</td>
-                </tr>
-            </table>
-        </div>
+        <section id="vocab-section" class="exercise">
+            <h2>Polish Vocabulary List</h2>
 
-        <div class="exercise">
-            <h2>Present Tense Examples — Regular</h2>
-            <table>
-                <tr>
-                    <th>Infinitive</th>
-                    <th>English</th>
-                    <th>Polish</th>
-                </tr>
-                <tr>
-                    <td>chcieć</td>
-                    <td>to want</td>
-                    <td>Czy <span class="stem">chcesz</span> iść do kina ze mną?</td>
-                </tr>
-                <tr>
-                    <td>pisać</td>
-                    <td>to write</td>
-                    <td><span class="stem">Piszę</span> list do swojej dziewczyny</td>
-                </tr>
-                <tr>
-                    <td>pić</td>
-                    <td>to drink</td>
-                    <td><span class="stem">Pijemy</span> piwo nad jeziorem</td>
-                </tr>
-                <tr>
-                    <td>kupować</td>
-                    <td>to buy</td>
-                    <td>Czy nadal <span class="stem">kupujesz</span> tylko ekologiczne produkty?</td>
-                </tr>
-                <tr>
-                    <td>pracować</td>
-                    <td>to work</td>
-                    <td>Czy <span class="stem">pracujecie</span> nad nowym rozwiązaniem?</td>
-                </tr>
-            </table>
-        </div>
+            <div class="controls">
+                <input type="text" id="search" placeholder="🔍 Search Polish or English..." />
+                <select id="category-filter"></select>
+                <button id="export-btn" class="btn">Export JSON</button>
+                <input type="file" id="file-input" accept=".json" style="display:none;" />
+                <button id="load-btn" class="btn">Load Vocabulary</button>
+            </div>
 
-        <div class="exercise">
-            <h2>Present Tense — Reflexive / Irregular</h2>
-            <table>
-                <tr>
-                    <th>Infinitive</th>
-                    <th>English</th>
-                    <th>Polish</th>
-                </tr>
-                <tr>
-                    <td>śmiać się</td>
-                    <td>to laugh</td>
-                    <td>Goście <span class="stem">śmieją</span> się z mojego żartu</td>
-                </tr>
-                <tr>
-                    <td>myć się</td>
-                    <td>to wash oneself</td>
-                    <td>Magda <span class="stem">myje</span> się w łazience</td>
-                </tr>
-                <tr>
-                    <td>umieć</td>
-                    <td>can</td>
-                    <td>Czy <span class="stem">umiesz</span> mówić po polsku?</td>
-                </tr>
-                <tr>
-                    <td>wiedzieć</td>
-                    <td>to know</td>
-                    <td><span class="stem">Wiem</span>, że jest ci trudno</td>
-                </tr>
-                <tr>
-                    <td>rozumieć</td>
-                    <td>to understand</td>
-                    <td><span class="stem">Rozumiemy</span> twój problem</td>
-                </tr>
-            </table>
-        </div>
+            <div class="table-wrap">
+                <table id="vocabulary-table">
+                    <thead>
+                        <tr>
+                            <th>Polish</th>
+                            <th>English</th>
+                            <th>Category</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <div class="pagination-controls">
+                <button id="prev-page" class="btn">Previous</button>
+                <span id="page-info">Page 1 of 1</span>
+                <button id="next-page" class="btn">Next</button>
+            </div>
+
+            <form id="add-form" class="add-form">
+                <input type="text" id="polish" placeholder="Polish word" required />
+                <input type="text" id="english" placeholder="English meaning" required />
+                <input type="text" id="category" placeholder="Category (optional)" />
+                <button type="submit" class="btn">Add Word</button>
+            </form>
+        </section>
     </main>
+
 </body>
 
 </html>
