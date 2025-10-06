@@ -54,7 +54,7 @@ function handleFileLoad(event) {
   if (!file) return;
 
   if (!file.name.endsWith(".json")) {
-    alert("Please select a JSON file.");
+    showModal("Please select a JSON file.");
     return;
   }
 
@@ -77,9 +77,9 @@ function handleFileLoad(event) {
       resetPage();
       renderVocabulary(filteredVocabulary);
       populateCategoryFilter(vocabulary);
-      alert("Vocabulary loaded successfully!");
+      showModal("Vocabulary loaded successfully!");
     } catch (err) {
-      alert("Error loading JSON: " + err.message);
+      showModal("Error loading JSON: " + err.message);
     }
   };
   reader.readAsText(file);
@@ -189,7 +189,7 @@ function handleAddEntry(e) {
   const category = document.getElementById("category").value.trim() || "misc";
 
   if (!polish || !english) {
-    alert("Please fill in both Polish and English fields.");
+    showModal("Please fill in both Polish and English fields.");
     return;
   }
 
@@ -215,9 +215,50 @@ function handleExport() {
   a.download = "vocabulary.json";
   a.click();
   URL.revokeObjectURL(url);
-  alert("Vocabulary exported as vocabulary.json");
+  showModal("Vocabulary exported as vocabulary.json");
 }
 
 function resetPage() {
   currentPage = 1;
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const clearBtn = document.getElementById("clear-btn");
+  const searchInput = document.getElementById("search");
+  const categoryFilter = document.getElementById("category-filter");
+  const fileInput = document.getElementById("file-input");
+
+  clearBtn.addEventListener("click", () => {
+    // Clear vocabulary arrays
+    vocabulary = [];
+    filteredVocabulary = [];
+
+    // Clear table
+    renderVocabulary(filteredVocabulary);
+
+    // Reset search input
+    searchInput.value = "";
+
+    // Reset category filter
+    categoryFilter.selectedIndex = 0;
+
+    // Reset file input
+    fileInput.value = "";
+
+    // Clear localStorage
+    localStorage.removeItem("vocabulary");
+
+    // Reset page
+    resetPage();
+
+    // Disable pagination buttons
+    document.getElementById("prev-page").disabled = true;
+    document.getElementById("next-page").disabled = true;
+    document.getElementById("prev-page").style.opacity = 0.5;
+    document.getElementById("next-page").style.opacity = 0.5;
+    document.getElementById("prev-page").style.cursor = "not-allowed";
+    document.getElementById("next-page").style.cursor = "not-allowed";
+
+    showModal("Vocabulary has been cleared!");
+  });
+});

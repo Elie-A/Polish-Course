@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/vocabulary.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
     <script src="../script/vocabulary.js"></script>
+    <script src="../script/script.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
         <a href="future.html">Future Tense</a>
         <a href="cases.html">Cases</a>
         <a href="grammar.html">Grammar & Gender</a>
-        <a href="vocabulary.html">Verbs & Vocabulary</a>
+        <a href="vocabulary.html">Vocabulary</a>
         <a href="practice.html">Practice Exercises</a>
         <a href="references.html">References</a>
     </nav>
@@ -39,6 +41,7 @@
                 <button id="export-btn" class="btn">Export JSON</button>
                 <input type="file" id="file-input" accept=".json" style="display:none;" />
                 <button id="load-btn" class="btn">Load Vocabulary</button>
+                <button id="clear-btn" class="btn">Clear Vocabulary</button>
             </div>
 
             <div class="table-wrap">
@@ -69,6 +72,13 @@
         </section>
     </main>
 
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <p id="modal-message"></p>
+            <button id="modal-ok">OK</button>
+        </div>
+    </div>
 </body>
 
 </html>

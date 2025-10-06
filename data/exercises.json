@@ -1,0 +1,180 @@
+{
+    "grammar": [
+        {
+            "question": "Ja ___ (to eat) jabłko.",
+            "answer": "jem"
+        },
+        {
+            "question": "Ty ___ (to go) do szkoły.",
+            "answer": "idziesz"
+        },
+        {
+            "question": "On ___ (to read) książkę.",
+            "answer": "czyta"
+        },
+        {
+            "question": "My ___ (to write) list.",
+            "answer": "piszemy"
+        },
+        {
+            "question": "Wy ___ (to speak) po polsku.",
+            "answer": "mówicie"
+        },
+        {
+            "question": "Oni ___ (to watch) film.",
+            "answer": "oglądają"
+        }
+    ],
+    "numbers": [
+        {
+            "question": "23 in Polish",
+            "answer": "dwudziesty trzeci"
+        },
+        {
+            "question": "50 in Polish",
+            "answer": "pięćdziesiąty"
+        },
+        {
+            "question": "12 in Polish",
+            "answer": "dwunasty"
+        },
+        {
+            "question": "7 in Polish",
+            "answer": "siódmy"
+        },
+        {
+            "question": "100 in Polish",
+            "answer": "setny"
+        },
+        {
+            "question": "1 in Polish",
+            "answer": "pierwszy"
+        }
+    ],
+    "cases": [
+        {
+            "question": "I see a ___ (dog - accusative).",
+            "answer": "psa"
+        },
+        {
+            "question": "She speaks with a ___ (friend - instrumental).",
+            "answer": "przyjacielem"
+        },
+        {
+            "question": "I am going to the ___ (school - accusative).",
+            "answer": "szkołę"
+        },
+        {
+            "question": "He is at the ___ (park - locative).",
+            "answer": "parku"
+        },
+        {
+            "question": "We have a ___ (car - nominative).",
+            "answer": "samochód"
+        },
+        {
+            "question": "They eat ___ (bread - accusative).",
+            "answer": "chleb"
+        }
+    ],
+    "vocabulary": [
+        {
+            "polish": "kot",
+            "english": "cat"
+        },
+        {
+            "polish": "pies",
+            "english": "dog"
+        },
+        {
+            "polish": "dom",
+            "english": "house"
+        },
+        {
+            "polish": "szkoła",
+            "english": "school"
+        },
+        {
+            "polish": "jabłko",
+            "english": "apple"
+        },
+        {
+            "polish": "książka",
+            "english": "book"
+        },
+        {
+            "polish": "samochód",
+            "english": "car"
+        },
+        {
+            "polish": "miasto",
+            "english": "city"
+        },
+        {
+            "polish": "droga",
+            "english": "road"
+        }
+    ],
+    "flashcards": [
+        {
+            "polish": "dom",
+            "english": "house"
+        },
+        {
+            "polish": "książka",
+            "english": "book"
+        },
+        {
+            "polish": "samochód",
+            "english": "car"
+        },
+        {
+            "polish": "jabłko",
+            "english": "apple"
+        },
+        {
+            "polish": "rower",
+            "english": "bicycle"
+        },
+        {
+            "polish": "pies",
+            "english": "dog"
+        },
+        {
+            "polish": "kot",
+            "english": "cat"
+        },
+        {
+            "polish": "szkoła",
+            "english": "school"
+        },
+        {
+            "polish": "miasto",
+            "english": "city"
+        },
+        {
+            "polish": "droga",
+            "english": "road"
+        },
+        {
+            "polish": "krzesło",
+            "english": "chair"
+        },
+        {
+            "polish": "stół",
+            "english": "table"
+        },
+        {
+            "polish": "okno",
+            "english": "window"
+        },
+        {
+            "polish": "drzewo",
+            "english": "tree"
+        },
+        {
+            "polish": "ptak",
+            "english": "bird"
+        }
+    ]
+}

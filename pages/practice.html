@@ -4,14 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polish Verbs & Vocabulary Exercises</title>
+    <title>Polish Practice Exercises</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/practice.css">
+    <link rel="stylesheet" href="../css/popup.css">
+    <script src="../script/practice.js" defer></script>
+    <script src="../script/script.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Polish Language Practice Exercises</h1>
+        <h1>Polish Practice Exercises</h1>
     </header>
 
     <nav>
@@ -22,12 +26,36 @@
         <a href="future.html">Future Tense</a>
         <a href="cases.html">Cases</a>
         <a href="grammar.html">Grammar & Gender</a>
-        <a href="vocabulary.html">Verbs & Vocabulary</a>
+        <a href="vocabulary.html">Vocabulary</a>
         <a href="practice.html">Practice Exercises</a>
         <a href="references.html">References</a>
     </nav>
 
-    <h1> 🚧 UNDER CONSTRUCTION 🚧</h1>
+    <main>
+        <div class="exercise-buttons">
+            <button onclick="loadExercise('grammar')">Grammar</button>
+            <button onclick="loadExercise('numbers')">Numbers & Ordinals</button>
+            <button onclick="loadExercise('cases')">Cases</button>
+            <button onclick="loadExercise('vocabulary')">Vocabulary</button>
+            <button onclick="loadExercise('flashcards')">Flashcards</button>
+        </div>
+
+        <div>
+            <button id="load-btn">Load Exercises JSON</button>
+            <input type="file" id="file-input" accept=".json" style="display:none;">
+            <button id="reset-btn">Reset Exercises</button>
+        </div>
+
+        <div id="exercise-container" class="exercise">Load the exercises file to start</div>
+    </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="modal-close" class="modal-close">&times;</span>
+            <p id="modal-message"></p>
+            <button id="modal-ok">OK</button>
+        </div>
+    </div>
 </body>
 
 </html>

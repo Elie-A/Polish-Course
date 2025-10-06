@@ -1,0 +1,136 @@
+/* Headings */
+h2 {
+    color: #c61322;
+}
+
+/* Exercise container default text */
+#exercise-container {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #c61322;
+    border-radius: 10px;
+    background-color: #fff5f5;
+    width: 70%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    /* center the text */
+    font-size: 1.1rem;
+    color: #c61322;
+    font-weight: bold;
+    line-height: 1.5;
+    min-height: 100px;
+    /* ensures it doesn't collapse when empty */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Exercise buttons */
+.exercise-buttons button {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #c61322;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.exercise-buttons button:hover {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* Load & Reset buttons */
+#load-btn,
+#reset-btn {
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #c61322;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#load-btn:hover,
+#reset-btn:hover {
+    background-color: #ff4757;
+    color: white;
+}
+
+
+/* Text input for answers */
+input[type="text"]#answer-input {
+    padding: 10px;
+    width: 80%;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Check button inside exercise container */
+#exercise-container button {
+    margin: 10px 0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #c61322;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#exercise-container button:hover {
+    background-color: #ff4757;
+    color: white;
+}
+
+/* Flashcards */
+.flashcard {
+    border: 2px solid #ffa502;
+    border-radius: 10px;
+    padding: 20px;
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-size: 1.2rem;
+}
+
+.flashcard:hover {
+    transform: scale(1.05);
+}
+
+/* Score display */
+.score {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* Timer display */
+.timer {
+    font-weight: bold;
+    color: #ff4757;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Result display */
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
