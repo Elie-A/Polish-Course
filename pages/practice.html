@@ -44,9 +44,38 @@
             <button id="load-btn">Load Exercises JSON</button>
             <input type="file" id="file-input" accept=".json" style="display:none;">
             <button id="reset-btn">Reset Exercises</button>
+            <button id="download-btn">Download Exercises JSON</button>
         </div>
 
         <div id="exercise-container" class="exercise">Load the exercises file to start</div>
+
+        <hr style="margin: 15px 0;">
+        <div class="add-exercise-section">
+            <h2>Add New Exercise</h2>
+            <label for="exercise-type">Exercise Type:</label>
+            <select id="exercise-type">
+                <option value="selectType">Select Exercise Type</option>
+                <option value="grammar">Grammar</option>
+                <option value="numbers">Numbers & Ordinals</option>
+                <option value="cases">Cases</option>
+                <option value="vocabulary">Vocabulary</option>
+                <option value="flashcards">Flashcards</option>
+            </select>
+            <br><br>
+
+            <label for="exercise-polish">Polish / Question:</label>
+            <input type="text" id="exercise-polish" placeholder="Enter question or Polish word">
+            <br><br>
+
+            <label for="exercise-answer">Answer / English:</label>
+            <input type="text" id="exercise-answer" placeholder="Enter answer or English word">
+            <br><br>
+
+            <button id="add-exercise-btn">Add Exercise</button>
+
+            <p id="exercise-example" style="color:#c61322; font-style:italic;"></p>
+        </div>
+
     </main>
 
     <div id="modal" class="modal">

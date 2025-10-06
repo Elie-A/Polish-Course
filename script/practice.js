@@ -174,6 +174,8 @@ function nextQuestion() {
 document.addEventListener("DOMContentLoaded", () => {
   const resetBtn = document.getElementById("reset-btn");
   const container = document.getElementById("exercise-container");
+  const exerciseTypeSelect = document.getElementById("exercise-type"); // reference to select
+  const exampleEl = document.getElementById("exercise-example"); // clear example too
 
   resetBtn.addEventListener("click", () => {
     // Clear exercises
@@ -191,6 +193,92 @@ document.addEventListener("DOMContentLoaded", () => {
     // Reset file input
     document.getElementById("file-input").value = "";
 
+    // Reset select back to default
+    exerciseTypeSelect.value = "selectType";
+
+    // Clear example text
+    exampleEl.textContent = "";
+
     showModal("Exercises have been reset!");
   });
+});
+
+document.getElementById("exercise-type").addEventListener("change", (e) => {
+  const type = e.target.value;
+
+  if (type === "selectType") {
+    exampleEl.textContent = ""; // clear previous example
+    showModal("Please select a valid exercise type.");
+    return;
+  }
+
+  exampleEl.textContent = exampleFormats[type];
+});
+
+document.getElementById("add-exercise-btn").addEventListener("click", () => {
+  const type = document.getElementById("exercise-type").value;
+  const polish = document.getElementById("exercise-polish").value.trim();
+  const answer = document.getElementById("exercise-answer").value.trim();
+
+  if (type === "selectType") {
+    showModal("Please select a valid exercise type before adding an exercise.");
+    return;
+  }
+
+  if (!polish || !answer) {
+    showModal(
+      "Please fill in both the question/Polish and answer/English fields."
+    );
+    return;
+  }
+
+  if (!exercises[type]) exercises[type] = [];
+
+  if (type === "vocabulary" || type === "flashcards") {
+    exercises[type].push({ polish, english: answer });
+  } else {
+    exercises[type].push({ question: polish, answer });
+  }
+
+  localStorage.setItem("exercises", JSON.stringify(exercises));
+
+  document.getElementById("exercise-polish").value = "";
+  document.getElementById("exercise-answer").value = "";
+
+  showModal(`New exercise added to "${type}"!`);
+});
+
+document.getElementById("download-btn").addEventListener("click", () => {
+  if (!exercises || Object.keys(exercises).length === 0) {
+    showModal("No exercises to download. Please load or add exercises first.");
+    return;
+  }
+
+  const dataStr = JSON.stringify(exercises, null, 4); // pretty format
+  const blob = new Blob([dataStr], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "polish_exercises.json";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+
+  showModal("Exercises JSON downloaded successfully!");
+});
+
+const exampleFormats = {
+  grammar: "Example: Ja ___ (to sleep) → śpię",
+  numbers: "Example: 5 in Polish → piąty",
+  cases: "Example: I see a ___ (cat - accusative) → kota",
+  vocabulary: "Example: kot → cat",
+  flashcards: "Example: okno → window",
+};
+
+const exampleEl = document.getElementById("exercise-example");
+
+document.getElementById("exercise-type").addEventListener("change", (e) => {
+  const type = e.target.value;
+  exampleEl.textContent = exampleFormats[type];
 });

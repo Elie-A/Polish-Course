@@ -49,7 +49,9 @@ h2 {
 
 /* Load & Reset buttons */
 #load-btn,
-#reset-btn {
+#reset-btn,
+#download-btn,
+#add-exercise-btn {
     margin: 5px;
     padding: 10px 20px;
     border-radius: 8px;
@@ -133,4 +135,44 @@ input[type="text"]#answer-input {
     margin-top: 10px;
     font-weight: bold;
     font-size: 1.1rem;
+}
+
+.add-exercise-section {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #c61322;
+    border-radius: 10px;
+    background-color: #fff5f5;
+    width: 70%;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.add-exercise-section input,
+.add-exercise-section select {
+    padding: 10px;
+    width: 80%;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.add-exercise-section button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    background-color: #ffa502;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.add-exercise-section button:hover {
+    background-color: #ffb84d;
 }
