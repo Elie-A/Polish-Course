@@ -1,2552 +1,2557 @@
 [
-   {
-      "polish":"zima",
-      "english":"winter",
-      "category":"time/seasons"
-   },
-   {
-      "polish":"rzeka",
-      "english":"river",
-      "category":"places/nature"
-   },
-   {
-      "polish":"żabka",
-      "english":"little frog",
-      "category":"animals"
-   },
-   {
-      "polish":"dzwonek",
-      "english":"door bell",
-      "category":"objects"
-   },
-   {
-      "polish":"dźwięk",
-      "english":"sound",
-      "category":"nouns"
-   },
-   {
-      "polish":"dżinsy",
-      "english":"jeans",
-      "category":"clothes"
-   },
-   {
-      "polish":"dżentelmen",
-      "english":"gentleman",
-      "category":"people"
-   },
-   {
-      "polish":"dżdżownica",
-      "english":"earthworm",
-      "category":"animals"
-   },
-   {
-      "polish":"przepraszam",
-      "english":"I'm sorry / excuse me",
-      "category":"phrases"
-   },
-   {
-      "polish":"wczoraj",
-      "english":"yesterday",
-      "category":"time"
-   },
-   {
-      "polish":"liczba",
-      "english":"number (1, 2, 3...)",
-      "category":"grammar"
-   },
-   {
-      "polish":"się",
-      "english":"oneself (reflexive particle)",
-      "category":"grammar"
-   },
-   {
-      "polish":"Nazywam się",
-      "english":"I call myself / My name is",
-      "category":"phrases"
-   },
-   {
-      "polish":"miło",
-      "english":"nice",
-      "category":"adjectives"
-   },
-   {
-      "polish":"bardzo",
-      "english":"very",
-      "category":"adverbs"
-   },
-   {
-      "polish":"poznać",
-      "english":"to get to know (for the first time)",
-      "category":"verbs"
-   },
-   {
-      "polish":"pan",
-      "english":"sir, Mr., gentleman",
-      "category":"people"
-   },
-   {
-      "polish":"pani",
-      "english":"ma'am, Mrs., Ms., lady",
-      "category":"people"
-   },
-   {
-      "polish":"do jutra",
-      "english":"until tomorrow",
-      "category":"phrases/time"
-   },
-   {
-      "polish":"do zobaczenia",
-      "english":"see you (do widzenia)",
-      "category":"phrases"
-   },
-   {
-      "polish":"mieć",
-      "english":"to have",
-      "category":"verbs"
-   },
-   {
-      "polish":"imię",
-      "english":"name",
-      "category":"nouns"
-   },
-   {
-      "polish":"Jak masz na imię?",
-      "english":"What's your name?",
-      "category":"phrases"
-   },
-   {
-      "polish":"proszę",
-      "english":"please / here you go / you're welcome / come in",
-      "category":"phrases"
-   },
-   {
-      "polish":"prosić",
-      "english":"to ask",
-      "category":"verbs"
-   },
-   {
-      "polish":"poproszę",
-      "english":"please (nicer)",
-      "category":"phrases"
-   },
-   {
-      "polish":"przedstawić się",
-      "english":"to introduce oneself",
-      "category":"verbs"
-   },
-   {
-      "polish":"ojej",
-      "english":"oh, no",
-      "category":"interjections"
-   },
-   {
-      "polish":"znaczyć",
-      "english":"to mean",
-      "category":"verbs"
-   },
-   {
-      "polish":"Co to znaczy ... po polsku?",
-      "english":"What does ... mean in Polish?",
-      "category":"phrases"
-   },
-   {
-      "polish":"iść",
-      "english":"to go (on foot)",
-      "category":"verbs"
-   },
-   {
-      "polish":"wy-",
-      "english":"out- (prefix)",
-      "category":"grammar"
-   },
-   {
-      "polish":"wyrzucić",
-      "english":"to throw out",
-      "category":"verbs"
-   },
-   {
-      "polish":"wyjść",
-      "english":"to go out",
-      "category":"verbs"
-   },
-   {
-      "polish":"wynieść",
-      "english":"to take out",
-      "category":"verbs"
-   },
-   {
-      "polish":"nieść",
-      "english":"to carry",
-      "category":"verbs"
-   },
-   {
-      "polish":"on zna (się)",
-      "english":"he knows",
-      "category":"phrases/verbs"
-   },
-   {
-      "polish":"Znam się na językach",
-      "english":"I know languages well",
-      "category":"phrases"
-   },
-   {
-      "polish":"Znam Polskę",
-      "english":"I know Poland",
-      "category":"phrases"
-   },
-   {
-      "polish":"znać się na",
-      "english":"to have expertise in",
-      "category":"verbs"
-   },
-   {
-      "polish":"kochać",
-      "english":"to love",
-      "category":"verbs"
-   },
-   {
-      "polish":"czytać",
-      "english":"to read",
-      "category":"verbs"
-   },
-   {
-      "polish":"one czytają",
-      "english":"they read",
-      "category":"phrases"
-   },
-   {
-      "polish":"oni, one",
-      "english":"they",
-      "category":"pronouns"
-   },
-   {
-      "polish":"on stawia (się)",
-      "english":"he shows up",
-      "category":"phrases"
-   },
-   {
-      "polish":"ubierać się",
-      "english":"to get dressed",
-      "category":"verbs"
-   },
-   {
-      "polish":"pani ubiera się",
-      "english":"the lady gets dressed",
-      "category":"phrases"
-   },
-   {
-      "polish":"my ubieramy się",
-      "english":"we get dressed",
-      "category":"phrases"
-   },
-   {
-      "polish":"żegnacie się",
-      "english":"you (plural) are saying goodbye",
-      "category":"phrases"
-   },
-   {
-      "polish":"powtarzamy",
-      "english":"we repeat",
-      "category":"verbs"
-   },
-   {
-      "polish":"powtarzacie",
-      "english":"you (plural) repeat",
-      "category":"verbs"
-   },
-   {
-      "polish":"czekać",
-      "english":"to wait",
-      "category":"verbs"
-   },
-   {
-      "polish":"czekają",
-      "english":"they are waiting",
-      "category":"phrases"
-   },
-   {
-      "polish":"wiedzieć",
-      "english":"to know (factually)",
-      "category":"verbs"
-   },
-   {
-      "polish":"jeść",
-      "english":"to eat",
-      "category":"verbs"
-   },
-   {
-      "polish":"zaczynać",
-      "english":"to start",
-      "category":"verbs"
-   },
-   {
-      "polish":"Zaczynam rozumieć język polski",
-      "english":"I'm starting to understand the Polish language",
-      "category":"phrases"
-   },
-   {
-      "polish":"Jem jabłko",
-      "english":"I'm eating an apple",
-      "category":"phrases"
-   },
-   {
-      "polish":"spotykać się",
-      "english":"to meet (each other)",
-      "category":"verbs"
-   },
-   {
-      "polish":"oglądać",
-      "english":"to watch",
-      "category":"verbs"
-   },
-   {
-      "polish":"znać się",
-      "english":"to know one another / to be versed in",
-      "category":"verbs"
-   },
-   {
-      "polish":"mieszkać",
-      "english":"to live (reside)",
-      "category":"verbs"
-   },
-   {
-      "polish":"przepraszać",
-      "english":"to apologize",
-      "category":"verbs"
-   },
-   {
-      "polish":"pamiętać",
-      "english":"to remember",
-      "category":"verbs"
-   },
-   {
-      "polish":"mieszkają",
-      "english":"they live",
-      "category":"phrases"
-   },
-   {
-      "polish":"kobiety",
-      "english":"women (nominative)",
-      "category":"people"
-   },
-   {
-      "polish":"kobietami",
-      "english":"women (instrumental)",
-      "category":"grammar"
-   },
-   {
-      "polish":"Jesteśmy kobietami",
-      "english":"We are women",
-      "category":"phrases"
-   },
-   {
-      "polish":"To są kobiety",
-      "english":"These are women",
-      "category":"phrases"
-   },
-   {
-      "polish":"kolega",
-      "english":"friend (male)",
-      "category":"people"
-   },
-   {
-      "polish":"koleżanka",
-      "english":"friend (female)",
-      "category":"people"
-   },
-   {
-      "polish":"lekarz",
-      "english":"doctor (male)",
-      "category":"people"
-   },
-   {
-      "polish":"lekarka",
-      "english":"doctor (female)",
-      "category":"people"
-   },
-   {
-      "polish":"wideem",
-      "english":"video (note: maybe 'wideo')",
-      "category":"media"
-   },
-   {
-      "polish":"inżynier",
-      "english":"engineer",
-      "category":"people"
-   },
-   {
-      "polish":"pilny",
-      "english":"attentive / urgent",
-      "category":"adjectives"
-   },
-   {
-      "polish":"interesować się",
-      "english":"to be interested in",
-      "category":"verbs"
-   },
-   {
-      "polish":"malarstwo",
-      "english":"painting (the art)",
-      "category":"nouns/art"
-   },
-   {
-      "polish":"współczesny",
-      "english":"contemporary",
-      "category":"adjectives"
-   },
-   {
-      "polish":"sztuka",
-      "english":"art",
-      "category":"nouns/art"
-   },
-   {
-      "polish":"improwizacja",
-      "english":"improvisation",
-      "category":"nouns/art"
-   },
-   {
-      "polish":"gotowanie",
-      "english":"cooking",
-      "category":"nouns/food"
-   },
-   {
-      "polish":"Ona jest naczelną pielęgniarką",
-      "english":"She is a head nurse",
-      "category":"phrases/people"
-   },
-   {
-      "polish":"naczelny",
-      "english":"head / main (masculine)",
-      "category":"adjectives"
-   },
-   {
-      "polish":"pielęgniarka",
-      "english":"female nurse",
-      "category":"people"
-   },
-   {
-      "polish":"ratownik",
-      "english":"paramedic / rescuer",
-      "category":"people"
-   },
-   {
-      "polish":"ratować",
-      "english":"to save / to rescue",
-      "category":"verbs"
-   },
-   {
-      "polish":"siódma",
-      "english":"seventh (7th, hour)",
-      "category":"numbers/time"
-   },
-   {
-      "polish":"ósma",
-      "english":"eighth (8th, hour)",
-      "category":"numbers/time"
-   },
-   {
-      "polish":"chodzę na spotkania",
-      "english":"I go to meetings",
-      "category":"phrases"
-   },
-   {
-      "polish":"popołudniu",
-      "english":"in the afternoon",
-      "category":"time"
-   },
-   {
-      "polish":"lunch [lancz]",
-      "english":"lunch",
-      "category":"food"
-   },
-   {
-      "polish":"kolację",
-      "english":"dinner (accusative)",
-      "category":"food"
-   },
-   {
-      "polish":"relaksuję się",
-      "english":"I relax",
-      "category":"phrases"
-   },
-   {
-      "polish":"czasem",
-      "english":"sometimes",
-      "category":"adverbs"
-   },
-   {
-      "polish":"rozmawiam",
-      "english":"I talk / I speak",
-      "category":"phrases"
-   },
-   {
-      "polish":"zabawny",
-      "english":"funny",
-      "category":"adjectives"
-   },
-   {
-      "polish":"zawsze",
-      "english":"always",
-      "category":"adverbs"
-   },
-   {
-      "polish":"mieszkanie",
-      "english":"apartment",
-      "category":"places"
-   },
-   {
-      "polish":"szachy",
-      "english":"chess",
-      "category":"hobbies/games"
-   },
-   {
-      "polish":"odpoczywać",
-      "english":"to rest",
-      "category":"verbs"
-   },
-   {
-      "polish":"miasto",
-      "english":"city",
-      "category":"places"
-   },
-   {
-      "polish":"opalać się",
-      "english":"to sunbathe",
-      "category":"verbs"
-   },
-   {
-      "polish":"rozrywka",
-      "english":"entertainment / pastime / hobby",
-      "category":"nouns"
-   },
-   {
-      "polish":"cieszyć się",
-      "english":"to be happy / to enjoy",
-      "category":"verbs"
-   },
-   {
-      "polish":"że",
-      "english":"that (conjunction)",
-      "category":"grammar"
-   },
-   {
-      "polish":"spóźnienie",
-      "english":"being late / delay",
-      "category":"nouns/time"
-   },
-   {
-      "polish":"siadać",
-      "english":"to sit down",
-      "category":"verbs"
-   },
-   {
-      "polish":"mieć ochotę na",
-      "english":"to feel like (doing something)",
-      "category":"phrases"
-   },
-   {
-      "polish":"ochota",
-      "english":"desire / appetite",
-      "category":"nouns"
-   },
-   {
-      "polish":"czarny",
-      "english":"black (m)",
-      "category":"adjectives"
-   },
-   {
-      "polish":"Proszę",
-      "english":"I ask / please / here you go",
-      "category":"phrases"
-   },
-   {
-      "polish":"Poproszę",
-      "english":"I'll ask / I'd like (please)",
-      "category":"phrases"
-   },
-   {
-      "polish":"Poprosiłbym",
-      "english":"I would ask (conditional)",
-      "category":"phrases"
-   },
-   {
-      "polish":"woda gazowana",
-      "english":"sparkling water",
-      "category":"food/drink"
-   },
-   {
-      "polish":"Co dla pana?",
-      "english":"What for you, sir?",
-      "category":"phrases"
-   },
-   {
-      "polish":"Co dla ciebie?",
-      "english":"What for you?",
-      "category":"phrases"
-   },
-   {
-      "polish":"Coś jeszcze?",
-      "english":"Anything else?",
-      "category":"phrases"
-   },
-   {
-      "polish":"bar mleczny",
-      "english":"traditional milk bar (cheap cafeteria)",
-      "category":"places/food"
-   },
-   {
-      "polish":"bawić się",
-      "english":"to play / to have fun",
-      "category":"verbs"
-   },
-   {
-      "polish":"nienawidzić",
-      "english":"to hate",
-      "category":"verbs"
-   },
-   {
-      "polish":"Smacznego!",
-      "english":"Have a good meal!",
-      "category":"phrases"
-   },
-   {
-      "polish":"smaczny",
-      "english":"tasty / delicious (m)",
-      "category":"adjectives/food"
-   },
-   {
-      "polish":"Na zdrowie",
-      "english":"Cheers / Bless you",
-      "category":"phrases"
-   },
-   {
-      "polish":"kapcie",
-      "english":"slippers (Warsaw)",
-      "category":"clothes"
-   },
-   {
-      "polish":"pantofle",
-      "english":"slippers (Kraków)",
-      "category":"clothes"
-   },
-   {
-      "polish":"Idę spać",
-      "english":"I'm going to sleep",
-      "category":"phrases"
-   },
-   {
-      "polish":"Siedzisz spać",
-      "english":"You are sitting to sleep (literal)",
-      "category":"phrases"
-   },
-   {
-      "polish":"W życiu trzeba sobie radzić, jak powiedział rolnik wiążąc buty glizdą",
-      "english":"You have to get through life somehow, said the farmer tying his shoes with a worm",
-      "category":"expressions"
-   },
-   {
-      "polish":"masakra",
-      "english":"massacre (slang: disaster, pathetic)",
-      "category":"slang"
-   },
-   {
-      "polish":"Odpukaj",
-      "english":"Knock on wood",
-      "category":"phrases"
-   },
-   {
-      "polish":"Boże",
-      "english":"Oh God",
-      "category":"interjections"
-   },
-   {
-      "polish":"O Jezu",
-      "english":"Jesus (Oh Jesus)",
-      "category":"interjections"
-   },
-   {
-      "polish":"Pan Jezus",
-      "english":"Mr. Jesus",
-      "category":"phrases"
-   },
-   {
-      "polish":"Panie Boże",
-      "english":"Dear Mr. God",
-      "category":"phrases"
-   },
-   {
-      "polish":"dworzec główny",
-      "english":"main station",
-      "category":"places"
-   },
-   {
-      "polish":"kupa",
-      "english":"poop (vulgar)",
-      "category":"slang"
-   },
-   {
-      "polish":"przeszłość",
-      "english":"past",
-      "category":"time"
-   },
-   {
-      "polish":"przyszłość",
-      "english":"future",
-      "category":"time"
-   },
-   {
-      "polish":"przylot",
-      "english":"arrival (airport)",
-      "category":"travel"
-   },
-   {
-      "polish":"odlot",
-      "english":"departure (airport)",
-      "category":"travel"
-   },
-   {
-      "polish":"lot",
-      "english":"flight",
-      "category":"travel"
-   },
-   {
-      "polish":"jazda",
-      "english":"ride / going (on ground)",
-      "category":"travel"
-   },
-   {
-      "polish":"Pan",
-      "english":"Mr. / Lord / sir",
-      "category":"people"
-   },
-   {
-      "polish":"modlitwa",
-      "english":"prayer",
-      "category":"nouns"
-   },
-   {
-      "polish":"cukiernia",
-      "english":"pastry / dessert bakery",
-      "category":"places/food"
-   },
-   {
-      "polish":"cukier",
-      "english":"sugar",
-      "category":"food"
-   },
-   {
-      "polish":"róża",
-      "english":"rose",
-      "category":"nouns/flowers"
-   },
-   {
-      "polish":"różane",
-      "english":"rose (adjective)",
-      "category":"adjectives"
-   },
-   {
-      "polish":"pomagać",
-      "english":"to help",
-      "category":"verbs"
-   },
-   {
-      "polish":"Pomocy!",
-      "english":"Help me!",
-      "category":"phrases"
-   },
-   {
-      "polish":"spacer",
-      "english":"a walk",
-      "category":"nouns"
-   },
-   {
-      "polish":"spacerować",
-      "english":"to walk / stroll",
-      "category":"verbs"
-   },
-   {
-      "polish":"często",
-      "english":"often",
-      "category":"adverbs"
-   },
-   {
-      "polish":"jeździć",
-      "english":"to go by vehicle habitually",
-      "category":"verbs"
-   },
-   {
-      "polish":"sen",
-      "english":"sleep / dream",
-      "category":"nouns"
-   },
-   {
-      "polish":"przygoda",
-      "english":"adventure",
-      "category":"nouns"
-   },
-   {
-      "polish":"ćwiczyć",
-      "english":"to exercise / practice",
-      "category":"verbs"
-   },
-   {
-      "polish":"chodzić",
-      "english":"to go habitually / to walk",
-      "category":"verbs"
-   },
-   {
-      "polish":"wielbić",
-      "english":"to worship",
-      "category":"verbs"
-   },
-   {
-      "polish":"uwielbiać",
-      "english":"to adore / like very much",
-      "category":"verbs"
-   },
-   {
-      "polish":"królik",
-      "english":"rabbit / bunny",
-      "category":"animals"
-   },
-   {
-      "polish":"karmić",
-      "english":"to feed",
-      "category":"verbs"
-   },
-   {
-      "polish":"przedmiot, rzecz",
-      "english":"thing / item",
-      "category":"nouns"
-   },
-   {
-      "polish":"przedmiot",
-      "english":"subject (at school)",
-      "category":"nouns"
-   },
-   {
-      "polish":"nauka",
-      "english":"learning / science",
-      "category":"nouns"
-   },
-   {
-      "polish":"przyroda",
-      "english":"nature",
-      "category":"nouns"
-   },
-   {
-      "polish":"przynosić",
-      "english":"to bring",
-      "category":"verbs"
-   },
-   {
-      "polish":"nożyczki",
-      "english":"scissors",
-      "category":"objects"
-   },
-   {
-      "polish":"noga",
-      "english":"leg / foot",
-      "category":"body"
-   },
-   {
-      "polish":"pierdzieć",
-      "english":"to fart",
-      "category":"verbs/slang"
-   },
-   {
-      "polish":"ugotować",
-      "english":"to cook (completed)",
-      "category":"verbs/food"
-   },
-   {
-      "polish":"pyszny",
-      "english":"delicious (m)",
-      "category":"adjectives/food"
-   },
-   {
-      "polish":"w zeszłym roku",
-      "english":"last year",
-      "category":"time"
-   },
-   {
-      "polish":"swój, swoja, swoje",
-      "english":"one's own",
-      "category":"pronouns"
-   },
-   {
-      "polish":"padać",
-      "english":"to fall (rain, snow)",
-      "category":"verbs/weather"
-   },
-   {
-      "polish":"zmęczony",
-      "english":"tired",
-      "category":"adjectives"
-   },
-   {
-      "polish":"najpierw",
-      "english":"first / firstly",
-      "category":"adverbs"
-   },
-   {
-      "polish":"o dwudziestej trzeciej",
-      "english":"at 23:00",
-      "category":"time"
-   },
-   {
-      "polish":"przedwczoraj",
-      "english":"the day before yesterday",
-      "category":"time"
-   },
-   {
-      "polish":"czarna czekolada",
-      "english":"dark chocolate",
-      "category":"food"
-   },
-   {
-      "polish":"osiemnaście",
-      "english":"eighteen (18)",
-      "category":"numbers"
-   },
-   {
-      "polish":"w Libanie",
-      "english":"in Lebanon",
-      "category":"places"
-   },
-   {
-      "polish":"Liban",
-      "english":"Lebanon",
-      "category":"places"
-   },
-   {
-      "polish":"tygodnie",
-      "english":"weeks",
-      "category":"time"
-   },
-   {
-      "polish":"pierwszy",
-      "english":"first (m)",
-      "category":"numbers"
-   },
-   {
-      "polish":"słyszeć + accusative",
-      "english":"to hear (requires accusative)",
-      "category":"grammar"
-   },
-   {
-      "polish":"słuchać + genitive",
-      "english":"to listen (requires genitive)",
-      "category":"grammar"
-   },
-   {
-      "polish":"Słyszę muzykę",
-      "english":"I hear music",
-      "category":"phrases"
-   },
-   {
-      "polish":"Słucham muzyki",
-      "english":"I listen to music",
-      "category":"phrases"
-   },
-   {
-      "polish":"Życzę Ci wszystkiego najlepszego",
-      "english":"I wish you all the best",
-      "category":"phrases"
-   },
-   {
-      "polish":"bać się",
-      "english":"to be afraid",
-      "category":"verbs"
-   },
-   {
-      "polish":"burza",
-      "english":"storm / thunderstorm",
-      "category":"weather"
-   },
-   {
-      "polish":"lodówka",
-      "english":"fridge",
-      "category":"objects"
-   },
-   {
-      "polish":"Słoiki jadą",
-      "english":"The jars are going (away)",
-      "category":"phrases"
-   },
-   {
-      "polish":"co -> czego (genitive)",
-      "english":"what -> of what (genitive)",
-      "category":"grammar"
-   },
-   {
-      "polish":"kto -> kogo (genitive)",
-      "english":"who -> whom (genitive)",
-      "category":"grammar"
-   },
-   {
-      "polish":"Czego nie lubisz?",
-      "english":"What do you not like?",
-      "category":"phrases"
-   },
-   {
-      "polish":"Kogo nie lubisz?",
-      "english":"Who do you not like?",
-      "category":"phrases"
-   },
-   {
-      "polish":"poczta",
-      "english":"post office",
-      "category":"places"
-   },
-   {
-      "polish":"sporo",
-      "english":"quite a lot / plenty",
-      "category":"adverbs"
-   },
-   {
-      "polish":"powszechny",
-      "english":"common",
-      "category":"adjectives"
-   },
-   {
-      "polish":"wszech-",
-      "english":"all- (prefix)",
-      "category":"grammar"
-   },
-   {
-      "polish":"Zamknij mordę",
-      "english":"Shut your ugly face (strong vulgar)",
-      "category":"slang"
-   },
-   {
-      "polish":"ciemność",
-      "english":"darkness",
-      "category":"nouns"
-   },
-   {
-      "polish":"unikać",
-      "english":"to avoid",
-      "category":"verbs"
-   },
-   {
-      "polish":"gwiazda",
-      "english":"star",
-      "category":"nouns"
-   },
-   {
-      "polish":"siatkówka",
-      "english":"volleyball",
-      "category":"sports"
-   },
-   {
-      "polish":"impreza",
-      "english":"party",
-      "category":"events"
-   },
-   {
-      "polish":"odwołać",
-      "english":"to cancel",
-      "category":"verbs"
-   },
-   {
-      "polish":"wizyta",
-      "english":"visit",
-      "category":"nouns"
-   },
-   {
-      "polish":"wiele",
-      "english":"many / a lot",
-      "category":"quantifiers"
-   },
-   {
-      "polish":"zapomnieć",
-      "english":"to forget",
-      "category":"verbs"
-   },
-   {
-      "polish":"jutro",
-      "english":"tomorrow",
-      "category":"time"
-   },
-   {
-      "polish":"cały",
-      "english":"entire / whole",
-      "category":"adjectives"
-   },
-   {
-      "polish":"w następnym tygodniu",
-      "english":"next week",
-      "category":"time"
-   },
-   {
-      "polish":"dostać",
-      "english":"to get / receive",
-      "category":"verbs"
-   },
-   {
-      "polish":"uczyć się",
-      "english":"to learn",
-      "category":"verbs"
-   },
-   {
-      "polish":"powiedzieć",
-      "english":"to say",
-      "category":"verbs"
-   },
-   {
-      "polish":"pić",
-      "english":"to drink",
-      "category":"verbs"
-   },
-   {
-      "polish":"wychodzić",
-      "english":"to go out / leave (habitual)",
-      "category":"verbs"
-   },
-   {
-      "polish":"pojechać",
-      "english":"to go by transport (one-time)",
-      "category":"verbs"
-   },
-   {
-      "polish":"zrobić",
-      "english":"to do / to make (completed)",
-      "category":"verbs"
-   },
-   {
-      "polish":"przeczytać",
-      "english":"to read (completed)",
-      "category":"verbs"
-   },
-   {
-      "polish":"pójść",
-      "english":"to go (one-time)",
-      "category":"verbs"
-   },
-   {
-      "polish":"kał",
-      "english":"feces (medical)",
-      "category":"slang"
-   },
-   {
-      "polish":"ząb zupa ząb, dąb zupa dąb",
-      "english":"(funny/phonetic phrases mixing words)",
-      "category":"phrases"
-   },
-   {
-      "polish":"umrzeć",
-      "english":"to die",
-      "category":"verbs"
-   },
-   {
-      "polish":"zdechnąć",
-      "english":"to die (vulgar/no respect)",
-      "category":"slang"
-   },
-   {
-      "polish":"odejść",
-      "english":"to depart / die (depart)",
-      "category":"verbs"
-   },
-   {
-      "polish":"zajęcia",
-      "english":"class / lessons",
-      "category":"nouns"
-   },
-   {
-      "polish":"dupa",
-      "english":"ass / butt (vulgar)",
-      "category":"slang"
-   },
-   {
-      "polish":"środa",
-      "english":"Wednesday",
-      "category":"time/days"
-   },
-   {
-      "polish":"czwartek",
-      "english":"Thursday",
-      "category":"time/days"
-   },
-   {
-      "polish":"piątek",
-      "english":"Friday",
-      "category":"time/days"
-   },
-   {
-      "polish":"sobota",
-      "english":"Saturday",
-      "category":"time/days"
-   },
-   {
-      "polish":"niedziela",
-      "english":"Sunday",
-      "category":"time/days"
-   },
-   {
-      "polish":"słońce",
-      "english":"sun",
-      "category":"nature/weather"
-   },
-   {
-      "polish":"księżyc",
-      "english":"moon",
-      "category":"nature/weather"
-   },
-   {
-      "polish":"gwiazdy",
-      "english":"stars",
-      "category":"nature/weather"
-   },
-   {
-      "polish":"deszcz",
-      "english":"rain",
-      "category":"weather"
-   },
-   {
-      "polish":"śnieg",
-      "english":"snow",
-      "category":"weather"
-   },
-   {
-      "polish":"wiatr",
-      "english":"wind",
-      "category":"weather"
-   },
-   {
-      "polish":"ciepło",
-      "english":"warm",
-      "category":"adjectives/weather"
-   },
-   {
-      "polish":"zimno",
-      "english":"cold",
-      "category":"adjectives/weather"
-   },
-   {
-      "polish":"mięso",
-      "english":"meat",
-      "category":"food"
-   },
-   {
-      "polish":"ryba",
-      "english":"fish",
-      "category":"food"
-   },
-   {
-      "polish":"warzywa",
-      "english":"vegetables",
-      "category":"food"
-   },
-   {
-      "polish":"owoce",
-      "english":"fruits",
-      "category":"food"
-   },
-   {
-      "polish":"herbata",
-      "english":"tea",
-      "category":"food/drink"
-   },
-   {
-      "polish":"kawa",
-      "english":"coffee",
-      "category":"food/drink"
-   },
-   {
-      "polish":"mleko",
-      "english":"milk",
-      "category":"food/drink"
-   },
-   {
-      "polish":"but",
-      "english":"shoe",
-      "category":"clothes"
-   },
-   {
-      "polish":"koszula",
-      "english":"shirt",
-      "category":"clothes"
-   },
-   {
-      "polish":"spódnica",
-      "english":"skirt",
-      "category":"clothes"
-   },
-   {
-      "polish":"bluza",
-      "english":"hoodie / sweatshirt",
-      "category":"clothes"
-   },
-   {
-      "polish":"kapelusz",
-      "english":"hat",
-      "category":"clothes"
-   },
-   {
-      "polish":"okulary",
-      "english":"glasses",
-      "category":"clothes/objects"
-   },
-   {
-      "polish":"talerz",
-      "english":"plate",
-      "category":"objects"
-   },
-   {
-      "polish":"kubek",
-      "english":"mug / cup",
-      "category":"objects"
-   },
-   {
-      "polish":"nóż",
-      "english":"knife",
-      "category":"objects"
-   },
-   {
-      "polish":"widelec",
-      "english":"fork",
-      "category":"objects"
-   },
-   {
-      "polish":"łyżka",
-      "english":"spoon",
-      "category":"objects"
-   },
-   {
-      "polish":"łóżko",
-      "english":"bed",
-      "category":"places/furniture"
-   },
-   {
-      "polish":"krzesło",
-      "english":"chair",
-      "category":"places/furniture"
-   },
-   {
-      "polish":"stół",
-      "english":"table",
-      "category":"places/furniture"
-   },
-   {
-      "polish":"szkoła",
-      "english":"school",
-      "category":"places"
-   },
-   {
-      "polish":"uczelnia",
-      "english":"university",
-      "category":"places"
-   },
-   {
-      "polish":"praca",
-      "english":"work / job",
-      "category":"places/nouns"
-   },
-   {
-      "polish":"sklep",
-      "english":"shop / store",
-      "category":"places"
-   },
-   {
-      "polish":"restauracja",
-      "english":"restaurant",
-      "category":"places/food"
-   },
-   {
-      "polish":"wiosna",
-      "english":"spring",
-      "category":"time/seasons"
-   },
-   {
-      "polish":"lato",
-      "english":"summer",
-      "category":"time/seasons"
-   },
-   {
-      "polish":"jesień",
-      "english":"autumn / fall",
-      "category":"time/seasons"
-   },
-   {
-      "polish":"styczeń",
-      "english":"January",
-      "category":"time/months"
-   },
-   {
-      "polish":"luty",
-      "english":"February",
-      "category":"time/months"
-   },
-   {
-      "polish":"marzec",
-      "english":"March",
-      "category":"time/months"
-   },
-   {
-      "polish":"kwiecień",
-      "english":"April",
-      "category":"time/months"
-   },
-   {
-      "polish":"maj",
-      "english":"May",
-      "category":"time/months"
-   },
-   {
-      "polish":"czerwiec",
-      "english":"June",
-      "category":"time/months"
-   },
-   {
-      "polish":"lipiec",
-      "english":"July",
-      "category":"time/months"
-   },
-   {
-      "polish":"sierpień",
-      "english":"August",
-      "category":"time/months"
-   },
-   {
-      "polish":"wrzesień",
-      "english":"September",
-      "category":"time/months"
-   },
-   {
-      "polish":"październik",
-      "english":"October",
-      "category":"time/months"
-   },
-   {
-      "polish":"listopad",
-      "english":"November",
-      "category":"time/months"
-   },
-   {
-      "polish":"grudzień",
-      "english":"December",
-      "category":"time/months"
-   },
-   {
-      "polish":"ja",
-      "english":"I",
-      "category":"pronouns"
-   },
-   {
-      "polish":"ty",
-      "english":"you (singular informal)",
-      "category":"pronouns"
-   },
-   {
-      "polish":"on",
-      "english":"he",
-      "category":"pronouns"
-   },
-   {
-      "polish":"ona",
-      "english":"she",
-      "category":"pronouns"
-   },
-   {
-      "polish":"ono",
-      "english":"it",
-      "category":"pronouns"
-   },
-   {
-      "polish":"my",
-      "english":"we",
-      "category":"pronouns"
-   },
-   {
-      "polish":"wy",
-      "english":"you (plural)",
-      "category":"pronouns"
-   },
-   {
-      "polish":"oni",
-      "english":"they (male/mixed)",
-      "category":"pronouns"
-   },
-   {
-      "polish":"one",
-      "english":"they (female)",
-      "category":"pronouns"
-   },
-   {
-      "polish":"i",
-      "english":"and",
-      "category":"grammar"
-   },
-   {
-      "polish":"lub",
-      "english":"or",
-      "category":"grammar"
-   },
-   {
-      "polish":"ale",
-      "english":"but",
-      "category":"grammar"
-   },
-   {
-      "polish":"ponieważ",
-      "english":"because",
-      "category":"grammar"
-   },
-   {
-      "polish":"móc",
-      "english":"can / to be able to",
-      "category":"verbs/modal"
-   },
-   {
-      "polish":"chcieć",
-      "english":"to want",
-      "category":"verbs/modal"
-   },
-   {
-      "polish":"musieć",
-      "english":"must / to have to",
-      "category":"verbs/modal"
-   },
-   {
-      "polish":"spać",
-      "english":"to sleep",
-      "category":"verbs"
-   },
-   {
-      "polish":"kupować",
-      "english":"to buy",
-      "category":"verbs"
-   },
-   {
-      "polish":"pisać",
-      "english":"to write",
-      "category":"verbs"
-   },
-   {
-      "polish":"mówić",
-      "english":"to speak / talk",
-      "category":"verbs"
-   },
-   {
-      "polish":"myć się",
-      "english":"to wash oneself",
-      "category":"verbs/reflexive"
-   },
-   {
-      "polish":"bawić się",
-      "english":"to play / have fun",
-      "category":"verbs/reflexive"
-   },
-   {
-      "polish":"chleb",
-      "english":"bread",
-      "category":"food"
-   },
-   {
-      "polish":"ser",
-      "english":"cheese",
-      "category":"food"
-   },
-   {
-      "polish":"jajko",
-      "english":"egg",
-      "category":"food"
-   },
-   {
-      "polish":"jabłko",
-      "english":"apple",
-      "category":"food"
-   },
-   {
-      "polish":"pomarańcza",
-      "english":"orange",
-      "category":"food"
-   },
-   {
-      "polish":"banan",
-      "english":"banana",
-      "category":"food"
-   },
-   {
-      "polish":"okno",
-      "english":"window",
-      "category":"objects"
-   },
-   {
-      "polish":"drzwi",
-      "english":"door",
-      "category":"objects"
-   },
-   {
-      "polish":"lampa",
-      "english":"lamp",
-      "category":"objects"
-   },
-   {
-      "polish":"komputer",
-      "english":"computer",
-      "category":"objects"
-   },
-   {
-      "polish":"ulica",
-      "english":"street",
-      "category":"places"
-   },
-   {
-      "polish":"hotel",
-      "english":"hotel",
-      "category":"places"
-   },
-   {
-      "polish":"samochód",
-      "english":"car",
-      "category":"transport"
-   },
-   {
-      "polish":"autobus",
-      "english":"bus",
-      "category":"transport"
-   },
-   {
-      "polish":"tramwaj",
-      "english":"tram",
-      "category":"transport"
-   },
-   {
-      "polish":"metro",
-      "english":"subway / metro",
-      "category":"transport"
-   },
-   {
-      "polish":"duży",
-      "english":"big / large",
-      "category":"adjectives"
-   },
-   {
-      "polish":"mały",
-      "english":"small",
-      "category":"adjectives"
-   },
-   {
-      "polish":"dobry",
-      "english":"good",
-      "category":"adjectives"
-   },
-   {
-      "polish":"zły",
-      "english":"bad",
-      "category":"adjectives"
-   },
-   {
-      "polish":"szybki",
-      "english":"fast",
-      "category":"adjectives"
-   },
-   {
-      "polish":"wolny",
-      "english":"slow / free",
-      "category":"adjectives"
-   },
-   {
-      "polish":"nowy",
-      "english":"new",
-      "category":"adjectives"
-   },
-   {
-      "polish":"stary",
-      "english":"old",
-      "category":"adjectives"
-   },
-   {
-      "polish":"kot",
-      "english":"cat",
-      "category":"animals"
-   },
-   {
-      "polish":"pies",
-      "english":"dog",
-      "category":"animals"
-   },
-   {
-      "polish":"koń",
-      "english":"horse",
-      "category":"animals"
-   },
-   {
-      "polish":"krowa",
-      "english":"cow",
-      "category":"animals"
-   },
-   {
-      "polish":"świnia",
-      "english":"pig",
-      "category":"animals"
-   },
-   {
-      "polish":"ptak",
-      "english":"bird",
-      "category":"animals"
-   },
-   {
-      "polish":"Dzień dobry",
-      "english":"Good morning / hello",
-      "category":"phrases"
-   },
-   {
-      "polish":"Dobry wieczór",
-      "english":"Good evening",
-      "category":"phrases"
-   },
-   {
-      "polish":"Dobranoc",
-      "english":"Good night",
-      "category":"phrases"
-   },
-   {
-      "polish":"Jak się masz?",
-      "english":"How are you?",
-      "category":"phrases"
-   },
-   {
-      "polish":"Co słychać?",
-      "english":"What's up?",
-      "category":"phrases"
-   },
-   {
-      "polish":"Dziękuję",
-      "english":"Thank you",
-      "category":"phrases"
-   },
-   {
-      "polish":"Dziękuję bardzo",
-      "english":"Thank you very much",
-      "category":"phrases"
-   },
-   {
-      "polish":"Proszę bardzo",
-      "english":"You're welcome",
-      "category":"phrases"
-   },
-   {
-      "polish":"dwa",
-      "english":"two",
-      "category":"numbers"
-   },
-   {
-      "polish":"trzy",
-      "english":"three",
-      "category":"numbers"
-   },
-   {
-      "polish":"cztery",
-      "english":"four",
-      "category":"numbers"
-   },
-   {
-      "polish":"pięć",
-      "english":"five",
-      "category":"numbers"
-   },
-   {
-      "polish":"sześć",
-      "english":"six",
-      "category":"numbers"
-   },
-   {
-      "polish":"siedem",
-      "english":"seven",
-      "category":"numbers"
-   },
-   {
-      "polish":"osiem",
-      "english":"eight",
-      "category":"numbers"
-   },
-   {
-      "polish":"dziewięć",
-      "english":"nine",
-      "category":"numbers"
-   },
-   {
-      "polish":"dziesięć",
-      "english":"ten",
-      "category":"numbers"
-   },
-   {
-      "polish":"jedenaście",
-      "english":"eleven",
-      "category":"numbers"
-   },
-   {
-      "polish":"dwanaście",
-      "english":"twelve",
-      "category":"numbers"
-   },
-   {
-      "polish":"trzynaście",
-      "english":"thirteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"czternaście",
-      "english":"fourteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"piętnaście",
-      "english":"fifteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"szesnaście",
-      "english":"sixteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"siedemnaście",
-      "english":"seventeen",
-      "category":"numbers"
-   },
-   {
-      "polish":"osiemnaście",
-      "english":"eighteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"dziewiętnaście",
-      "english":"nineteen",
-      "category":"numbers"
-   },
-   {
-      "polish":"dwadzieścia",
-      "english":"twenty",
-      "category":"numbers"
-   },
-   {
-      "polish":"trzydzieści",
-      "english":"thirty",
-      "category":"numbers"
-   },
-   {
-      "polish":"czterdzieści",
-      "english":"forty",
-      "category":"numbers"
-   },
-   {
-      "polish":"pięćdziesiąt",
-      "english":"fifty",
-      "category":"numbers"
-   },
-   {
-      "polish":"sześćdziesiąt",
-      "english":"sixty",
-      "category":"numbers"
-   },
-   {
-      "polish":"siedemdziesiąt",
-      "english":"seventy",
-      "category":"numbers"
-   },
-   {
-      "polish":"osiemdziesiąt",
-      "english":"eighty",
-      "category":"numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąt",
-      "english":"ninety",
-      "category":"numbers"
-   },
-   {
-      "polish":"sto",
-      "english":"one hundred",
-      "category":"numbers"
-   },
-   {
-      "polish":"pierwszy",
-      "english":"first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"drugi",
-      "english":"second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzeci",
-      "english":"third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czwarty",
-      "english":"fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"piąty",
-      "english":"fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"szósty",
-      "english":"sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siódmy",
-      "english":"seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"ósmy",
-      "english":"eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewiąty",
-      "english":"ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziesiąty",
-      "english":"tenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"wczoraj",
-      "english":"yesterday",
-      "category":"time"
-   },
-   {
-      "polish":"dzisiaj",
-      "english":"today",
-      "category":"time"
-   },
-   {
-      "polish":"jutro",
-      "english":"tomorrow",
-      "category":"time"
-   },
-   {
-      "polish":"za tydzień",
-      "english":"in a week",
-      "category":"time"
-   },
-   {
-      "polish":"za miesiąc",
-      "english":"in a month",
-      "category":"time"
-   },
-   {
-      "polish":"za rok",
-      "english":"in a year",
-      "category":"time"
-   },
-   {
-      "polish":"dzisiaj rano",
-      "english":"this morning",
-      "category":"time"
-   },
-   {
-      "polish":"dzisiaj wieczorem",
-      "english":"this evening",
-      "category":"time"
-   },
-   {
-      "polish":"o północy",
-      "english":"at midnight",
-      "category":"time"
-   },
-   {
-      "polish":"w południe",
-      "english":"at noon",
-      "category":"time"
-   },
-   {
-      "polish":"co godzinę",
-      "english":"every hour",
-      "category":"time"
-   },
-   {
-      "polish":"co dzień",
-      "english":"every day",
-      "category":"time"
-   },
-   {
-      "polish":"co tydzień",
-      "english":"every week",
-      "category":"time"
-   },
-   {
-      "polish":"co miesiąc",
-      "english":"every month",
-      "category":"time"
-   },
-   {
-      "polish":"co rok",
-      "english":"every year",
-      "category":"time"
-   },
-   {
-      "polish":"jedenasty",
-      "english":"eleventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwunasty",
-      "english":"twelfth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzynasty",
-      "english":"thirteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czternasty",
-      "english":"fourteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"piętnasty",
-      "english":"fifteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"szesnasty",
-      "english":"sixteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemnasty",
-      "english":"seventeenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemnasty",
-      "english":"eighteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewiętnasty",
-      "english":"nineteenth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty",
-      "english":"twentieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty",
-      "english":"thirtieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty",
-      "english":"fortieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty",
-      "english":"fiftieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty",
-      "english":"sixtieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty",
-      "english":"seventieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty",
-      "english":"eightieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty",
-      "english":"ninetieth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"setny",
-      "english":"one hundredth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"poniedziałek",
-      "english":"Monday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"wtorek",
-      "english":"Tuesday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"środa",
-      "english":"Wednesday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"czwartek",
-      "english":"Thursday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"piątek",
-      "english":"Friday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"sobota",
-      "english":"Saturday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"niedziela",
-      "english":"Sunday",
-      "category":"days of the week"
-   },
-   {
-      "polish":"rano",
-      "english":"morning",
-      "category":"parts of the day"
-   },
-   {
-      "polish":"przed południem",
-      "english":"before noon",
-      "category":"parts of the day"
-   },
-   {
-      "polish":"po południu",
-      "english":"afternoon",
-      "category":"parts of the day"
-   },
-   {
-      "polish":"wieczorem",
-      "english":"in the evening",
-      "category":"parts of the day"
-   },
-   {
-      "polish":"w nocy",
-      "english":"at night",
-      "category":"parts of the day"
-   },
-   {
-      "polish":"w tym tygodniu",
-      "english":"this week",
-      "category":"time"
-   },
-   {
-      "polish":"w przyszłym tygodniu",
-      "english":"next week",
-      "category":"time"
-   },
-   {
-      "polish":"w zeszłym tygodniu",
-      "english":"last week",
-      "category":"time"
-   },
-   {
-      "polish":"w tym miesiącu",
-      "english":"this month",
-      "category":"time"
-   },
-   {
-      "polish":"w przyszłym miesiącu",
-      "english":"next month",
-      "category":"time"
-   },
-   {
-      "polish":"w zeszłym miesiącu",
-      "english":"last month",
-      "category":"time"
-   },
-   {
-      "polish":"w tym roku",
-      "english":"this year",
-      "category":"time"
-   },
-   {
-      "polish":"w przyszłym roku",
-      "english":"next year",
-      "category":"time"
-   },
-   {
-      "polish":"w zeszłym roku",
-      "english":"last year",
-      "category":"time"
-   },
-   {
-      "polish":"dzisiaj w nocy",
-      "english":"tonight",
-      "category":"time"
-   },
-   {
-      "polish":"dwudziesty pierwszy",
-      "english":"twenty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty drugi",
-      "english":"twenty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty trzeci",
-      "english":"twenty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty czwarty",
-      "english":"twenty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty piąty",
-      "english":"twenty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty szósty",
-      "english":"twenty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty siódmy",
-      "english":"twenty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty ósmy",
-      "english":"twenty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dwudziesty dziewiąty",
-      "english":"twenty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty pierwszy",
-      "english":"thirty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty drugi",
-      "english":"thirty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty trzeci",
-      "english":"thirty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty czwarty",
-      "english":"thirty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty piąty",
-      "english":"thirty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty szósty",
-      "english":"thirty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty siódmy",
-      "english":"thirty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty ósmy",
-      "english":"thirty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"trzydziesty dziewiąty",
-      "english":"thirty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty pierwszy",
-      "english":"forty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty drugi",
-      "english":"forty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty trzeci",
-      "english":"forty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty czwarty",
-      "english":"forty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty piąty",
-      "english":"forty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty szósty",
-      "english":"forty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty siódmy",
-      "english":"forty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty ósmy",
-      "english":"forty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"czterdziesty dziewiąty",
-      "english":"forty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty pierwszy",
-      "english":"fifty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty drugi",
-      "english":"fifty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty trzeci",
-      "english":"fifty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty czwarty",
-      "english":"fifty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty piąty",
-      "english":"fifty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty szósty",
-      "english":"fifty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty siódmy",
-      "english":"fifty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty ósmy",
-      "english":"fifty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"pięćdziesiąty dziewiąty",
-      "english":"fifty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty pierwszy",
-      "english":"sixty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty drugi",
-      "english":"sixty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty trzeci",
-      "english":"sixty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty czwarty",
-      "english":"sixty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty piąty",
-      "english":"sixty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty szósty",
-      "english":"sixty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty siódmy",
-      "english":"sixty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty ósmy",
-      "english":"sixty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"sześćdziesiąty dziewiąty",
-      "english":"sixty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty pierwszy",
-      "english":"seventy-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty drugi",
-      "english":"seventy-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty trzeci",
-      "english":"seventy-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty czwarty",
-      "english":"seventy-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty piąty",
-      "english":"seventy-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty szósty",
-      "english":"seventy-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty siódmy",
-      "english":"seventy-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty ósmy",
-      "english":"seventy-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"siedemdziesiąty dziewiąty",
-      "english":"seventy-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty pierwszy",
-      "english":"eighty-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty drugi",
-      "english":"eighty-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty trzeci",
-      "english":"eighty-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty czwarty",
-      "english":"eighty-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty piąty",
-      "english":"eighty-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty szósty",
-      "english":"eighty-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty siódmy",
-      "english":"eighty-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty ósmy",
-      "english":"eighty-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"osiemdziesiąty dziewiąty",
-      "english":"eighty-ninth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty pierwszy",
-      "english":"ninety-first",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty drugi",
-      "english":"ninety-second",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty trzeci",
-      "english":"ninety-third",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty czwarty",
-      "english":"ninety-fourth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty piąty",
-      "english":"ninety-fifth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty szósty",
-      "english":"ninety-sixth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty siódmy",
-      "english":"ninety-seventh",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty ósmy",
-      "english":"ninety-eighth",
-      "category":"ordinal numbers"
-   },
-   {
-      "polish":"dziewięćdziesiąty dziewiąty",
-      "english":"ninety-ninth",
-      "category":"ordinal numbers"
-   }
+  {
+    "polish": "zima",
+    "english": "winter",
+    "category": "time/seasons"
+  },
+  {
+    "polish": "rzeka",
+    "english": "river",
+    "category": "places/nature"
+  },
+  {
+    "polish": "żabka",
+    "english": "little frog",
+    "category": "animals"
+  },
+  {
+    "polish": "dzwonek",
+    "english": "door bell",
+    "category": "objects"
+  },
+  {
+    "polish": "dźwięk",
+    "english": "sound",
+    "category": "nouns"
+  },
+  {
+    "polish": "dżinsy",
+    "english": "jeans",
+    "category": "clothes"
+  },
+  {
+    "polish": "dżentelmen",
+    "english": "gentleman",
+    "category": "people"
+  },
+  {
+    "polish": "dżdżownica",
+    "english": "earthworm",
+    "category": "animals"
+  },
+  {
+    "polish": "przepraszam",
+    "english": "I'm sorry / excuse me",
+    "category": "phrases"
+  },
+  {
+    "polish": "wczoraj",
+    "english": "yesterday",
+    "category": "time"
+  },
+  {
+    "polish": "liczba",
+    "english": "number (1, 2, 3...)",
+    "category": "grammar"
+  },
+  {
+    "polish": "się",
+    "english": "oneself (reflexive particle)",
+    "category": "grammar"
+  },
+  {
+    "polish": "Nazywam się",
+    "english": "I call myself / My name is",
+    "category": "phrases"
+  },
+  {
+    "polish": "miło",
+    "english": "nice",
+    "category": "adjectives"
+  },
+  {
+    "polish": "bardzo",
+    "english": "very",
+    "category": "adverbs"
+  },
+  {
+    "polish": "poznać",
+    "english": "to get to know (for the first time)",
+    "category": "verbs"
+  },
+  {
+    "polish": "pan",
+    "english": "sir, Mr., gentleman",
+    "category": "people"
+  },
+  {
+    "polish": "pani",
+    "english": "ma'am, Mrs., Ms., lady",
+    "category": "people"
+  },
+  {
+    "polish": "do jutra",
+    "english": "until tomorrow",
+    "category": "phrases/time"
+  },
+  {
+    "polish": "do zobaczenia",
+    "english": "see you (do widzenia)",
+    "category": "phrases"
+  },
+  {
+    "polish": "mieć",
+    "english": "to have",
+    "category": "verbs"
+  },
+  {
+    "polish": "imię",
+    "english": "name",
+    "category": "nouns"
+  },
+  {
+    "polish": "Jak masz na imię?",
+    "english": "What's your name?",
+    "category": "phrases"
+  },
+  {
+    "polish": "proszę",
+    "english": "please / here you go / you're welcome / come in",
+    "category": "phrases"
+  },
+  {
+    "polish": "prosić",
+    "english": "to ask",
+    "category": "verbs"
+  },
+  {
+    "polish": "poproszę",
+    "english": "please (nicer)",
+    "category": "phrases"
+  },
+  {
+    "polish": "przedstawić się",
+    "english": "to introduce oneself",
+    "category": "verbs"
+  },
+  {
+    "polish": "ojej",
+    "english": "oh, no",
+    "category": "interjections"
+  },
+  {
+    "polish": "znaczyć",
+    "english": "to mean",
+    "category": "verbs"
+  },
+  {
+    "polish": "Co to znaczy ... po polsku?",
+    "english": "What does ... mean in Polish?",
+    "category": "phrases"
+  },
+  {
+    "polish": "iść",
+    "english": "to go (on foot)",
+    "category": "verbs"
+  },
+  {
+    "polish": "wy-",
+    "english": "out- (prefix)",
+    "category": "grammar"
+  },
+  {
+    "polish": "wyrzucić",
+    "english": "to throw out",
+    "category": "verbs"
+  },
+  {
+    "polish": "wyjść",
+    "english": "to go out",
+    "category": "verbs"
+  },
+  {
+    "polish": "wynieść",
+    "english": "to take out",
+    "category": "verbs"
+  },
+  {
+    "polish": "nieść",
+    "english": "to carry",
+    "category": "verbs"
+  },
+  {
+    "polish": "on zna (się)",
+    "english": "he knows",
+    "category": "phrases/verbs"
+  },
+  {
+    "polish": "Znam się na językach",
+    "english": "I know languages well",
+    "category": "phrases"
+  },
+  {
+    "polish": "Znam Polskę",
+    "english": "I know Poland",
+    "category": "phrases"
+  },
+  {
+    "polish": "znać się na",
+    "english": "to have expertise in",
+    "category": "verbs"
+  },
+  {
+    "polish": "kochać",
+    "english": "to love",
+    "category": "verbs"
+  },
+  {
+    "polish": "czytać",
+    "english": "to read",
+    "category": "verbs"
+  },
+  {
+    "polish": "one czytają",
+    "english": "they read",
+    "category": "phrases"
+  },
+  {
+    "polish": "oni, one",
+    "english": "they",
+    "category": "pronouns"
+  },
+  {
+    "polish": "on stawia (się)",
+    "english": "he shows up",
+    "category": "phrases"
+  },
+  {
+    "polish": "ubierać się",
+    "english": "to get dressed",
+    "category": "verbs"
+  },
+  {
+    "polish": "pani ubiera się",
+    "english": "the lady gets dressed",
+    "category": "phrases"
+  },
+  {
+    "polish": "my ubieramy się",
+    "english": "we get dressed",
+    "category": "phrases"
+  },
+  {
+    "polish": "żegnacie się",
+    "english": "you (plural) are saying goodbye",
+    "category": "phrases"
+  },
+  {
+    "polish": "powtarzamy",
+    "english": "we repeat",
+    "category": "verbs"
+  },
+  {
+    "polish": "powtarzacie",
+    "english": "you (plural) repeat",
+    "category": "verbs"
+  },
+  {
+    "polish": "czekać",
+    "english": "to wait",
+    "category": "verbs"
+  },
+  {
+    "polish": "czekają",
+    "english": "they are waiting",
+    "category": "phrases"
+  },
+  {
+    "polish": "wiedzieć",
+    "english": "to know (factually)",
+    "category": "verbs"
+  },
+  {
+    "polish": "jeść",
+    "english": "to eat",
+    "category": "verbs"
+  },
+  {
+    "polish": "zaczynać",
+    "english": "to start",
+    "category": "verbs"
+  },
+  {
+    "polish": "Zaczynam rozumieć język polski",
+    "english": "I'm starting to understand the Polish language",
+    "category": "phrases"
+  },
+  {
+    "polish": "Jem jabłko",
+    "english": "I'm eating an apple",
+    "category": "phrases"
+  },
+  {
+    "polish": "spotykać się",
+    "english": "to meet (each other)",
+    "category": "verbs"
+  },
+  {
+    "polish": "oglądać",
+    "english": "to watch",
+    "category": "verbs"
+  },
+  {
+    "polish": "znać się",
+    "english": "to know one another / to be versed in",
+    "category": "verbs"
+  },
+  {
+    "polish": "mieszkać",
+    "english": "to live (reside)",
+    "category": "verbs"
+  },
+  {
+    "polish": "przepraszać",
+    "english": "to apologize",
+    "category": "verbs"
+  },
+  {
+    "polish": "pamiętać",
+    "english": "to remember",
+    "category": "verbs"
+  },
+  {
+    "polish": "mieszkają",
+    "english": "they live",
+    "category": "phrases"
+  },
+  {
+    "polish": "kobiety",
+    "english": "women (nominative)",
+    "category": "people"
+  },
+  {
+    "polish": "kobietami",
+    "english": "women (instrumental)",
+    "category": "grammar"
+  },
+  {
+    "polish": "Jesteśmy kobietami",
+    "english": "We are women",
+    "category": "phrases"
+  },
+  {
+    "polish": "To są kobiety",
+    "english": "These are women",
+    "category": "phrases"
+  },
+  {
+    "polish": "kolega",
+    "english": "friend (male)",
+    "category": "people"
+  },
+  {
+    "polish": "koleżanka",
+    "english": "friend (female)",
+    "category": "people"
+  },
+  {
+    "polish": "lekarz",
+    "english": "doctor (male)",
+    "category": "people"
+  },
+  {
+    "polish": "lekarka",
+    "english": "doctor (female)",
+    "category": "people"
+  },
+  {
+    "polish": "wideem",
+    "english": "video (note: maybe 'wideo')",
+    "category": "media"
+  },
+  {
+    "polish": "inżynier",
+    "english": "engineer",
+    "category": "people"
+  },
+  {
+    "polish": "pilny",
+    "english": "attentive / urgent",
+    "category": "adjectives"
+  },
+  {
+    "polish": "interesować się",
+    "english": "to be interested in",
+    "category": "verbs"
+  },
+  {
+    "polish": "malarstwo",
+    "english": "painting (the art)",
+    "category": "nouns/art"
+  },
+  {
+    "polish": "współczesny",
+    "english": "contemporary",
+    "category": "adjectives"
+  },
+  {
+    "polish": "sztuka",
+    "english": "art",
+    "category": "nouns/art"
+  },
+  {
+    "polish": "improwizacja",
+    "english": "improvisation",
+    "category": "nouns/art"
+  },
+  {
+    "polish": "gotowanie",
+    "english": "cooking",
+    "category": "nouns/food"
+  },
+  {
+    "polish": "Ona jest naczelną pielęgniarką",
+    "english": "She is a head nurse",
+    "category": "phrases/people"
+  },
+  {
+    "polish": "naczelny",
+    "english": "head / main (masculine)",
+    "category": "adjectives"
+  },
+  {
+    "polish": "pielęgniarka",
+    "english": "female nurse",
+    "category": "people"
+  },
+  {
+    "polish": "ratownik",
+    "english": "paramedic / rescuer",
+    "category": "people"
+  },
+  {
+    "polish": "ratować",
+    "english": "to save / to rescue",
+    "category": "verbs"
+  },
+  {
+    "polish": "siódma",
+    "english": "seventh (7th, hour)",
+    "category": "numbers/time"
+  },
+  {
+    "polish": "ósma",
+    "english": "eighth (8th, hour)",
+    "category": "numbers/time"
+  },
+  {
+    "polish": "chodzę na spotkania",
+    "english": "I go to meetings",
+    "category": "phrases"
+  },
+  {
+    "polish": "popołudniu",
+    "english": "in the afternoon",
+    "category": "time"
+  },
+  {
+    "polish": "lunch [lancz]",
+    "english": "lunch",
+    "category": "food"
+  },
+  {
+    "polish": "kolację",
+    "english": "dinner (accusative)",
+    "category": "food"
+  },
+  {
+    "polish": "relaksuję się",
+    "english": "I relax",
+    "category": "phrases"
+  },
+  {
+    "polish": "czasem",
+    "english": "sometimes",
+    "category": "adverbs"
+  },
+  {
+    "polish": "rozmawiam",
+    "english": "I talk / I speak",
+    "category": "phrases"
+  },
+  {
+    "polish": "zabawny",
+    "english": "funny",
+    "category": "adjectives"
+  },
+  {
+    "polish": "zawsze",
+    "english": "always",
+    "category": "adverbs"
+  },
+  {
+    "polish": "mieszkanie",
+    "english": "apartment",
+    "category": "places"
+  },
+  {
+    "polish": "szachy",
+    "english": "chess",
+    "category": "hobbies/games"
+  },
+  {
+    "polish": "odpoczywać",
+    "english": "to rest",
+    "category": "verbs"
+  },
+  {
+    "polish": "miasto",
+    "english": "city",
+    "category": "places"
+  },
+  {
+    "polish": "opalać się",
+    "english": "to sunbathe",
+    "category": "verbs"
+  },
+  {
+    "polish": "rozrywka",
+    "english": "entertainment / pastime / hobby",
+    "category": "nouns"
+  },
+  {
+    "polish": "cieszyć się",
+    "english": "to be happy / to enjoy",
+    "category": "verbs"
+  },
+  {
+    "polish": "że",
+    "english": "that (conjunction)",
+    "category": "grammar"
+  },
+  {
+    "polish": "spóźnienie",
+    "english": "being late / delay",
+    "category": "nouns/time"
+  },
+  {
+    "polish": "siadać",
+    "english": "to sit down",
+    "category": "verbs"
+  },
+  {
+    "polish": "mieć ochotę na",
+    "english": "to feel like (doing something)",
+    "category": "phrases"
+  },
+  {
+    "polish": "ochota",
+    "english": "desire / appetite",
+    "category": "nouns"
+  },
+  {
+    "polish": "czarny",
+    "english": "black (m)",
+    "category": "adjectives"
+  },
+  {
+    "polish": "Proszę",
+    "english": "I ask / please / here you go",
+    "category": "phrases"
+  },
+  {
+    "polish": "Poproszę",
+    "english": "I'll ask / I'd like (please)",
+    "category": "phrases"
+  },
+  {
+    "polish": "Poprosiłbym",
+    "english": "I would ask (conditional)",
+    "category": "phrases"
+  },
+  {
+    "polish": "woda gazowana",
+    "english": "sparkling water",
+    "category": "food/drink"
+  },
+  {
+    "polish": "Co dla pana?",
+    "english": "What for you, sir?",
+    "category": "phrases"
+  },
+  {
+    "polish": "Co dla ciebie?",
+    "english": "What for you?",
+    "category": "phrases"
+  },
+  {
+    "polish": "Coś jeszcze?",
+    "english": "Anything else?",
+    "category": "phrases"
+  },
+  {
+    "polish": "bar mleczny",
+    "english": "traditional milk bar (cheap cafeteria)",
+    "category": "places/food"
+  },
+  {
+    "polish": "bawić się",
+    "english": "to play / to have fun",
+    "category": "verbs"
+  },
+  {
+    "polish": "nienawidzić",
+    "english": "to hate",
+    "category": "verbs"
+  },
+  {
+    "polish": "Smacznego!",
+    "english": "Have a good meal!",
+    "category": "phrases"
+  },
+  {
+    "polish": "smaczny",
+    "english": "tasty / delicious (m)",
+    "category": "adjectives/food"
+  },
+  {
+    "polish": "Na zdrowie",
+    "english": "Cheers / Bless you",
+    "category": "phrases"
+  },
+  {
+    "polish": "kapcie",
+    "english": "slippers (Warsaw)",
+    "category": "clothes"
+  },
+  {
+    "polish": "pantofle",
+    "english": "slippers (Kraków)",
+    "category": "clothes"
+  },
+  {
+    "polish": "Idę spać",
+    "english": "I'm going to sleep",
+    "category": "phrases"
+  },
+  {
+    "polish": "Siedzisz spać",
+    "english": "You are sitting to sleep (literal)",
+    "category": "phrases"
+  },
+  {
+    "polish": "W życiu trzeba sobie radzić, jak powiedział rolnik wiążąc buty glizdą",
+    "english": "You have to get through life somehow, said the farmer tying his shoes with a worm",
+    "category": "expressions"
+  },
+  {
+    "polish": "masakra",
+    "english": "massacre (slang: disaster, pathetic)",
+    "category": "slang"
+  },
+  {
+    "polish": "Odpukaj",
+    "english": "Knock on wood",
+    "category": "phrases"
+  },
+  {
+    "polish": "Boże",
+    "english": "Oh God",
+    "category": "interjections"
+  },
+  {
+    "polish": "O Jezu",
+    "english": "Jesus (Oh Jesus)",
+    "category": "interjections"
+  },
+  {
+    "polish": "Pan Jezus",
+    "english": "Mr. Jesus",
+    "category": "phrases"
+  },
+  {
+    "polish": "Panie Boże",
+    "english": "Dear Mr. God",
+    "category": "phrases"
+  },
+  {
+    "polish": "dworzec główny",
+    "english": "main station",
+    "category": "places"
+  },
+  {
+    "polish": "kupa",
+    "english": "poop (vulgar)",
+    "category": "slang"
+  },
+  {
+    "polish": "przeszłość",
+    "english": "past",
+    "category": "time"
+  },
+  {
+    "polish": "przyszłość",
+    "english": "future",
+    "category": "time"
+  },
+  {
+    "polish": "przylot",
+    "english": "arrival (airport)",
+    "category": "travel"
+  },
+  {
+    "polish": "odlot",
+    "english": "departure (airport)",
+    "category": "travel"
+  },
+  {
+    "polish": "lot",
+    "english": "flight",
+    "category": "travel"
+  },
+  {
+    "polish": "jazda",
+    "english": "ride / going (on ground)",
+    "category": "travel"
+  },
+  {
+    "polish": "Pan",
+    "english": "Mr. / Lord / sir",
+    "category": "people"
+  },
+  {
+    "polish": "modlitwa",
+    "english": "prayer",
+    "category": "nouns"
+  },
+  {
+    "polish": "cukiernia",
+    "english": "pastry / dessert bakery",
+    "category": "places/food"
+  },
+  {
+    "polish": "cukier",
+    "english": "sugar",
+    "category": "food"
+  },
+  {
+    "polish": "róża",
+    "english": "rose",
+    "category": "nouns/flowers"
+  },
+  {
+    "polish": "różane",
+    "english": "rose (adjective)",
+    "category": "adjectives"
+  },
+  {
+    "polish": "pomagać",
+    "english": "to help",
+    "category": "verbs"
+  },
+  {
+    "polish": "Pomocy!",
+    "english": "Help me!",
+    "category": "phrases"
+  },
+  {
+    "polish": "spacer",
+    "english": "a walk",
+    "category": "nouns"
+  },
+  {
+    "polish": "spacerować",
+    "english": "to walk / stroll",
+    "category": "verbs"
+  },
+  {
+    "polish": "często",
+    "english": "often",
+    "category": "adverbs"
+  },
+  {
+    "polish": "jeździć",
+    "english": "to go by vehicle habitually",
+    "category": "verbs"
+  },
+  {
+    "polish": "sen",
+    "english": "sleep / dream",
+    "category": "nouns"
+  },
+  {
+    "polish": "przygoda",
+    "english": "adventure",
+    "category": "nouns"
+  },
+  {
+    "polish": "ćwiczyć",
+    "english": "to exercise / practice",
+    "category": "verbs"
+  },
+  {
+    "polish": "chodzić",
+    "english": "to go habitually / to walk",
+    "category": "verbs"
+  },
+  {
+    "polish": "wielbić",
+    "english": "to worship",
+    "category": "verbs"
+  },
+  {
+    "polish": "uwielbiać",
+    "english": "to adore / like very much",
+    "category": "verbs"
+  },
+  {
+    "polish": "królik",
+    "english": "rabbit / bunny",
+    "category": "animals"
+  },
+  {
+    "polish": "karmić",
+    "english": "to feed",
+    "category": "verbs"
+  },
+  {
+    "polish": "przedmiot, rzecz",
+    "english": "thing / item",
+    "category": "nouns"
+  },
+  {
+    "polish": "przedmiot",
+    "english": "subject (at school)",
+    "category": "nouns"
+  },
+  {
+    "polish": "nauka",
+    "english": "learning / science",
+    "category": "nouns"
+  },
+  {
+    "polish": "przyroda",
+    "english": "nature",
+    "category": "nouns"
+  },
+  {
+    "polish": "przynosić",
+    "english": "to bring",
+    "category": "verbs"
+  },
+  {
+    "polish": "nożyczki",
+    "english": "scissors",
+    "category": "objects"
+  },
+  {
+    "polish": "noga",
+    "english": "leg / foot",
+    "category": "body"
+  },
+  {
+    "polish": "pierdzieć",
+    "english": "to fart",
+    "category": "verbs/slang"
+  },
+  {
+    "polish": "ugotować",
+    "english": "to cook (completed)",
+    "category": "verbs/food"
+  },
+  {
+    "polish": "pyszny",
+    "english": "delicious (m)",
+    "category": "adjectives/food"
+  },
+  {
+    "polish": "w zeszłym roku",
+    "english": "last year",
+    "category": "time"
+  },
+  {
+    "polish": "swój, swoja, swoje",
+    "english": "one's own",
+    "category": "pronouns"
+  },
+  {
+    "polish": "padać",
+    "english": "to fall (rain, snow)",
+    "category": "verbs/weather"
+  },
+  {
+    "polish": "zmęczony",
+    "english": "tired",
+    "category": "adjectives"
+  },
+  {
+    "polish": "najpierw",
+    "english": "first / firstly",
+    "category": "adverbs"
+  },
+  {
+    "polish": "o dwudziestej trzeciej",
+    "english": "at 23:00",
+    "category": "time"
+  },
+  {
+    "polish": "przedwczoraj",
+    "english": "the day before yesterday",
+    "category": "time"
+  },
+  {
+    "polish": "czarna czekolada",
+    "english": "dark chocolate",
+    "category": "food"
+  },
+  {
+    "polish": "osiemnaście",
+    "english": "eighteen (18)",
+    "category": "numbers"
+  },
+  {
+    "polish": "w Libanie",
+    "english": "in Lebanon",
+    "category": "places"
+  },
+  {
+    "polish": "Liban",
+    "english": "Lebanon",
+    "category": "places"
+  },
+  {
+    "polish": "tygodnie",
+    "english": "weeks",
+    "category": "time"
+  },
+  {
+    "polish": "pierwszy",
+    "english": "first (m)",
+    "category": "numbers"
+  },
+  {
+    "polish": "słyszeć + accusative",
+    "english": "to hear (requires accusative)",
+    "category": "grammar"
+  },
+  {
+    "polish": "słuchać + genitive",
+    "english": "to listen (requires genitive)",
+    "category": "grammar"
+  },
+  {
+    "polish": "Słyszę muzykę",
+    "english": "I hear music",
+    "category": "phrases"
+  },
+  {
+    "polish": "Słucham muzyki",
+    "english": "I listen to music",
+    "category": "phrases"
+  },
+  {
+    "polish": "Życzę Ci wszystkiego najlepszego",
+    "english": "I wish you all the best",
+    "category": "phrases"
+  },
+  {
+    "polish": "bać się",
+    "english": "to be afraid",
+    "category": "verbs"
+  },
+  {
+    "polish": "burza",
+    "english": "storm / thunderstorm",
+    "category": "weather"
+  },
+  {
+    "polish": "lodówka",
+    "english": "fridge",
+    "category": "objects"
+  },
+  {
+    "polish": "Słoiki jadą",
+    "english": "The jars are going (away)",
+    "category": "phrases"
+  },
+  {
+    "polish": "co -> czego (genitive)",
+    "english": "what -> of what (genitive)",
+    "category": "grammar"
+  },
+  {
+    "polish": "kto -> kogo (genitive)",
+    "english": "who -> whom (genitive)",
+    "category": "grammar"
+  },
+  {
+    "polish": "Czego nie lubisz?",
+    "english": "What do you not like?",
+    "category": "phrases"
+  },
+  {
+    "polish": "Kogo nie lubisz?",
+    "english": "Who do you not like?",
+    "category": "phrases"
+  },
+  {
+    "polish": "poczta",
+    "english": "post office",
+    "category": "places"
+  },
+  {
+    "polish": "sporo",
+    "english": "quite a lot / plenty",
+    "category": "adverbs"
+  },
+  {
+    "polish": "powszechny",
+    "english": "common",
+    "category": "adjectives"
+  },
+  {
+    "polish": "wszech-",
+    "english": "all- (prefix)",
+    "category": "grammar"
+  },
+  {
+    "polish": "Zamknij mordę",
+    "english": "Shut your ugly face (strong vulgar)",
+    "category": "slang"
+  },
+  {
+    "polish": "ciemność",
+    "english": "darkness",
+    "category": "nouns"
+  },
+  {
+    "polish": "unikać",
+    "english": "to avoid",
+    "category": "verbs"
+  },
+  {
+    "polish": "gwiazda",
+    "english": "star",
+    "category": "nouns"
+  },
+  {
+    "polish": "siatkówka",
+    "english": "volleyball",
+    "category": "sports"
+  },
+  {
+    "polish": "impreza",
+    "english": "party",
+    "category": "events"
+  },
+  {
+    "polish": "odwołać",
+    "english": "to cancel",
+    "category": "verbs"
+  },
+  {
+    "polish": "wizyta",
+    "english": "visit",
+    "category": "nouns"
+  },
+  {
+    "polish": "wiele",
+    "english": "many / a lot",
+    "category": "quantifiers"
+  },
+  {
+    "polish": "zapomnieć",
+    "english": "to forget",
+    "category": "verbs"
+  },
+  {
+    "polish": "jutro",
+    "english": "tomorrow",
+    "category": "time"
+  },
+  {
+    "polish": "cały",
+    "english": "entire / whole",
+    "category": "adjectives"
+  },
+  {
+    "polish": "w następnym tygodniu",
+    "english": "next week",
+    "category": "time"
+  },
+  {
+    "polish": "dostać",
+    "english": "to get / receive",
+    "category": "verbs"
+  },
+  {
+    "polish": "uczyć się",
+    "english": "to learn",
+    "category": "verbs"
+  },
+  {
+    "polish": "powiedzieć",
+    "english": "to say",
+    "category": "verbs"
+  },
+  {
+    "polish": "pić",
+    "english": "to drink",
+    "category": "verbs"
+  },
+  {
+    "polish": "wychodzić",
+    "english": "to go out / leave (habitual)",
+    "category": "verbs"
+  },
+  {
+    "polish": "pojechać",
+    "english": "to go by transport (one-time)",
+    "category": "verbs"
+  },
+  {
+    "polish": "zrobić",
+    "english": "to do / to make (completed)",
+    "category": "verbs"
+  },
+  {
+    "polish": "przeczytać",
+    "english": "to read (completed)",
+    "category": "verbs"
+  },
+  {
+    "polish": "pójść",
+    "english": "to go (one-time)",
+    "category": "verbs"
+  },
+  {
+    "polish": "kał",
+    "english": "feces (medical)",
+    "category": "slang"
+  },
+  {
+    "polish": "ząb zupa ząb, dąb zupa dąb",
+    "english": "(funny/phonetic phrases mixing words)",
+    "category": "phrases"
+  },
+  {
+    "polish": "umrzeć",
+    "english": "to die",
+    "category": "verbs"
+  },
+  {
+    "polish": "zdechnąć",
+    "english": "to die (vulgar/no respect)",
+    "category": "slang"
+  },
+  {
+    "polish": "odejść",
+    "english": "to depart / die (depart)",
+    "category": "verbs"
+  },
+  {
+    "polish": "zajęcia",
+    "english": "class / lessons",
+    "category": "nouns"
+  },
+  {
+    "polish": "dupa",
+    "english": "ass / butt (vulgar)",
+    "category": "slang"
+  },
+  {
+    "polish": "środa",
+    "english": "Wednesday",
+    "category": "time/days"
+  },
+  {
+    "polish": "czwartek",
+    "english": "Thursday",
+    "category": "time/days"
+  },
+  {
+    "polish": "piątek",
+    "english": "Friday",
+    "category": "time/days"
+  },
+  {
+    "polish": "sobota",
+    "english": "Saturday",
+    "category": "time/days"
+  },
+  {
+    "polish": "niedziela",
+    "english": "Sunday",
+    "category": "time/days"
+  },
+  {
+    "polish": "słońce",
+    "english": "sun",
+    "category": "nature/weather"
+  },
+  {
+    "polish": "księżyc",
+    "english": "moon",
+    "category": "nature/weather"
+  },
+  {
+    "polish": "gwiazdy",
+    "english": "stars",
+    "category": "nature/weather"
+  },
+  {
+    "polish": "deszcz",
+    "english": "rain",
+    "category": "weather"
+  },
+  {
+    "polish": "śnieg",
+    "english": "snow",
+    "category": "weather"
+  },
+  {
+    "polish": "wiatr",
+    "english": "wind",
+    "category": "weather"
+  },
+  {
+    "polish": "ciepło",
+    "english": "warm",
+    "category": "adjectives/weather"
+  },
+  {
+    "polish": "zimno",
+    "english": "cold",
+    "category": "adjectives/weather"
+  },
+  {
+    "polish": "mięso",
+    "english": "meat",
+    "category": "food"
+  },
+  {
+    "polish": "ryba",
+    "english": "fish",
+    "category": "food"
+  },
+  {
+    "polish": "warzywa",
+    "english": "vegetables",
+    "category": "food"
+  },
+  {
+    "polish": "owoce",
+    "english": "fruits",
+    "category": "food"
+  },
+  {
+    "polish": "herbata",
+    "english": "tea",
+    "category": "food/drink"
+  },
+  {
+    "polish": "kawa",
+    "english": "coffee",
+    "category": "food/drink"
+  },
+  {
+    "polish": "mleko",
+    "english": "milk",
+    "category": "food/drink"
+  },
+  {
+    "polish": "but",
+    "english": "shoe",
+    "category": "clothes"
+  },
+  {
+    "polish": "koszula",
+    "english": "shirt",
+    "category": "clothes"
+  },
+  {
+    "polish": "spódnica",
+    "english": "skirt",
+    "category": "clothes"
+  },
+  {
+    "polish": "bluza",
+    "english": "hoodie / sweatshirt",
+    "category": "clothes"
+  },
+  {
+    "polish": "kapelusz",
+    "english": "hat",
+    "category": "clothes"
+  },
+  {
+    "polish": "okulary",
+    "english": "glasses",
+    "category": "clothes/objects"
+  },
+  {
+    "polish": "talerz",
+    "english": "plate",
+    "category": "objects"
+  },
+  {
+    "polish": "kubek",
+    "english": "mug / cup",
+    "category": "objects"
+  },
+  {
+    "polish": "nóż",
+    "english": "knife",
+    "category": "objects"
+  },
+  {
+    "polish": "widelec",
+    "english": "fork",
+    "category": "objects"
+  },
+  {
+    "polish": "łyżka",
+    "english": "spoon",
+    "category": "objects"
+  },
+  {
+    "polish": "łóżko",
+    "english": "bed",
+    "category": "places/furniture"
+  },
+  {
+    "polish": "krzesło",
+    "english": "chair",
+    "category": "places/furniture"
+  },
+  {
+    "polish": "stół",
+    "english": "table",
+    "category": "places/furniture"
+  },
+  {
+    "polish": "szkoła",
+    "english": "school",
+    "category": "places"
+  },
+  {
+    "polish": "uczelnia",
+    "english": "university",
+    "category": "places"
+  },
+  {
+    "polish": "praca",
+    "english": "work / job",
+    "category": "places/nouns"
+  },
+  {
+    "polish": "sklep",
+    "english": "shop / store",
+    "category": "places"
+  },
+  {
+    "polish": "restauracja",
+    "english": "restaurant",
+    "category": "places/food"
+  },
+  {
+    "polish": "wiosna",
+    "english": "spring",
+    "category": "time/seasons"
+  },
+  {
+    "polish": "lato",
+    "english": "summer",
+    "category": "time/seasons"
+  },
+  {
+    "polish": "jesień",
+    "english": "autumn / fall",
+    "category": "time/seasons"
+  },
+  {
+    "polish": "styczeń",
+    "english": "January",
+    "category": "time/months"
+  },
+  {
+    "polish": "luty",
+    "english": "February",
+    "category": "time/months"
+  },
+  {
+    "polish": "marzec",
+    "english": "March",
+    "category": "time/months"
+  },
+  {
+    "polish": "kwiecień",
+    "english": "April",
+    "category": "time/months"
+  },
+  {
+    "polish": "maj",
+    "english": "May",
+    "category": "time/months"
+  },
+  {
+    "polish": "czerwiec",
+    "english": "June",
+    "category": "time/months"
+  },
+  {
+    "polish": "lipiec",
+    "english": "July",
+    "category": "time/months"
+  },
+  {
+    "polish": "sierpień",
+    "english": "August",
+    "category": "time/months"
+  },
+  {
+    "polish": "wrzesień",
+    "english": "September",
+    "category": "time/months"
+  },
+  {
+    "polish": "październik",
+    "english": "October",
+    "category": "time/months"
+  },
+  {
+    "polish": "listopad",
+    "english": "November",
+    "category": "time/months"
+  },
+  {
+    "polish": "grudzień",
+    "english": "December",
+    "category": "time/months"
+  },
+  {
+    "polish": "ja",
+    "english": "I",
+    "category": "pronouns"
+  },
+  {
+    "polish": "ty",
+    "english": "you (singular informal)",
+    "category": "pronouns"
+  },
+  {
+    "polish": "on",
+    "english": "he",
+    "category": "pronouns"
+  },
+  {
+    "polish": "ona",
+    "english": "she",
+    "category": "pronouns"
+  },
+  {
+    "polish": "ono",
+    "english": "it",
+    "category": "pronouns"
+  },
+  {
+    "polish": "my",
+    "english": "we",
+    "category": "pronouns"
+  },
+  {
+    "polish": "wy",
+    "english": "you (plural)",
+    "category": "pronouns"
+  },
+  {
+    "polish": "oni",
+    "english": "they (male/mixed)",
+    "category": "pronouns"
+  },
+  {
+    "polish": "one",
+    "english": "they (female)",
+    "category": "pronouns"
+  },
+  {
+    "polish": "i",
+    "english": "and",
+    "category": "grammar"
+  },
+  {
+    "polish": "lub",
+    "english": "or",
+    "category": "grammar"
+  },
+  {
+    "polish": "ale",
+    "english": "but",
+    "category": "grammar"
+  },
+  {
+    "polish": "ponieważ",
+    "english": "because",
+    "category": "grammar"
+  },
+  {
+    "polish": "móc",
+    "english": "can / to be able to",
+    "category": "verbs/modal"
+  },
+  {
+    "polish": "chcieć",
+    "english": "to want",
+    "category": "verbs/modal"
+  },
+  {
+    "polish": "musieć",
+    "english": "must / to have to",
+    "category": "verbs/modal"
+  },
+  {
+    "polish": "spać",
+    "english": "to sleep",
+    "category": "verbs"
+  },
+  {
+    "polish": "kupować",
+    "english": "to buy",
+    "category": "verbs"
+  },
+  {
+    "polish": "pisać",
+    "english": "to write",
+    "category": "verbs"
+  },
+  {
+    "polish": "mówić",
+    "english": "to speak / talk",
+    "category": "verbs"
+  },
+  {
+    "polish": "myć się",
+    "english": "to wash oneself",
+    "category": "verbs/reflexive"
+  },
+  {
+    "polish": "bawić się",
+    "english": "to play / have fun",
+    "category": "verbs/reflexive"
+  },
+  {
+    "polish": "chleb",
+    "english": "bread",
+    "category": "food"
+  },
+  {
+    "polish": "ser",
+    "english": "cheese",
+    "category": "food"
+  },
+  {
+    "polish": "jajko",
+    "english": "egg",
+    "category": "food"
+  },
+  {
+    "polish": "jabłko",
+    "english": "apple",
+    "category": "food"
+  },
+  {
+    "polish": "pomarańcza",
+    "english": "orange",
+    "category": "food"
+  },
+  {
+    "polish": "banan",
+    "english": "banana",
+    "category": "food"
+  },
+  {
+    "polish": "okno",
+    "english": "window",
+    "category": "objects"
+  },
+  {
+    "polish": "drzwi",
+    "english": "door",
+    "category": "objects"
+  },
+  {
+    "polish": "lampa",
+    "english": "lamp",
+    "category": "objects"
+  },
+  {
+    "polish": "komputer",
+    "english": "computer",
+    "category": "objects"
+  },
+  {
+    "polish": "ulica",
+    "english": "street",
+    "category": "places"
+  },
+  {
+    "polish": "hotel",
+    "english": "hotel",
+    "category": "places"
+  },
+  {
+    "polish": "samochód",
+    "english": "car",
+    "category": "transport"
+  },
+  {
+    "polish": "autobus",
+    "english": "bus",
+    "category": "transport"
+  },
+  {
+    "polish": "tramwaj",
+    "english": "tram",
+    "category": "transport"
+  },
+  {
+    "polish": "metro",
+    "english": "subway / metro",
+    "category": "transport"
+  },
+  {
+    "polish": "duży",
+    "english": "big / large",
+    "category": "adjectives"
+  },
+  {
+    "polish": "mały",
+    "english": "small",
+    "category": "adjectives"
+  },
+  {
+    "polish": "dobry",
+    "english": "good",
+    "category": "adjectives"
+  },
+  {
+    "polish": "zły",
+    "english": "bad",
+    "category": "adjectives"
+  },
+  {
+    "polish": "szybki",
+    "english": "fast",
+    "category": "adjectives"
+  },
+  {
+    "polish": "wolny",
+    "english": "slow / free",
+    "category": "adjectives"
+  },
+  {
+    "polish": "nowy",
+    "english": "new",
+    "category": "adjectives"
+  },
+  {
+    "polish": "stary",
+    "english": "old",
+    "category": "adjectives"
+  },
+  {
+    "polish": "kot",
+    "english": "cat",
+    "category": "animals"
+  },
+  {
+    "polish": "pies",
+    "english": "dog",
+    "category": "animals"
+  },
+  {
+    "polish": "koń",
+    "english": "horse",
+    "category": "animals"
+  },
+  {
+    "polish": "krowa",
+    "english": "cow",
+    "category": "animals"
+  },
+  {
+    "polish": "świnia",
+    "english": "pig",
+    "category": "animals"
+  },
+  {
+    "polish": "ptak",
+    "english": "bird",
+    "category": "animals"
+  },
+  {
+    "polish": "Dzień dobry",
+    "english": "Good morning / hello",
+    "category": "phrases"
+  },
+  {
+    "polish": "Dobry wieczór",
+    "english": "Good evening",
+    "category": "phrases"
+  },
+  {
+    "polish": "Dobranoc",
+    "english": "Good night",
+    "category": "phrases"
+  },
+  {
+    "polish": "Jak się masz?",
+    "english": "How are you?",
+    "category": "phrases"
+  },
+  {
+    "polish": "Co słychać?",
+    "english": "What's up?",
+    "category": "phrases"
+  },
+  {
+    "polish": "Dziękuję",
+    "english": "Thank you",
+    "category": "phrases"
+  },
+  {
+    "polish": "Dziękuję bardzo",
+    "english": "Thank you very much",
+    "category": "phrases"
+  },
+  {
+    "polish": "Proszę bardzo",
+    "english": "You're welcome",
+    "category": "phrases"
+  },
+  {
+    "polish": "dwa",
+    "english": "two",
+    "category": "numbers"
+  },
+  {
+    "polish": "trzy",
+    "english": "three",
+    "category": "numbers"
+  },
+  {
+    "polish": "cztery",
+    "english": "four",
+    "category": "numbers"
+  },
+  {
+    "polish": "pięć",
+    "english": "five",
+    "category": "numbers"
+  },
+  {
+    "polish": "sześć",
+    "english": "six",
+    "category": "numbers"
+  },
+  {
+    "polish": "siedem",
+    "english": "seven",
+    "category": "numbers"
+  },
+  {
+    "polish": "osiem",
+    "english": "eight",
+    "category": "numbers"
+  },
+  {
+    "polish": "dziewięć",
+    "english": "nine",
+    "category": "numbers"
+  },
+  {
+    "polish": "dziesięć",
+    "english": "ten",
+    "category": "numbers"
+  },
+  {
+    "polish": "jedenaście",
+    "english": "eleven",
+    "category": "numbers"
+  },
+  {
+    "polish": "dwanaście",
+    "english": "twelve",
+    "category": "numbers"
+  },
+  {
+    "polish": "trzynaście",
+    "english": "thirteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "czternaście",
+    "english": "fourteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "piętnaście",
+    "english": "fifteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "szesnaście",
+    "english": "sixteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "siedemnaście",
+    "english": "seventeen",
+    "category": "numbers"
+  },
+  {
+    "polish": "osiemnaście",
+    "english": "eighteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "dziewiętnaście",
+    "english": "nineteen",
+    "category": "numbers"
+  },
+  {
+    "polish": "dwadzieścia",
+    "english": "twenty",
+    "category": "numbers"
+  },
+  {
+    "polish": "trzydzieści",
+    "english": "thirty",
+    "category": "numbers"
+  },
+  {
+    "polish": "czterdzieści",
+    "english": "forty",
+    "category": "numbers"
+  },
+  {
+    "polish": "pięćdziesiąt",
+    "english": "fifty",
+    "category": "numbers"
+  },
+  {
+    "polish": "sześćdziesiąt",
+    "english": "sixty",
+    "category": "numbers"
+  },
+  {
+    "polish": "siedemdziesiąt",
+    "english": "seventy",
+    "category": "numbers"
+  },
+  {
+    "polish": "osiemdziesiąt",
+    "english": "eighty",
+    "category": "numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąt",
+    "english": "ninety",
+    "category": "numbers"
+  },
+  {
+    "polish": "sto",
+    "english": "one hundred",
+    "category": "numbers"
+  },
+  {
+    "polish": "pierwszy",
+    "english": "first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "drugi",
+    "english": "second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzeci",
+    "english": "third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czwarty",
+    "english": "fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "piąty",
+    "english": "fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "szósty",
+    "english": "sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siódmy",
+    "english": "seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "ósmy",
+    "english": "eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewiąty",
+    "english": "ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziesiąty",
+    "english": "tenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "wczoraj",
+    "english": "yesterday",
+    "category": "time"
+  },
+  {
+    "polish": "dzisiaj",
+    "english": "today",
+    "category": "time"
+  },
+  {
+    "polish": "jutro",
+    "english": "tomorrow",
+    "category": "time"
+  },
+  {
+    "polish": "za tydzień",
+    "english": "in a week",
+    "category": "time"
+  },
+  {
+    "polish": "za miesiąc",
+    "english": "in a month",
+    "category": "time"
+  },
+  {
+    "polish": "za rok",
+    "english": "in a year",
+    "category": "time"
+  },
+  {
+    "polish": "dzisiaj rano",
+    "english": "this morning",
+    "category": "time"
+  },
+  {
+    "polish": "dzisiaj wieczorem",
+    "english": "this evening",
+    "category": "time"
+  },
+  {
+    "polish": "o północy",
+    "english": "at midnight",
+    "category": "time"
+  },
+  {
+    "polish": "w południe",
+    "english": "at noon",
+    "category": "time"
+  },
+  {
+    "polish": "co godzinę",
+    "english": "every hour",
+    "category": "time"
+  },
+  {
+    "polish": "co dzień",
+    "english": "every day",
+    "category": "time"
+  },
+  {
+    "polish": "co tydzień",
+    "english": "every week",
+    "category": "time"
+  },
+  {
+    "polish": "co miesiąc",
+    "english": "every month",
+    "category": "time"
+  },
+  {
+    "polish": "co rok",
+    "english": "every year",
+    "category": "time"
+  },
+  {
+    "polish": "jedenasty",
+    "english": "eleventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwunasty",
+    "english": "twelfth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzynasty",
+    "english": "thirteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czternasty",
+    "english": "fourteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "piętnasty",
+    "english": "fifteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "szesnasty",
+    "english": "sixteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemnasty",
+    "english": "seventeenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemnasty",
+    "english": "eighteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewiętnasty",
+    "english": "nineteenth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty",
+    "english": "twentieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty",
+    "english": "thirtieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty",
+    "english": "fortieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty",
+    "english": "fiftieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty",
+    "english": "sixtieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty",
+    "english": "seventieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty",
+    "english": "eightieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty",
+    "english": "ninetieth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "setny",
+    "english": "one hundredth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "poniedziałek",
+    "english": "Monday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "wtorek",
+    "english": "Tuesday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "środa",
+    "english": "Wednesday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "czwartek",
+    "english": "Thursday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "piątek",
+    "english": "Friday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "sobota",
+    "english": "Saturday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "niedziela",
+    "english": "Sunday",
+    "category": "days of the week"
+  },
+  {
+    "polish": "rano",
+    "english": "morning",
+    "category": "parts of the day"
+  },
+  {
+    "polish": "przed południem",
+    "english": "before noon",
+    "category": "parts of the day"
+  },
+  {
+    "polish": "po południu",
+    "english": "afternoon",
+    "category": "parts of the day"
+  },
+  {
+    "polish": "wieczorem",
+    "english": "in the evening",
+    "category": "parts of the day"
+  },
+  {
+    "polish": "w nocy",
+    "english": "at night",
+    "category": "parts of the day"
+  },
+  {
+    "polish": "w tym tygodniu",
+    "english": "this week",
+    "category": "time"
+  },
+  {
+    "polish": "w przyszłym tygodniu",
+    "english": "next week",
+    "category": "time"
+  },
+  {
+    "polish": "w zeszłym tygodniu",
+    "english": "last week",
+    "category": "time"
+  },
+  {
+    "polish": "w tym miesiącu",
+    "english": "this month",
+    "category": "time"
+  },
+  {
+    "polish": "w przyszłym miesiącu",
+    "english": "next month",
+    "category": "time"
+  },
+  {
+    "polish": "w zeszłym miesiącu",
+    "english": "last month",
+    "category": "time"
+  },
+  {
+    "polish": "w tym roku",
+    "english": "this year",
+    "category": "time"
+  },
+  {
+    "polish": "w przyszłym roku",
+    "english": "next year",
+    "category": "time"
+  },
+  {
+    "polish": "w zeszłym roku",
+    "english": "last year",
+    "category": "time"
+  },
+  {
+    "polish": "dzisiaj w nocy",
+    "english": "tonight",
+    "category": "time"
+  },
+  {
+    "polish": "dwudziesty pierwszy",
+    "english": "twenty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty drugi",
+    "english": "twenty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty trzeci",
+    "english": "twenty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty czwarty",
+    "english": "twenty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty piąty",
+    "english": "twenty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty szósty",
+    "english": "twenty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty siódmy",
+    "english": "twenty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty ósmy",
+    "english": "twenty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dwudziesty dziewiąty",
+    "english": "twenty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty pierwszy",
+    "english": "thirty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty drugi",
+    "english": "thirty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty trzeci",
+    "english": "thirty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty czwarty",
+    "english": "thirty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty piąty",
+    "english": "thirty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty szósty",
+    "english": "thirty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty siódmy",
+    "english": "thirty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty ósmy",
+    "english": "thirty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "trzydziesty dziewiąty",
+    "english": "thirty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty pierwszy",
+    "english": "forty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty drugi",
+    "english": "forty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty trzeci",
+    "english": "forty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty czwarty",
+    "english": "forty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty piąty",
+    "english": "forty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty szósty",
+    "english": "forty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty siódmy",
+    "english": "forty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty ósmy",
+    "english": "forty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "czterdziesty dziewiąty",
+    "english": "forty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty pierwszy",
+    "english": "fifty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty drugi",
+    "english": "fifty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty trzeci",
+    "english": "fifty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty czwarty",
+    "english": "fifty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty piąty",
+    "english": "fifty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty szósty",
+    "english": "fifty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty siódmy",
+    "english": "fifty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty ósmy",
+    "english": "fifty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "pięćdziesiąty dziewiąty",
+    "english": "fifty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty pierwszy",
+    "english": "sixty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty drugi",
+    "english": "sixty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty trzeci",
+    "english": "sixty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty czwarty",
+    "english": "sixty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty piąty",
+    "english": "sixty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty szósty",
+    "english": "sixty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty siódmy",
+    "english": "sixty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty ósmy",
+    "english": "sixty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "sześćdziesiąty dziewiąty",
+    "english": "sixty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty pierwszy",
+    "english": "seventy-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty drugi",
+    "english": "seventy-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty trzeci",
+    "english": "seventy-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty czwarty",
+    "english": "seventy-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty piąty",
+    "english": "seventy-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty szósty",
+    "english": "seventy-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty siódmy",
+    "english": "seventy-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty ósmy",
+    "english": "seventy-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "siedemdziesiąty dziewiąty",
+    "english": "seventy-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty pierwszy",
+    "english": "eighty-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty drugi",
+    "english": "eighty-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty trzeci",
+    "english": "eighty-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty czwarty",
+    "english": "eighty-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty piąty",
+    "english": "eighty-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty szósty",
+    "english": "eighty-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty siódmy",
+    "english": "eighty-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty ósmy",
+    "english": "eighty-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "osiemdziesiąty dziewiąty",
+    "english": "eighty-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty pierwszy",
+    "english": "ninety-first",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty drugi",
+    "english": "ninety-second",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty trzeci",
+    "english": "ninety-third",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty czwarty",
+    "english": "ninety-fourth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty piąty",
+    "english": "ninety-fifth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty szósty",
+    "english": "ninety-sixth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty siódmy",
+    "english": "ninety-seventh",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty ósmy",
+    "english": "ninety-eighth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "dziewięćdziesiąty dziewiąty",
+    "english": "ninety-ninth",
+    "category": "ordinal numbers"
+  },
+  {
+    "polish": "rower",
+    "english": "bycicle",
+    "category": "transport"
+  }
 ]
