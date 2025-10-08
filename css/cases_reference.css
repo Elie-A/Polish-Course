@@ -222,28 +222,56 @@
     color: #28a745;
 }
 
+.modal-content.nominative {
+    border-top-color: #28a745;
+}
+
 .modal-content.genitive h2 {
     color: #ff4757;
+}
+
+.modal-content.genitive {
+    border-top-color: #ff4757;
 }
 
 .modal-content.dative h2 {
     color: #1e90ff;
 }
 
+.modal-content.dative {
+    border-top-color: #1e90ff;
+}
+
 .modal-content.accusative h2 {
     color: #ffa502;
+}
+
+.modal-content.accusative {
+    border-top-color: #ffa502;
 }
 
 .modal-content.instrumental h2 {
     color: #6f42c1;
 }
 
+.modal-content.instrumental {
+    border-top-color: #6f42c1;
+}
+
 .modal-content.locative h2 {
     color: #20c997;
 }
 
+.modal-content.locative {
+    border-top-color: #20c997;
+}
+
 .modal-content.vocative h2 {
     color: #e83e8c;
+}
+
+.modal-content.vocative {
+    border-top-color: #e83e8c;
 }
 
 /* ===== Case Tables Alternating Rows by Case ===== */

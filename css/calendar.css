@@ -98,6 +98,15 @@
     color: #ff8c00;
 }
 
+.calendar-days-modal {
+    border-top-color: #ff8c00;
+}
+
 .modal-content.calendar-months-modal h2 {
     color: #20b2aa;
+}
+
+.calendar-months-modal {
+    border-top-color: #20b2aa;
+
 }

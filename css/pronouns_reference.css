@@ -145,36 +145,72 @@
     color: #28a745;
 }
 
+.modal-content.moj {
+    border-top-color: #28a745;
+}
+
 .modal-content.twoj h2 {
     color: #ff4757;
+}
+
+.modal-content.twoj {
+    border-top-color: #ff4757;
 }
 
 .modal-content.jego-jej h2 {
     color: #1e90ff;
 }
 
+.modal-content.jego-jej {
+    border-top-color: #1e90ff;
+}
+
 .modal-content.nasz h2 {
     color: #ffa502;
+}
+
+.modal-content.nasz {
+    border-top-color: #ffa502;
 }
 
 .modal-content.wasz h2 {
     color: #6f42c1;
 }
 
+.modal-content.wasz {
+    border-top-color: #6f42c1;
+}
+
 .modal-content.ich h2 {
     color: #20c997;
+}
+
+.modal-content.ich {
+    border-top-color: #20c997;
 }
 
 .modal-content.swoj h2 {
     color: #e83e8c;
 }
 
+.modal-content.swoj {
+    border-top-color: #e83e8c;
+}
+
 .modal-content.reflexive-personal h2 {
     color: #800080;
 }
 
+.modal-content.reflexive-personal {
+    border-top-color: #800080;
+}
+
 .modal-content.reflexive-intensifier h2 {
     color: #adff2f;
+}
+
+.modal-content.reflexive-intensifier {
+    border-top-color: #adff2f;
 }
 
 /* ===== Pronouns Tables Styling ===== */

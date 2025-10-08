@@ -151,6 +151,10 @@
     background-color: rgba(40, 167, 69, 0.15);
 }
 
+.modal-content.color-0-10 {
+    border-top-color: #28a745;
+}
+
 /* Card 10-100 (red) */
 .modal-content.color-10-100 h2,
 .modal-content.color-10-100 .numbers-table th {
@@ -164,6 +168,10 @@
 
 .modal-content.color-10-100 .numbers-table tr:hover {
     background-color: rgba(255, 71, 87, 0.15);
+}
+
+.modal-content.color-10-100 {
+    border-top-color: #ff4757;
 }
 
 /* Card 100-1000 (blue) */
@@ -181,6 +189,10 @@
     background-color: rgba(30, 144, 255, 0.15);
 }
 
+.modal-content.color-100-1000 {
+    border-top-color: #1e90ff;
+}
+
 /* Card 1000-1000000 (orange) */
 .modal-content.color-1000-1000000 h2,
 .modal-content.color-1000-1000000 .numbers-table th {
@@ -194,6 +206,10 @@
 
 .modal-content.color-1000-1000000 .numbers-table tr:hover {
     background-color: rgba(255, 165, 2, 0.15);
+}
+
+.modal-content.color-1000-1000000 {
+    border-top-color: #ffa502;
 }
 
 /* Modal header default */
