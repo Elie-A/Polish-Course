@@ -45,6 +45,7 @@
             <input type="file" id="file-input" accept=".json" style="display:none;">
             <button id="reset-btn">Reset Exercises</button>
             <button id="download-btn">Download Exercises JSON</button>
+            <button id="info-btn" class="btn">💡 info</button>
         </div>
 
         <div id="exercise-container" class="exercise">Load the exercises file to start</div>
@@ -85,6 +86,74 @@
             <button id="modal-ok">OK</button>
         </div>
     </div>
+
+    <div style="text-align:center; margin-top: 10px;">
+        <button id="info-btn" class="btn">ℹ️ JSON Format Guide</button>
+    </div>
+
+    <!-- JSON Format Guide Section -->
+    <section id="json-format" class="json-format">
+        <h3>📘 Exercises JSON Format Guide</h3>
+        <p>
+            When exporting or importing your exercises, the JSON file should follow this structure:
+        </p>
+
+        <pre><code>{
+  "grammar": [
+    {
+      "question": "Ja ___ (to eat) jabłko.",
+      "answer": "jem"
+    }
+  ],
+  "numbers": [
+    {
+      "question": "23 in Polish",
+      "answer": "dwudziesty trzeci"
+    }
+  ],
+  "cases": [
+    {
+      "question": "I see a ___ (dog - accusative).",
+      "answer": "psa"
+    }
+  ],
+  "vocabulary": [
+    {
+      "polish": "kot",
+      "english": "cat"
+    }
+  ],
+  "flashcards": [
+    {
+      "polish": "dom",
+      "english": "house"
+    }
+  ]
+}</code></pre>
+
+        <h4>🧩 Steps to Create Your Own JSON File</h4>
+        <ol>
+            <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac), or
+                <strong>VS Code</strong>.
+            </li>
+            <li>Copy the example above and replace the values with your own exercises.</li>
+            <li>Keep the five main sections:
+                <ul>
+                    <li><code>grammar</code>: fill-in-the-blank exercises.</li>
+                    <li><code>numbers</code>: number and ordinal word questions.</li>
+                    <li><code>cases</code>: noun declension and case practice.</li>
+                    <li><code>vocabulary</code>: basic word translations.</li>
+                    <li><code>flashcards</code>: quick Polish–English pairs for review.</li>
+                </ul>
+            </li>
+            <li>Each section is an array of <code>{ question, answer }</code> or <code>{ polish, english }</code>
+                objects.</li>
+            <li>Make sure every key is surrounded by quotes <code>" "</code> and commas are placed correctly.</li>
+            <li>Save your file as <strong>exercises.json</strong>.</li>
+            <li>Click the <strong>“Load Exercises JSON”</strong> button to import it.</li>
+            <li>Click <strong>“Download Exercises JSON”</strong> to export your current data.</li>
+        </ol>
+    </section>
 </body>
 
 </html>

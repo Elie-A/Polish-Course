@@ -281,3 +281,29 @@ main {
         transform: translateY(0);
     }
 }
+
+.male {
+    color: #1E90FF;
+    /* blue */
+    font-weight: bold;
+}
+
+.female {
+    color: #FF1493;
+    /* pink */
+    font-weight: bold;
+}
+
+.neuter {
+    color: #228B22;
+    /* green */
+    font-weight: bold;
+}
+
+.ending-plural {
+    color: #8a2be2;
+    font-weight: 600;
+    background: rgba(204, 153, 255, 0.12);
+    padding: 2px 4px;
+    border-radius: 4px;
+}

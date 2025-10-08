@@ -262,3 +262,16 @@ document.addEventListener("DOMContentLoaded", () => {
     showModal("Vocabulary has been cleared!");
   });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const infoBtn = document.getElementById("info-btn");
+  const jsonSection = document.getElementById("json-format");
+
+  if (infoBtn && jsonSection) {
+    infoBtn.addEventListener("click", () => {
+      jsonSection.scrollIntoView({ behavior: "smooth" });
+      jsonSection.classList.add("highlight");
+      setTimeout(() => jsonSection.classList.remove("highlight"), 1500);
+    });
+  }
+});

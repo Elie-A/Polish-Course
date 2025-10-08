@@ -138,3 +138,63 @@
 .pagination-controls #page-info {
     font-weight: 600;
 }
+
+/* ---------- JSON Format Section ---------- */
+.json-format {
+    width: 100%;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin: 30px auto;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.json-format h3 {
+    color: #b91c3c;
+    margin-bottom: 10px;
+}
+
+.json-format pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px;
+    overflow-x: auto;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.json-format code {
+    color: #333;
+}
+
+.json-format p strong {
+    color: #dc143c;
+}
+
+.json-format.highlight {
+    box-shadow: 0 0 15px 3px rgba(220, 20, 60, 0.4);
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.json-format h4 {
+    margin-top: 20px;
+    color: #b91c3c;
+}
+
+.json-format ol {
+    margin: 10px 0 10px 25px;
+}
+
+.json-format ol li {
+    margin-bottom: 8px;
+}
+
+.json-format ul {
+    margin: 6px 0 6px 25px;
+    list-style-type: circle;
+}

@@ -282,3 +282,16 @@ document.getElementById("exercise-type").addEventListener("change", (e) => {
   const type = e.target.value;
   exampleEl.textContent = exampleFormats[type];
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const infoBtn = document.getElementById("info-btn");
+  const jsonSection = document.getElementById("json-format");
+
+  if (infoBtn && jsonSection) {
+    infoBtn.addEventListener("click", () => {
+      jsonSection.scrollIntoView({ behavior: "smooth" });
+      jsonSection.classList.add("highlight");
+      setTimeout(() => jsonSection.classList.remove("highlight"), 1500);
+    });
+  }
+});

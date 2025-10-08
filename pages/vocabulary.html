@@ -42,6 +42,7 @@
                 <input type="file" id="file-input" accept=".json" style="display:none;" />
                 <button id="load-btn" class="btn">Load Vocabulary</button>
                 <button id="clear-btn" class="btn">Clear Vocabulary</button>
+                <button id="info-btn" class="btn">💡 info</button>
             </div>
 
             <div class="table-wrap">
@@ -69,6 +70,67 @@
                 <input type="text" id="category" placeholder="Category (optional)" />
                 <button type="submit" class="btn">Add Word</button>
             </form>
+            <hr />
+            <section id="json-format" class="json-format">
+                <h3>📘 JSON Format Guide</h3>
+                <p>
+                    When exporting or importing your vocabulary, the JSON file should follow this structure:
+                </p>
+
+                <pre><code>{
+  "vocab": [
+    {
+      "polish": "zima",
+      "english": "winter",
+      "category": "time/seasons"
+    }
+  ]
+}</code></pre>
+
+                <h4>🧩 Steps to Create Your Own JSON File</h4>
+                <ol>
+                    <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac),
+                        or <strong>VS Code</strong>.</li>
+                    <li>Copy the example above and replace the values with your own words.</li>
+                    <li>Make sure the structure stays the same — including curly brackets <code>{ }</code> and square
+                        brackets <code>[ ]</code>.</li>
+                    <li>Each word should be written inside <code>{ }</code> with the three keys:
+                        <ul>
+                            <li><code>"polish"</code>: Polish word (required)</li>
+                            <li><code>"english"</code>: English translation (required)</li>
+                            <li><code>"category"</code>: category or topic (optional)</li>
+                        </ul>
+                    </li>
+                    <li>Separate multiple words with commas, for example:</li>
+                </ol>
+
+                <pre><code>{
+  "vocab": [
+    {
+      "polish": "zima",
+      "english": "winter",
+      "category": "time/seasons"
+    },
+    {
+      "polish": "jabłko",
+      "english": "apple",
+      "category": "food"
+    },
+    {
+      "polish": "dzień",
+      "english": "day",
+      "category": "time"
+    }
+  ]
+}</code></pre>
+
+                <ol start="6">
+                    <li>Save your file as <strong>vocabulary.json</strong>.</li>
+                    <li>Click the <strong>“Load Vocabulary”</strong> button on this page and select your JSON file.</li>
+                    <li>To export your current list, use the <strong>“Export JSON”</strong> button — it will
+                        automatically download your vocabulary in the correct format.</li>
+                </ol>
+            </section>
         </section>
     </main>
 

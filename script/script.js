@@ -23,6 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
     ".alphabet-card",
     ".calendar-card",
     ".pronouns-case-card",
+    ".verb-card",
+    ".perf-imperf-card",
   ];
 
   cardSelectors.forEach((selector) => {
