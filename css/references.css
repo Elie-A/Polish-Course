@@ -1,44 +1,4 @@
-/* ===== General Reset ===== */
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    margin: 0;
-    background: #fdfdfd;
-    color: #333;
-}
-
-/* ===== Header ===== */
-header {
-    background: #b30059;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem;
-}
-
-header h1 {
-    margin: 0;
-}
-
-/* ===== Hero Section ===== */
-.hero {
-    text-align: center;
-    margin: 40px auto;
-    padding: 50px 20px;
-    border-radius: 15px;
-    background: linear-gradient(135deg, #DC143C, #B91C3C);
-    color: white;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-    max-width: 1000px;
-}
-
-.hero h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.1rem;
-    opacity: 0.9;
-}
+/* Shared body, header, hero styles removed (now in common.css). */
 
 /* ===== Responsive ===== */
 @media (max-width: 600px) {

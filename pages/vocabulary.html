@@ -5,12 +5,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Polish Vocabulary</title>
+    <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/vocabulary.css" />
     <link rel="stylesheet" href="../css/popup.css" />
-    <script src="../script/vocabulary.js"></script>
-    <script src="../script/script.js"></script>
+    <script defer src="../script/common.js"></script>
+    <script defer src="../script/vocabulary.js"></script>
+    <script defer src="../script/script.js"></script>
 </head>
 
 <body>
@@ -37,7 +39,9 @@
 
             <div class="controls">
                 <input type="text" id="search" placeholder="🔍 Search Polish or English..." />
-                <select id="category-filter"></select>
+                <select id="category-filter"><!-- default populated by JS if empty -->
+                    <option value="">All Categories</option>
+                </select>
                 <button id="export-btn" class="btn">Export JSON</button>
                 <input type="file" id="file-input" accept=".json" style="display:none;" />
                 <button id="load-btn" class="btn">Load Vocabulary</button>

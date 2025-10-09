@@ -5,12 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Polish Practice Exercises</title>
+  <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/navigation.css">
   <link rel="stylesheet" href="../css/practice.css">
   <link rel="stylesheet" href="../css/popup.css">
-  <script src="../script/practice.js" defer></script>
-  <script src="../script/script.js" defer></script>
+  <script defer src="../script/common.js"></script>
+  <script defer src="../script/practice.js"></script>
+  <script defer src="../script/script.js"></script>
 </head>
 
 <body>
@@ -40,6 +42,26 @@
       <button onclick="loadExercise('flashcards')">Flashcards</button>
     </div>
 
+    <div class="quiz-controls" style="margin:10px auto; max-width:700px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center;">
+      <label style="display:flex; align-items:center; gap:6px; font-size:0.9rem;">
+        <input type="checkbox" id="shuffle-toggle"> Shuffle
+      </label>
+      <label style="display:flex; align-items:center; gap:6px; font-size:0.9rem;">
+        Timer:
+        <select id="timer-select" style="padding:4px 6px;">
+          <option value="30" selected>30s</option>
+          <option value="15">15s</option>
+          <option value="45">45s</option>
+          <option value="60">60s</option>
+          <option value="0">No timer</option>
+        </select>
+      </label>
+    </div>
+
+    <div class="progress-wrapper" style="max-width:700px; margin:5px auto 0; height:10px; background:#eee; border-radius:6px; overflow:hidden;">
+      <div id="progress-bar" style="height:100%; width:0%; background:#c61322; transition:width .35s ease;"></div>
+    </div>
+
     <div>
       <button id="load-btn">Load Exercises JSON</button>
       <input type="file" id="file-input" accept=".json" style="display:none;">
@@ -48,7 +70,7 @@
       <button id="info-btn" class="btn">💡 info</button>
     </div>
 
-    <div id="exercise-container" class="exercise">Load the exercises file to start</div>
+  <div id="exercise-container" class="exercise">Load the exercises file to start</div>
 
     <hr style="margin: 15px 0;">
     <div class="add-exercise-section">
@@ -75,6 +97,7 @@
       <button id="add-exercise-btn">Add Exercise</button>
 
       <p id="exercise-example" style="color:#c61322; font-style:italic;"></p>
+      <p id="recent-added" style="margin-top:6px; font-size:0.9rem; color:#444;"></p>
     </div>
 
   </main>
@@ -88,7 +111,7 @@
   </div>
 
   <div style="text-align:center; margin-top: 10px;">
-    <button id="info-btn" class="btn">ℹ️ JSON Format Guide</button>
+    <button id="info-guide-btn" class="btn">ℹ️ JSON Format Guide</button>
   </div>
 
   <!-- JSON Format Guide Section -->
@@ -153,6 +176,26 @@
       <li>Click the <strong>"Load Exercises JSON"</strong> button to import it.</li>
       <li>Click <strong>"Download Exercises JSON"</strong> to export your current data.</li>
     </ol>
+
+    <h4>💾 How Saving Works (localStorage)</h4>
+    <p>
+      Every exercise you add is immediately saved in your browser using <code>localStorage</code> under the key
+      <code>"exercises"</code>. This means:
+    </p>
+    <ul>
+      <li>Your added items will still be here after refreshing the page.</li>
+      <li>They are private to this browser & device (not uploaded anywhere).</li>
+      <li>Use <strong>Download Exercises JSON</strong> to back them up or transfer.</li>
+      <li>Use <strong>Reset Exercises</strong> to clear everything from storage.</li>
+    </ul>
+    <p>
+      If you clear browser data (cache/storage) or open the file on another device, your custom exercises will not be there
+      unless you import the JSON you exported earlier.
+    </p>
+    <p style="font-size:0.9rem; color:#555;">Tip: After adding a few items, click Download to keep a backup copy.</p>
+  
+    <h4>🆕 Recently Added</h4>
+    <p>The latest exercise you add will appear just below the Add Exercise form for quick confirmation.</p>
   </section>
 </body>
 

@@ -227,6 +227,22 @@ input[type="text"]#answer-input {
     transition: box-shadow 0.4s ease-in-out;
 }
 
+/* Quiz controls */
+.quiz-controls label {
+    background:#fff5f5;
+    padding:6px 10px;
+    border:1px solid #f1b0b7;
+    border-radius:6px;
+}
+.quiz-controls select {
+    border:1px solid #c61322;
+    border-radius:4px;
+}
+
+/* Progress bar wrapper (inline style fallback already present) */
+.progress-wrapper { position:relative; }
+#progress-bar { background:linear-gradient(90deg,#c61322,#ff4757); }
+
 /* Info button style */
 #info-btn.btn {
     background: linear-gradient(135deg, #c61322, #a10f1d);

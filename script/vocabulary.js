@@ -3,49 +3,40 @@ let filteredVocabulary = [];
 const ITEMS_PER_PAGE = 10;
 let currentPage = 1;
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Load saved vocabulary from localStorage
-  const saved = localStorage.getItem("vocabulary");
-  if (saved) {
-    vocabulary = JSON.parse(saved);
-    filteredVocabulary = [...vocabulary];
-    renderVocabulary(filteredVocabulary);
-    populateCategoryFilter(vocabulary);
-  }
+// ---- UI Helper references (assigned in init) ----
+let btnPrev, btnNext, btnLoad, btnClear, btnExport, btnSubmit, btnInfo, fileInputEl;
 
-  // Event listeners
-  document
-    .getElementById("add-form")
-    .addEventListener("submit", handleAddEntry);
-  document.getElementById("search").addEventListener("input", handleSearch);
-  document
-    .getElementById("category-filter")
-    .addEventListener("change", handleFilter);
-  document.getElementById("export-btn").addEventListener("click", handleExport);
+// Provide safe wrapper for modal messaging with consistent autoClose
+function safeModal(msg, opts){
+  let optionsObj = {};
+  if(typeof opts === 'number') optionsObj.autoClose = opts; else if(opts) optionsObj = opts;
+  if(optionsObj.autoClose == null) optionsObj.autoClose = 1800; // default auto close
+  if(window.PolishApp && typeof PolishApp.showModal === 'function'){ PolishApp.showModal(msg, optionsObj); }
+  else if(typeof showModal === 'function'){ try { showModal(msg); } catch(_){} }
+  else { console.warn('Modal message (no UI):', msg); }
+  // Watchdog to ensure overlay does not linger >5s
+  setTimeout(()=> {
+    const modal = document.getElementById('modal');
+    if(modal && modal.style.display === 'flex') { modal.style.display='none'; }
+  }, 5000);
+}
 
-  // Load JSON button
-  document.getElementById("load-btn").addEventListener("click", () => {
-    document.getElementById("file-input").click();
+function reEnableActionButtons(){
+  [btnLoad, btnClear, btnInfo, btnExport, btnSubmit].forEach(b=>{
+    if(b){ b.disabled=false; b.style.opacity=1; b.style.cursor='pointer'; }
   });
-  document
-    .getElementById("file-input")
-    .addEventListener("change", handleFileLoad);
+}
 
-  // Pagination
-  document.getElementById("prev-page").addEventListener("click", () => {
-    if (currentPage > 1) {
-      currentPage--;
-      renderVocabulary(filteredVocabulary);
-    }
+function updatePaginationButtons(){
+  if(!btnPrev || !btnNext) return;
+  const totalPages = Math.ceil(filteredVocabulary.length / ITEMS_PER_PAGE) || 0;
+  btnPrev.disabled = currentPage <= 1 || totalPages === 0;
+  btnNext.disabled = currentPage >= totalPages || totalPages === 0;
+  [btnPrev, btnNext].forEach(b=>{
+    b.style.opacity = b.disabled ? 0.5 : 1;
+    b.style.cursor = b.disabled ? 'not-allowed' : 'pointer';
   });
-  document.getElementById("next-page").addEventListener("click", () => {
-    const totalPages = Math.ceil(filteredVocabulary.length / ITEMS_PER_PAGE);
-    if (currentPage < totalPages) {
-      currentPage++;
-      renderVocabulary(filteredVocabulary);
-    }
-  });
-});
+}
 
 // ---------- Functions ----------
 
@@ -54,7 +45,7 @@ function handleFileLoad(event) {
   if (!file) return;
 
   if (!file.name.endsWith(".json")) {
-    showModal("Please select a JSON file.");
+    safeModal("Please select a JSON file.");
     return;
   }
 
@@ -77,9 +68,12 @@ function handleFileLoad(event) {
       resetPage();
       renderVocabulary(filteredVocabulary);
       populateCategoryFilter(vocabulary);
-      showModal("Vocabulary loaded successfully!");
+      updatePaginationButtons();
+      safeModal("Vocabulary loaded successfully!");
+      reEnableActionButtons();
     } catch (err) {
-      showModal("Error loading JSON: " + err.message);
+      safeModal("Error loading JSON: " + err.message, 2600);
+      reEnableActionButtons();
     }
   };
   reader.readAsText(file);
@@ -113,26 +107,13 @@ function renderVocabulary(data) {
     }, 50); // fade-in effect
   });
 
-  const totalPages = Math.ceil(data.length / ITEMS_PER_PAGE);
-  updatePageInfo(currentPage, totalPages);
+  updatePageInfo(currentPage, Math.ceil(data.length / ITEMS_PER_PAGE));
+  updatePaginationButtons();
 }
 
 function updatePageInfo(page, total) {
   const info = document.getElementById("page-info");
   info.textContent = total > 0 ? `Page ${page} of ${total}` : "No results";
-
-  // Enable/disable pagination buttons
-  const prevBtn = document.getElementById("prev-page");
-  const nextBtn = document.getElementById("next-page");
-
-  prevBtn.disabled = page <= 1;
-  nextBtn.disabled = page >= total || total === 0;
-
-  // Optional: visually indicate disabled buttons
-  prevBtn.style.opacity = prevBtn.disabled ? 0.5 : 1;
-  nextBtn.style.opacity = nextBtn.disabled ? 0.5 : 1;
-  prevBtn.style.cursor = prevBtn.disabled ? "not-allowed" : "pointer";
-  nextBtn.style.cursor = nextBtn.disabled ? "not-allowed" : "pointer";
 }
 
 function populateCategoryFilter(data) {
@@ -189,18 +170,19 @@ function handleAddEntry(e) {
   const category = document.getElementById("category").value.trim() || "misc";
 
   if (!polish || !english) {
-    showModal("Please fill in both Polish and English fields.");
+    safeModal("Please fill in both Polish and English fields.");
     return;
   }
 
   const newEntry = { polish, english, category };
   vocabulary.push(newEntry);
-  localStorage.setItem("vocabulary", JSON.stringify(vocabulary));
+  window.PolishApp && PolishApp.storage.setJSON('vocabulary', vocabulary);
 
   filteredVocabulary = [...vocabulary];
   resetPage();
   renderVocabulary(filteredVocabulary);
   populateCategoryFilter(vocabulary);
+  updatePaginationButtons();
 
   document.getElementById("add-form").reset();
 }
@@ -215,63 +197,65 @@ function handleExport() {
   a.download = "vocabulary.json";
   a.click();
   URL.revokeObjectURL(url);
-  showModal("Vocabulary exported as vocabulary.json");
+  safeModal("Vocabulary exported as vocabulary.json");
+  reEnableActionButtons();
 }
 
 function resetPage() {
   currentPage = 1;
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  const clearBtn = document.getElementById("clear-btn");
-  const searchInput = document.getElementById("search");
-  const categoryFilter = document.getElementById("category-filter");
-  const fileInput = document.getElementById("file-input");
+// Removed duplicate DOMContentLoaded listeners (will be wrapped in unified initializer below)
 
-  clearBtn.addEventListener("click", () => {
-    // Clear vocabulary arrays
-    vocabulary = [];
-    filteredVocabulary = [];
-
-    // Clear table
-    renderVocabulary(filteredVocabulary);
-
-    // Reset search input
-    searchInput.value = "";
-
-    // Reset category filter
-    categoryFilter.selectedIndex = 0;
-
-    // Reset file input
-    fileInput.value = "";
-
-    // Clear localStorage
-    localStorage.removeItem("vocabulary");
-
-    // Reset page
-    resetPage();
-
-    // Disable pagination buttons
-    document.getElementById("prev-page").disabled = true;
-    document.getElementById("next-page").disabled = true;
-    document.getElementById("prev-page").style.opacity = 0.5;
-    document.getElementById("next-page").style.opacity = 0.5;
-    document.getElementById("prev-page").style.cursor = "not-allowed";
-    document.getElementById("next-page").style.cursor = "not-allowed";
-
-    showModal("Vocabulary has been cleared!");
-  });
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-  const infoBtn = document.getElementById("info-btn");
-  const jsonSection = document.getElementById("json-format");
-
-  if (infoBtn && jsonSection) {
-    infoBtn.addEventListener("click", () => {
-      jsonSection.scrollIntoView({ behavior: "smooth" });
-      jsonSection.classList.add("highlight");
-      setTimeout(() => jsonSection.classList.remove("highlight"), 1500);
+// Unified initialization using PolishApp utilities
+(function(){
+  function init(){
+    const app = window.PolishApp; if(!app || !app.dom) return setTimeout(init,40);
+    const { dom, storage, effects } = app;
+    dom.onReady(()=>{
+      vocabulary = storage.getJSON('vocabulary', []);
+      filteredVocabulary = [...vocabulary];
+      // Always populate category filter (even empty -> shows 'All Categories')
+      populateCategoryFilter(vocabulary);
+      if(vocabulary.length){
+        renderVocabulary(filteredVocabulary);
+      }
+      // Cache buttons
+      btnPrev = dom.qs('#prev-page');
+      btnNext = dom.qs('#next-page');
+      btnLoad = dom.qs('#load-btn');
+      btnClear = dom.qs('#clear-btn');
+      btnExport = dom.qs('#export-btn');
+      btnInfo = dom.qs('#info-btn');
+      btnSubmit = dom.qs('#add-form')?.querySelector('button[type="submit"]');
+      fileInputEl = dom.qs('#file-input');
+      updatePaginationButtons();
+      // Bind events
+      dom.addEvent(dom.qs('#add-form'),'submit', handleAddEntry);
+      dom.addEvent(dom.qs('#search'),'input', handleSearch);
+      dom.addEvent(dom.qs('#category-filter'),'change', handleFilter);
+      dom.addEvent(dom.qs('#export-btn'),'click', handleExport);
+      dom.addEvent(btnLoad,'click', ()=> fileInputEl && fileInputEl.click());
+      dom.addEvent(fileInputEl,'change', handleFileLoad);
+      dom.addEvent(btnPrev,'click', ()=> { if(currentPage>1){ currentPage--; renderVocabulary(filteredVocabulary);} });
+      dom.addEvent(btnNext,'click', ()=> { const totalPages=Math.ceil(filteredVocabulary.length/ITEMS_PER_PAGE); if(currentPage<totalPages){ currentPage++; renderVocabulary(filteredVocabulary);} });
+      const searchInput = dom.qs('#search');
+      const categoryFilter = dom.qs('#category-filter');
+      dom.addEvent(btnClear,'click', ()=> {
+        vocabulary=[]; filteredVocabulary=[]; renderVocabulary(filteredVocabulary);
+        if(searchInput) searchInput.value='';
+        if(categoryFilter) categoryFilter.selectedIndex=0;
+        if(fileInputEl) fileInputEl.value='';
+        storage.setJSON('vocabulary', []);
+        resetPage();
+        populateCategoryFilter(vocabulary);
+        updatePaginationButtons();
+        reEnableActionButtons();
+        safeModal('Vocabulary has been cleared!');
+      });
+      const jsonSection = dom.qs('#json-format');
+      dom.addEvent(btnInfo,'click', ()=> { if(jsonSection) effects.smoothScrollHighlight(jsonSection,'highlight',1500); });
     });
   }
-});
+  init();
+})();

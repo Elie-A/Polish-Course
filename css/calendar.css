@@ -1,41 +1,4 @@
-/* ===== Calendar Grid ===== */
-.calendar-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
-}
-
-/* ===== Calendar Cards ===== */
-.calendar-card {
-    background: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-    text-align: center;
-    border-top: 6px solid #ff8c00;
-    cursor: pointer;
-}
-
-.calendar-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
-}
-
-.calendar-card h3 {
-    margin-bottom: 12px;
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.calendar-card p {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.5;
-}
+/* Base grid/card styles in common.css; retain color, tables, responsive tweaks */
 
 /* ===== Color-coded Cards ===== */
 .days {
@@ -93,14 +56,9 @@
     background: #f0f8ff;
 }
 
-/* ===== Modals ===== */
-.modal-content.days {
-    border-top-color: #ff8c00;
-}
-
-.modal-content.months {
-    border-top-color: #20b2aa;
-}
+/* Modal border overrides */
+.modal-content.days { border-top-color:#ff8c00; }
+.modal-content.months { border-top-color:#20b2aa; }
 
 .modal-content.calendar-days-modal h2 {
     color: #ff8c00;
