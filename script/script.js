@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ".verb-card",
     ".perf-imperf-card",
     ".pref-mov-card",
+    ".gender-card",
   ];
 
   cardSelectors.forEach((selector) => {

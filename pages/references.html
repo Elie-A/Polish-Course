@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="../css/alphabet_reference.css">
     <link rel="stylesheet" href="../css/pronouns_reference.css">
     <link rel="stylesheet" href="../css/most-common-used-verbs_reference.css">
-    <link rel="stylesheet" href="../css/prefixes-direction_references.css">
+    <link rel="stylesheet" href="../css/prefixes-direction_reference.css">
+    <link rel="stylesheet" href="../css/gender_reference.css">
     <link rel="stylesheet" href="../css/calendar.css">
     <link rel="stylesheet" href="../css/style.css">
     <script defer src="../script/script.js"></script>
@@ -44,12 +45,12 @@
         <ul>
             <li><a href="#alphabet-hero" title="Alphabet Letters">🔤</a></li>
             <li><a href="#numbers-hero" title="Numbers">🔢</a></li>
+            <li><a href="#gender-hero" title="Genders">🧑🏻</a></li>
             <li><a href="#calendar-hero" title="Calendar">📅</a></li>
             <li><a href="#cases-hero" title="Cases">📝</a></li>
             <li><a href="#possessives-hero" title="Possessive/Reflexive">🏷️</a></li>
             <li><a href="#most-common-hero" title="Most Common Used Verbs">🎬</a></li>
             <li><a href="#perf-imperf-hero" title="Perfective/Imperfective Verbs">⏳</a></li>
-            <li><a href="#pref-mov-hero" title="Prefixes Movements">🏃🏻‍♂️</a></li>
         </ul>
     </div>
 
@@ -891,6 +892,71 @@
             </div>
         </div>
     </div>
+
+
+
+    <!-- ===== Gender ==== -->
+    <section id="gender-hero" class="gender hero">
+        <h2>Polish Genders</h2>
+        <p>This chart shows common Polish motion verb prefixes, their meanings, and visual representations of direction.
+        </p>
+    </section>
+
+    <section class="gender-grid">
+        <div class="gender-card gender-class" data-modal="modal-gender-class">
+            <h3>Genders</h3>
+            <p>In Polish, nouns have genders — masculine, feminine, or neuter. The gender affects adjectives, pronouns,
+                and verb forms, so it’s important to recognize each noun’s gender when learning the language.</p>
+
+        </div>
+    </section>
+
+    <div id="modal-gender-class" class="modal">
+        <div class="modal-content gender-class">
+            <span class="close">&times;</span>
+            <h2>Genders in Polish</h2>
+            <p>Polish nouns are categorized by gender: masculine, feminine, or neuter. Gender affects adjectives,
+                pronouns, and verb forms. Here are some tips to identify each gender:</p>
+            <ul>
+                <li><strong>Masculine:</strong> usually end in a consonant (e.g., <em>kot</em> – cat). Includes most
+                    male persons.</li>
+                <li><strong>Feminine:</strong> usually end in -a (e.g., <em>kotka</em> – female cat). Includes most
+                    female persons.</li>
+                <li><strong>Neuter:</strong> usually end in -o, -e, or -um (e.g., <em>okno</em> – window).</li>
+            </ul>
+            <p><strong>Exceptions:</strong></p>
+            <ul>
+                <li>Some masculine nouns end in -a (e.g., <em>mężczyzna</em> – man, <em>tata</em> – dad).</li>
+                <li>Some feminine nouns don’t end in -a (e.g., <em>kobieta</em> – woman, <em>noc</em> – night).</li>
+                <li>Some neuter nouns can have other endings, especially borrowed words (e.g., <em>muzeum</em> –
+                    museum).</li>
+                <li>Animate vs inanimate masculine nouns can affect verb agreement in past tense.</li>
+            </ul>
+            <table class="gender-table gender-class">
+                <tr>
+                    <th>Gender</th>
+                    <th>Example Noun</th>
+                    <th>Notes</th>
+                </tr>
+                <tr>
+                    <td>Masculine</td>
+                    <td>kot</td>
+                    <td>male cat</td>
+                </tr>
+                <tr>
+                    <td>Feminine</td>
+                    <td>kotka</td>
+                    <td>female cat</td>
+                </tr>
+                <tr>
+                    <td>Neuter</td>
+                    <td>okno</td>
+                    <td>window</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
 
     <!-- Calendar Hero Section -->
     <section id="calendar-hero" class="calendar-hero hero">
@@ -3722,7 +3788,6 @@
 
         </div>
     </section>
-
 
     <!-- ===== Imperfective Modal ===== -->
     <div id="modal-verbs-imperfective-class" class="modal">

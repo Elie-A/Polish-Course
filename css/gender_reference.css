@@ -1,0 +1,85 @@
+/* ===== Prefixes Movements Grid ===== */
+.gender-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+/* ===== Prefixes Movements Cards ===== */
+.gender-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-top: 6px solid #ff4757;
+    cursor: pointer;
+}
+
+.gender-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.gender-card p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* ===== Color-coded Variant ===== */
+.gender-class {
+    border-top-color: #ff4757;
+    /* Purple tone for consistency */
+}
+
+/* Optional: Hover accent for purple variant */
+.gender-class:hover {
+    box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+}
+
+/* ===== Prefix Movements Modal Table ===== */
+.gender-class table,
+.gender-table.gender-class {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* Header styling */
+.gender-class th {
+    background-color: #ff4757;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Row styling */
+.gender-class td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Zebra striping for clarity */
+.gender-class tr:nth-child(even) {
+    background-color: #f9f7ff;
+}
+
+/* Optional: subtle hover */
+.gender-class tr:hover {
+    background-color: #f0e8ff;
+}
+
+.gender-class h2 {
+    color: #ff4757;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
