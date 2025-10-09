@@ -2,103 +2,103 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Polish Practice Exercises</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/navigation.css">
-    <link rel="stylesheet" href="../css/practice.css">
-    <link rel="stylesheet" href="../css/popup.css">
-    <script src="../script/practice.js" defer></script>
-    <script src="../script/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polish Practice Exercises</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/navigation.css">
+  <link rel="stylesheet" href="../css/practice.css">
+  <link rel="stylesheet" href="../css/popup.css">
+  <script src="../script/practice.js" defer></script>
+  <script src="../script/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <h1>Polish Practice Exercises</h1>
-    </header>
+  <header>
+    <h1>Polish Practice Exercises</h1>
+  </header>
 
-    <nav>
-        <div class="polish-flag"></div>
-        <a href="../index.html">Home</a>
-        <a href="present.html">Present Tense</a>
-        <a href="past.html">Past Tense</a>
-        <a href="future.html">Future Tense</a>
-        <a href="cases.html">Cases</a>
-        <a href="grammar.html">Grammar & Gender</a>
-        <a href="vocabulary.html">Vocabulary</a>
-        <a href="practice.html">Practice Exercises</a>
-        <a href="references.html">References</a>
-    </nav>
+  <nav>
+    <div class="polish-flag"></div>
+    <a href="../index.html">Home</a>
+    <a href="present.html">Present Tense</a>
+    <a href="past.html">Past Tense</a>
+    <a href="future.html">Future Tense</a>
+    <a href="cases.html">Cases</a>
+    <a href="grammar.html">Grammar & Gender</a>
+    <a href="vocabulary.html">Vocabulary</a>
+    <a href="practice.html">Practice Exercises</a>
+    <a href="references.html">References</a>
+  </nav>
 
-    <main>
-        <div class="exercise-buttons">
-            <button onclick="loadExercise('grammar')">Grammar</button>
-            <button onclick="loadExercise('numbers')">Numbers & Ordinals</button>
-            <button onclick="loadExercise('cases')">Cases</button>
-            <button onclick="loadExercise('vocabulary')">Vocabulary</button>
-            <button onclick="loadExercise('flashcards')">Flashcards</button>
-        </div>
-
-        <div>
-            <button id="load-btn">Load Exercises JSON</button>
-            <input type="file" id="file-input" accept=".json" style="display:none;">
-            <button id="reset-btn">Reset Exercises</button>
-            <button id="download-btn">Download Exercises JSON</button>
-            <button id="info-btn" class="btn">💡 info</button>
-        </div>
-
-        <div id="exercise-container" class="exercise">Load the exercises file to start</div>
-
-        <hr style="margin: 15px 0;">
-        <div class="add-exercise-section">
-            <h2>Add New Exercise</h2>
-            <label for="exercise-type">Exercise Type:</label>
-            <select id="exercise-type">
-                <option value="selectType">Select Exercise Type</option>
-                <option value="grammar">Grammar</option>
-                <option value="numbers">Numbers & Ordinals</option>
-                <option value="cases">Cases</option>
-                <option value="vocabulary">Vocabulary</option>
-                <option value="flashcards">Flashcards</option>
-            </select>
-            <br><br>
-
-            <label for="exercise-polish">Polish / Question:</label>
-            <input type="text" id="exercise-polish" placeholder="Enter question or Polish word">
-            <br><br>
-
-            <label for="exercise-answer">Answer / English:</label>
-            <input type="text" id="exercise-answer" placeholder="Enter answer or English word">
-            <br><br>
-
-            <button id="add-exercise-btn">Add Exercise</button>
-
-            <p id="exercise-example" style="color:#c61322; font-style:italic;"></p>
-        </div>
-
-    </main>
-
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span id="modal-close" class="modal-close">&times;</span>
-            <p id="modal-message"></p>
-            <button id="modal-ok">OK</button>
-        </div>
+  <main>
+    <div class="exercise-buttons">
+      <button onclick="loadExercise('grammar')">Grammar</button>
+      <button onclick="loadExercise('numbers')">Numbers & Ordinals</button>
+      <button onclick="loadExercise('cases')">Cases</button>
+      <button onclick="loadExercise('vocabulary')">Vocabulary</button>
+      <button onclick="loadExercise('flashcards')">Flashcards</button>
     </div>
 
-    <div style="text-align:center; margin-top: 10px;">
-        <button id="info-btn" class="btn">ℹ️ JSON Format Guide</button>
+    <div>
+      <button id="load-btn">Load Exercises JSON</button>
+      <input type="file" id="file-input" accept=".json" style="display:none;">
+      <button id="reset-btn">Reset Exercises</button>
+      <button id="download-btn">Download Exercises JSON</button>
+      <button id="info-btn" class="btn">💡 info</button>
     </div>
 
-    <!-- JSON Format Guide Section -->
-    <section id="json-format" class="json-format">
-        <h3>📘 Exercises JSON Format Guide</h3>
-        <p>
-            When exporting or importing your exercises, the JSON file should follow this structure:
-        </p>
+    <div id="exercise-container" class="exercise">Load the exercises file to start</div>
 
-        <pre><code>{
+    <hr style="margin: 15px 0;">
+    <div class="add-exercise-section">
+      <h2>Add New Exercise</h2>
+      <label for="exercise-type">Exercise Type:</label>
+      <select id="exercise-type">
+        <option value="selectType">Select Exercise Type</option>
+        <option value="grammar">Grammar</option>
+        <option value="numbers">Numbers & Ordinals</option>
+        <option value="cases">Cases</option>
+        <option value="vocabulary">Vocabulary</option>
+        <option value="flashcards">Flashcards</option>
+      </select>
+      <br><br>
+
+      <label for="exercise-polish">Polish / Question:</label>
+      <input type="text" id="exercise-polish" placeholder="Enter question or Polish word">
+      <br><br>
+
+      <label for="exercise-answer">Answer / English:</label>
+      <input type="text" id="exercise-answer" placeholder="Enter answer or English word">
+      <br><br>
+
+      <button id="add-exercise-btn">Add Exercise</button>
+
+      <p id="exercise-example" style="color:#c61322; font-style:italic;"></p>
+    </div>
+
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span id="modal-close" class="modal-close">&times;</span>
+      <p id="modal-message"></p>
+      <button id="modal-ok">OK</button>
+    </div>
+  </div>
+
+  <div style="text-align:center; margin-top: 10px;">
+    <button id="info-btn" class="btn">ℹ️ JSON Format Guide</button>
+  </div>
+
+  <!-- JSON Format Guide Section -->
+  <section id="json-format" class="json-format">
+    <h3>📘 Exercises JSON Format Guide</h3>
+    <p>
+      When exporting or importing your exercises, the JSON file should follow this structure:
+    </p>
+
+    <pre><code>{
   "grammar": [
     {
       "question": "Ja ___ (to eat) jabłko.",
@@ -131,29 +131,29 @@
   ]
 }</code></pre>
 
-        <h4>🧩 Steps to Create Your Own JSON File</h4>
-        <ol>
-            <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac), or
-                <strong>VS Code</strong>.
-            </li>
-            <li>Copy the example above and replace the values with your own exercises.</li>
-            <li>Keep the five main sections:
-                <ul>
-                    <li><code>grammar</code>: fill-in-the-blank exercises.</li>
-                    <li><code>numbers</code>: number and ordinal word questions.</li>
-                    <li><code>cases</code>: noun declension and case practice.</li>
-                    <li><code>vocabulary</code>: basic word translations.</li>
-                    <li><code>flashcards</code>: quick Polish–English pairs for review.</li>
-                </ul>
-            </li>
-            <li>Each section is an array of <code>{ question, answer }</code> or <code>{ polish, english }</code>
-                objects.</li>
-            <li>Make sure every key is surrounded by quotes <code>" "</code> and commas are placed correctly.</li>
-            <li>Save your file as <strong>exercises.json</strong>.</li>
-            <li>Click the <strong>“Load Exercises JSON”</strong> button to import it.</li>
-            <li>Click <strong>“Download Exercises JSON”</strong> to export your current data.</li>
-        </ol>
-    </section>
+    <h4>🧩 Steps to Create Your Own JSON File</h4>
+    <ol>
+      <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac), or
+        <strong>VS Code</strong>.
+      </li>
+      <li>Copy the example above and replace the values with your own exercises.</li>
+      <li>Keep the five main sections:
+        <ul>
+          <li><code>grammar</code>: fill-in-the-blank exercises.</li>
+          <li><code>numbers</code>: number and ordinal word questions.</li>
+          <li><code>cases</code>: noun declension and case practice.</li>
+          <li><code>vocabulary</code>: basic word translations.</li>
+          <li><code>flashcards</code>: quick Polish–English pairs for review.</li>
+        </ul>
+      </li>
+      <li>Each section is an array of <code>{ question, answer }</code> or <code>{ polish, english }</code>
+        objects.</li>
+      <li>Make sure every key is surrounded by quotes <code>" "</code> and commas are placed correctly.</li>
+      <li>Save your file as <strong>exercises.json</strong>.</li>
+      <li>Click the <strong>"Load Exercises JSON"</strong> button to import it.</li>
+      <li>Click <strong>"Download Exercises JSON"</strong> to export your current data.</li>
+    </ol>
+  </section>
 </body>
 
 </html>

@@ -17,7 +17,6 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     text-align: center;
     border-top: 6px solid #ff8c00;
-    /* default orange for days */
     cursor: pointer;
 }
 
@@ -49,6 +48,11 @@
     /* teal */
 }
 
+.time {
+    border-top-color: #ff4757;
+    /* red */
+}
+
 /* ===== Calendar Tables ===== */
 .calendar-table {
     width: 100%;
@@ -71,6 +75,11 @@
     color: white;
 }
 
+.calendar-table.time th {
+    background: #ff4757;
+    color: white;
+}
+
 .calendar-table td {
     padding: 12px 15px;
     border-bottom: 1px solid #eee;
@@ -82,7 +91,6 @@
 
 .calendar-table tr:hover td {
     background: #f0f8ff;
-    /* lighter hover for days/months */
 }
 
 /* ===== Modals ===== */
@@ -108,5 +116,143 @@
 
 .calendar-months-modal {
     border-top-color: #20b2aa;
+}
 
+.modal-content.calendar-time-modal h2 {
+    color: #ff4757;
+}
+
+.modal-content.calendar-time-modal h3 {
+    color: #ff4757;
+    font-style: italic;
+}
+
+.calendar-time-modal {
+    border-top-color: #ff4757;
+}
+
+/* ===== Time Tables (Specific Styling) ===== */
+
+/* Base for all time tables */
+.calendar-table.time-basic,
+.calendar-table.time-grammar,
+.calendar-table.time-sentences {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 18px 0;
+    font-size: 0.95rem;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Headers */
+.calendar-table.time-basic th,
+.calendar-table.time-grammar th,
+.calendar-table.time-sentences th {
+    background: #ff4757;
+    color: white;
+    text-align: left;
+    padding: 12px 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* Table cells */
+.calendar-table.time-basic td,
+.calendar-table.time-grammar td,
+.calendar-table.time-sentences td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Alternate rows */
+.calendar-table.time-basic tr:nth-child(even) td,
+.calendar-table.time-grammar tr:nth-child(even) td,
+.calendar-table.time-sentences tr:nth-child(even) td {
+    background: #fff7f8;
+}
+
+/* Hover effects */
+.calendar-table.time-basic tr:hover td,
+.calendar-table.time-grammar tr:hover td,
+.calendar-table.time-sentences tr:hover td {
+    background: #ffeef0;
+    transition: background 0.2s ease;
+}
+
+/* Gradient headers for variety */
+.calendar-table.time-grammar th {
+    background: #ff4757;
+}
+
+.calendar-table.time-sentences th {
+    background: #ff4757;
+}
+
+/* ===== Modal Text and Typography ===== */
+.calendar-time-modal h2 {
+    color: #ff4757;
+    margin-bottom: 10px;
+}
+
+.calendar-time-modal h3 {
+    color: #ff4757;
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+.calendar-time-modal p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.calendar-time-modal strong {
+    color: #ff4757;
+}
+
+.calendar-time-modal em {
+    font-style: italic;
+    color: #555;
+}
+
+.calendar-time-modal p a {
+    color: #ff4757;
+    text-decoration: none;
+}
+
+.calendar-time-modal p a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Optional: Case Column Highlight ===== */
+.calendar-table.time-grammar td:nth-child(4),
+.calendar-table.time-sentences td:nth-child(4) {
+    font-style: italic;
+    color: #ff4757;
+    background-color: #fff1f3;
+}
+
+/* ===== Small Screen Adjustments ===== */
+@media (max-width: 600px) {
+    .calendar-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .calendar-card {
+        padding: 20px;
+    }
+
+    .calendar-table th,
+    .calendar-table td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .calendar-time-modal h2 {
+        font-size: 1.3rem;
+    }
 }
