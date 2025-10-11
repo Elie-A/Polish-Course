@@ -1,39 +1,48 @@
 /* Base grid/card styles moved to common.css */
 
 /* ===== Color-coded Borders for Pronouns Cards ===== */
-.pronouns-case-card.moj {
+.pronouns-case-card.moj,
+.pronouns-case-card.ja {
     border-top-color: #28a745;
 }
 
-.pronouns-case-card.twoj {
+.pronouns-case-card.twoj,
+.pronouns-case-card.ty {
     border-top-color: #ff4757;
 }
 
-.pronouns-case-card.jego-jej {
+.pronouns-case-card.jego-jej,
+.pronouns-case-card.on {
     border-top-color: #1e90ff;
 }
 
-.pronouns-case-card.nasz {
+.pronouns-case-card.nasz,
+.pronouns-case-card.ona {
     border-top-color: #ffa502;
 }
 
-.pronouns-case-card.wasz {
+.pronouns-case-card.wasz,
+.pronouns-case-card.ono {
     border-top-color: #6f42c1;
 }
 
-.pronouns-case-card.ich {
+.pronouns-case-card.ich,
+.pronouns-case-card.my {
     border-top-color: #20c997;
 }
 
-.pronouns-case-card.swoj {
+.pronouns-case-card.swoj,
+.pronouns-case-card.wy {
     border-top-color: #e83e8c;
 }
 
-.pronouns-case-card.reflexive-personal {
+.pronouns-case-card.reflexive-personal,
+.pronouns-case-card.oni {
     border-top-color: #800080;
 }
 
-.pronouns-case-card.reflexive-intensifier {
+.pronouns-case-card.reflexive-intensifier,
+.pronouns-case-card.one {
     border-top-color: #adff2f;
 }
 
@@ -41,75 +50,93 @@
 /* Modal base moved to common.css */
 
 /* ===== Modal Titles by Pronoun Case ===== */
-.modal-content.moj h2 {
+.modal-content.moj h2,
+.modal-content.ja h2 {
     color: #28a745;
 }
 
-.modal-content.moj {
+.modal-content.moj,
+.modal-content.ja {
     border-top-color: #28a745;
 }
 
-.modal-content.twoj h2 {
+.modal-content.twoj h2,
+.modal-content.ty h2 {
     color: #ff4757;
 }
 
-.modal-content.twoj {
+.modal-content.twoj,
+.modal-content.ty {
     border-top-color: #ff4757;
 }
 
-.modal-content.jego-jej h2 {
+.modal-content.jego-jej h2,
+.modal-content.on h2 {
     color: #1e90ff;
 }
 
-.modal-content.jego-jej {
+.modal-content.jego-jej,
+.modal-content.on {
     border-top-color: #1e90ff;
 }
 
-.modal-content.nasz h2 {
+.modal-content.nasz h2,
+.modal-content.ona h2 {
     color: #ffa502;
 }
 
-.modal-content.nasz {
+.modal-content.nasz,
+.modal-content.ona {
     border-top-color: #ffa502;
 }
 
-.modal-content.wasz h2 {
+.modal-content.wasz h2,
+.modal-content.ono h2 {
     color: #6f42c1;
 }
 
-.modal-content.wasz {
+.modal-content.wasz,
+.modal-content.ono {
     border-top-color: #6f42c1;
 }
 
-.modal-content.ich h2 {
+.modal-content.ich h2,
+.modal-content.my h2 {
     color: #20c997;
 }
 
-.modal-content.ich {
+.modal-content.ich,
+.modal-content.my {
     border-top-color: #20c997;
 }
 
-.modal-content.swoj h2 {
+.modal-content.swoj h2,
+.modal-content.wy h2 {
     color: #e83e8c;
 }
 
-.modal-content.swoj {
+.modal-content.swoj,
+.modal-content.wy {
     border-top-color: #e83e8c;
 }
 
-.modal-content.reflexive-personal h2 {
+.modal-content.reflexive-personal h2,
+.modal-content.oni h2 {
     color: #800080;
 }
 
-.modal-content.reflexive-personal {
+.modal-content.reflexive-personal,
+.modal-content.oni {
     border-top-color: #800080;
 }
 
-.modal-content.reflexive-intensifier h2 {
+.modal-content.reflexive-intensifier h2,
+.modal-content.one h2 {
     color: #adff2f;
 }
 
-.modal-content.reflexive-intensifier {
+.modal-content.reflexive-intensifier,
+.modal-content.one {
     border-top-color: #adff2f;
 }
 
@@ -129,124 +156,151 @@
 }
 
 /* Table Headers by Pronoun (match modal color) */
-.pronouns-case-table.moj th {
+.pronouns-case-table.moj th,
+.pronouns-case-table.ja th {
     background-color: #28a745;
     color: white;
 }
 
-.pronouns-case-table.twoj th {
+.pronouns-case-table.twoj th,
+.pronouns-case-table.ty th {
     background-color: #ff4757;
     color: white;
 }
 
-.pronouns-case-table.jego-jej th {
+.pronouns-case-table.jego-jej th,
+.pronouns-case-table.on th {
     background-color: #1e90ff;
     color: white;
 }
 
-.pronouns-case-table.nasz th {
+.pronouns-case-table.nasz th,
+.pronouns-case-table.ona th {
     background-color: #ffa502;
     color: white;
 }
 
-.pronouns-case-table.wasz th {
+.pronouns-case-table.wasz th,
+.pronouns-case-table.ono th {
     background-color: #6f42c1;
     color: white;
 }
 
-.pronouns-case-table.ich th {
+.pronouns-case-table.ich th,
+.pronouns-case-table.my th {
     background-color: #20c997;
     color: white;
 }
 
-.pronouns-case-table.swoj th {
+.pronouns-case-table.swoj th,
+.pronouns-case-table.wy th {
     background-color: #e83e8c;
     color: white;
 }
 
-.pronouns-case-table.reflexive-personal th {
+.pronouns-case-table.reflexive-personal th,
+.pronouns-case-table.oni th {
     background-color: #800080;
     color: white;
 }
 
-.pronouns-case-table.reflexive-intensifier th {
+.pronouns-case-table.reflexive-intensifier th,
+.pronouns-case-table.one th {
     background-color: #adff2f;
     color: white;
 }
 
 /* Alternating row colors per pronoun (light shades) */
-.pronouns-case-table.moj tr:nth-child(even) {
+.pronouns-case-table.moj tr:nth-child(even),
+.pronouns-case-table.ja tr:nth-child(even) {
     background-color: #d4f7d4;
 }
 
-.pronouns-case-table.moj tr:nth-child(odd) {
+.pronouns-case-table.moj tr:nth-child(odd),
+.pronouns-case-table.ja tr:nth-child(odd) {
     background-color: #f0fff0;
 }
 
-.pronouns-case-table.twoj tr:nth-child(even) {
+.pronouns-case-table.twoj tr:nth-child(even),
+.pronouns-case-table.ty tr:nth-child(even) {
     background-color: #ffd6d6;
 }
 
-.pronouns-case-table.twoj tr:nth-child(odd) {
+.pronouns-case-table.twoj tr:nth-child(odd),
+.pronouns-case-table.ty tr:nth-child(odd) {
     background-color: #fff0f0;
 }
 
-.pronouns-case-table.jego-jej tr:nth-child(even) {
+.pronouns-case-table.jego-jej tr:nth-child(even),
+.pronouns-case-table.on tr:nth-child(even) {
     background-color: #cce5ff;
 }
 
-.pronouns-case-table.jego-jej tr:nth-child(odd) {
+.pronouns-case-table.jego-jej tr:nth-child(odd),
+.pronouns-case-table.on tr:nth-child(odd) {
     background-color: #e6f2ff;
 }
 
-.pronouns-case-table.nasz tr:nth-child(even) {
+.pronouns-case-table.nasz tr:nth-child(even),
+.pronouns-case-table.ona tr:nth-child(even) {
     background-color: #ffe6b3;
 }
 
-.pronouns-case-table.nasz tr:nth-child(odd) {
+.pronouns-case-table.nasz tr:nth-child(odd),
+.pronouns-case-table.ona tr:nth-child(odd) {
     background-color: #fff7e6;
 }
 
-.pronouns-case-table.wasz tr:nth-child(even) {
+.pronouns-case-table.wasz tr:nth-child(even),
+.pronouns-case-table.ono tr:nth-child(even) {
     background-color: #d9ccff;
 }
 
-.pronouns-case-table.wasz tr:nth-child(odd) {
+.pronouns-case-table.wasz tr:nth-child(odd),
+.pronouns-case-table.ono tr:nth-child(odd) {
     background-color: #f2e6ff;
 }
 
-.pronouns-case-table.ich tr:nth-child(even) {
+.pronouns-case-table.ich tr:nth-child(even),
+.pronouns-case-table.my tr:nth-child(even) {
     background-color: #b3f0e6;
 }
 
-.pronouns-case-table.ich tr:nth-child(odd) {
+.pronouns-case-table.ich tr:nth-child(odd),
+.pronouns-case-table.my tr:nth-child(odd) {
     background-color: #e6fbf8;
 }
 
-.pronouns-case-table.swoj tr:nth-child(even) {
+.pronouns-case-table.swoj tr:nth-child(even),
+.pronouns-case-table.wy tr:nth-child(even) {
     background-color: #ffccf0;
 }
 
-.pronouns-case-table.swoj tr:nth-child(odd) {
+.pronouns-case-table.swoj tr:nth-child(odd),
+.pronouns-case-table.wy tr:nth-child(odd) {
     background-color: #ffe6f7;
 }
 
-.pronouns-case-table.reflexive-personal tr:nth-child(even) {
+.pronouns-case-table.reflexive-personal tr:nth-child(even),
+.pronouns-case-table.oni tr:nth-child(even) {
     background-color: #f2e6f7;
     /* light lavender */
 }
 
-.pronouns-case-table.reflexive-personal tr:nth-child(odd) {
+.pronouns-case-table.reflexive-personal tr:nth-child(odd),
+.pronouns-case-table.oni tr:nth-child(odd) {
     background-color: #ecd9f3;
     /* slightly lighter lavender */
 }
 
-.pronouns-case-table.reflexive-intensifier tr:nth-child(even) {
+.pronouns-case-table.reflexive-intensifier tr:nth-child(even),
+.pronouns-case-table.one tr:nth-child(even) {
     background-color: #f7ffe6;
     /* very light lime */
 }
 
-.pronouns-case-table.reflexive-intensifier tr:nth-child(odd) {
+.pronouns-case-table.reflexive-intensifier tr:nth-child(odd),
+.pronouns-case-table.one tr:nth-child(odd) {
     background-color: #f3ffc0;
     /* slightly darker light green */
 }
