@@ -4,37 +4,57 @@ const ITEMS_PER_PAGE = 10;
 let currentPage = 1;
 
 // ---- UI Helper references (assigned in init) ----
-let btnPrev, btnNext, btnLoad, btnClear, btnExport, btnSubmit, btnInfo, fileInputEl;
+let btnPrev,
+  btnNext,
+  btnLoad,
+  btnClear,
+  btnExport,
+  btnSubmit,
+  btnInfo,
+  fileInputEl;
 
 // Provide safe wrapper for modal messaging with consistent autoClose
-function safeModal(msg, opts){
+function safeModal(msg, opts) {
   let optionsObj = {};
-  if(typeof opts === 'number') optionsObj.autoClose = opts; else if(opts) optionsObj = opts;
-  if(optionsObj.autoClose == null) optionsObj.autoClose = 1800; // default auto close
-  if(window.PolishApp && typeof PolishApp.showModal === 'function'){ PolishApp.showModal(msg, optionsObj); }
-  else if(typeof showModal === 'function'){ try { showModal(msg); } catch(_){} }
-  else { console.warn('Modal message (no UI):', msg); }
+  if (typeof opts === "number") optionsObj.autoClose = opts;
+  else if (opts) optionsObj = opts;
+  if (optionsObj.autoClose == null) optionsObj.autoClose = 1800; // default auto close
+  if (window.PolishApp && typeof PolishApp.showModal === "function") {
+    PolishApp.showModal(msg, optionsObj);
+  } else if (typeof showModal === "function") {
+    try {
+      showModal(msg);
+    } catch (_) {}
+  } else {
+    console.warn("Modal message (no UI):", msg);
+  }
   // Watchdog to ensure overlay does not linger >5s
-  setTimeout(()=> {
-    const modal = document.getElementById('modal');
-    if(modal && modal.style.display === 'flex') { modal.style.display='none'; }
-  }, 5000);
+  setTimeout(() => {
+    const modal = document.getElementById("modal");
+    if (modal && modal.style.display === "flex") {
+      modal.style.display = "none";
+    }
+  }, 1800);
 }
 
-function reEnableActionButtons(){
-  [btnLoad, btnClear, btnInfo, btnExport, btnSubmit].forEach(b=>{
-    if(b){ b.disabled=false; b.style.opacity=1; b.style.cursor='pointer'; }
+function reEnableActionButtons() {
+  [btnLoad, btnClear, btnInfo, btnExport, btnSubmit].forEach((b) => {
+    if (b) {
+      b.disabled = false;
+      b.style.opacity = 1;
+      b.style.cursor = "pointer";
+    }
   });
 }
 
-function updatePaginationButtons(){
-  if(!btnPrev || !btnNext) return;
+function updatePaginationButtons() {
+  if (!btnPrev || !btnNext) return;
   const totalPages = Math.ceil(filteredVocabulary.length / ITEMS_PER_PAGE) || 0;
   btnPrev.disabled = currentPage <= 1 || totalPages === 0;
   btnNext.disabled = currentPage >= totalPages || totalPages === 0;
-  [btnPrev, btnNext].forEach(b=>{
+  [btnPrev, btnNext].forEach((b) => {
     b.style.opacity = b.disabled ? 0.5 : 1;
-    b.style.cursor = b.disabled ? 'not-allowed' : 'pointer';
+    b.style.cursor = b.disabled ? "not-allowed" : "pointer";
   });
 }
 
@@ -176,7 +196,7 @@ function handleAddEntry(e) {
 
   const newEntry = { polish, english, category };
   vocabulary.push(newEntry);
-  window.PolishApp && PolishApp.storage.setJSON('vocabulary', vocabulary);
+  window.PolishApp && PolishApp.storage.setJSON("vocabulary", vocabulary);
 
   filteredVocabulary = [...vocabulary];
   resetPage();
@@ -208,53 +228,72 @@ function resetPage() {
 // Removed duplicate DOMContentLoaded listeners (will be wrapped in unified initializer below)
 
 // Unified initialization using PolishApp utilities
-(function(){
-  function init(){
-    const app = window.PolishApp; if(!app || !app.dom) return setTimeout(init,40);
+(function () {
+  function init() {
+    const app = window.PolishApp;
+    if (!app || !app.dom) return setTimeout(init, 40);
     const { dom, storage, effects } = app;
-    dom.onReady(()=>{
-      vocabulary = storage.getJSON('vocabulary', []);
+    dom.onReady(() => {
+      vocabulary = storage.getJSON("vocabulary", []);
       filteredVocabulary = [...vocabulary];
       // Always populate category filter (even empty -> shows 'All Categories')
       populateCategoryFilter(vocabulary);
-      if(vocabulary.length){
+      if (vocabulary.length) {
         renderVocabulary(filteredVocabulary);
       }
       // Cache buttons
-      btnPrev = dom.qs('#prev-page');
-      btnNext = dom.qs('#next-page');
-      btnLoad = dom.qs('#load-btn');
-      btnClear = dom.qs('#clear-btn');
-      btnExport = dom.qs('#export-btn');
-      btnInfo = dom.qs('#info-btn');
-      btnSubmit = dom.qs('#add-form')?.querySelector('button[type="submit"]');
-      fileInputEl = dom.qs('#file-input');
+      btnPrev = dom.qs("#prev-page");
+      btnNext = dom.qs("#next-page");
+      btnLoad = dom.qs("#load-btn");
+      btnClear = dom.qs("#clear-btn");
+      btnExport = dom.qs("#export-btn");
+      btnInfo = dom.qs("#info-btn");
+      btnSubmit = dom.qs("#add-form")?.querySelector('button[type="submit"]');
+      fileInputEl = dom.qs("#file-input");
       updatePaginationButtons();
       // Bind events
-      dom.addEvent(dom.qs('#add-form'),'submit', handleAddEntry);
-      dom.addEvent(dom.qs('#search'),'input', handleSearch);
-      dom.addEvent(dom.qs('#category-filter'),'change', handleFilter);
-      dom.addEvent(dom.qs('#export-btn'),'click', handleExport);
-      dom.addEvent(btnLoad,'click', ()=> fileInputEl && fileInputEl.click());
-      dom.addEvent(fileInputEl,'change', handleFileLoad);
-      dom.addEvent(btnPrev,'click', ()=> { if(currentPage>1){ currentPage--; renderVocabulary(filteredVocabulary);} });
-      dom.addEvent(btnNext,'click', ()=> { const totalPages=Math.ceil(filteredVocabulary.length/ITEMS_PER_PAGE); if(currentPage<totalPages){ currentPage++; renderVocabulary(filteredVocabulary);} });
-      const searchInput = dom.qs('#search');
-      const categoryFilter = dom.qs('#category-filter');
-      dom.addEvent(btnClear,'click', ()=> {
-        vocabulary=[]; filteredVocabulary=[]; renderVocabulary(filteredVocabulary);
-        if(searchInput) searchInput.value='';
-        if(categoryFilter) categoryFilter.selectedIndex=0;
-        if(fileInputEl) fileInputEl.value='';
-        storage.setJSON('vocabulary', []);
+      dom.addEvent(dom.qs("#add-form"), "submit", handleAddEntry);
+      dom.addEvent(dom.qs("#search"), "input", handleSearch);
+      dom.addEvent(dom.qs("#category-filter"), "change", handleFilter);
+      dom.addEvent(dom.qs("#export-btn"), "click", handleExport);
+      dom.addEvent(btnLoad, "click", () => fileInputEl && fileInputEl.click());
+      dom.addEvent(fileInputEl, "change", handleFileLoad);
+      dom.addEvent(btnPrev, "click", () => {
+        if (currentPage > 1) {
+          currentPage--;
+          renderVocabulary(filteredVocabulary);
+        }
+      });
+      dom.addEvent(btnNext, "click", () => {
+        const totalPages = Math.ceil(
+          filteredVocabulary.length / ITEMS_PER_PAGE
+        );
+        if (currentPage < totalPages) {
+          currentPage++;
+          renderVocabulary(filteredVocabulary);
+        }
+      });
+      const searchInput = dom.qs("#search");
+      const categoryFilter = dom.qs("#category-filter");
+      dom.addEvent(btnClear, "click", () => {
+        vocabulary = [];
+        filteredVocabulary = [];
+        renderVocabulary(filteredVocabulary);
+        if (searchInput) searchInput.value = "";
+        if (categoryFilter) categoryFilter.selectedIndex = 0;
+        if (fileInputEl) fileInputEl.value = "";
+        storage.setJSON("vocabulary", []);
         resetPage();
         populateCategoryFilter(vocabulary);
         updatePaginationButtons();
         reEnableActionButtons();
-        safeModal('Vocabulary has been cleared!');
+        safeModal("Vocabulary has been cleared!");
       });
-      const jsonSection = dom.qs('#json-format');
-      dom.addEvent(btnInfo,'click', ()=> { if(jsonSection) effects.smoothScrollHighlight(jsonSection,'highlight',1500); });
+      const jsonSection = dom.qs("#json-format");
+      dom.addEvent(btnInfo, "click", () => {
+        if (jsonSection)
+          effects.smoothScrollHighlight(jsonSection, "highlight", 1500);
+      });
     });
   }
   init();
