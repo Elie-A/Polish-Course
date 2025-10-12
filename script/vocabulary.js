@@ -11,7 +11,22 @@ let btnPrev,
   btnExport,
   btnSubmit,
   btnInfo,
+  btnDownloadSample,
   fileInputEl;
+
+// Default 10 common Polish words
+const DEFAULT_VOCAB = [
+  { polish: "dziękuję", english: "thank you", category: "common" },
+  { polish: "tak", english: "yes", category: "common" },
+  { polish: "nie", english: "no", category: "common" },
+  { polish: "proszę", english: "please", category: "common" },
+  { polish: "cześć", english: "hello/hi", category: "common" },
+  { polish: "do widzenia", english: "goodbye", category: "common" },
+  { polish: "przepraszam", english: "sorry/excuse me", category: "common" },
+  { polish: "dobry", english: "good", category: "common" },
+  { polish: "zły", english: "bad", category: "common" },
+  { polish: "dzień", english: "day", category: "time" },
+];
 
 // Provide safe wrapper for modal messaging with consistent autoClose
 function safeModal(msg, opts) {
@@ -38,13 +53,15 @@ function safeModal(msg, opts) {
 }
 
 function reEnableActionButtons() {
-  [btnLoad, btnClear, btnInfo, btnExport, btnSubmit].forEach((b) => {
-    if (b) {
-      b.disabled = false;
-      b.style.opacity = 1;
-      b.style.cursor = "pointer";
+  [btnLoad, btnClear, btnInfo, btnExport, btnSubmit, btnDownloadSample].forEach(
+    (b) => {
+      if (b) {
+        b.disabled = false;
+        b.style.opacity = 1;
+        b.style.cursor = "pointer";
+      }
     }
-  });
+  );
 }
 
 function updatePaginationButtons() {
@@ -59,6 +76,19 @@ function updatePaginationButtons() {
 }
 
 // ---------- Functions ----------
+
+function handleDownloadSample() {
+  const blob = new Blob([JSON.stringify(DEFAULT_VOCAB, null, 2)], {
+    type: "application/json",
+  });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "sample-vocabulary.json";
+  a.click();
+  URL.revokeObjectURL(url);
+  safeModal("Sample vocabulary downloaded");
+}
 
 function handleFileLoad(event) {
   const file = event.target.files[0];
@@ -248,6 +278,7 @@ function resetPage() {
       btnClear = dom.qs("#clear-btn");
       btnExport = dom.qs("#export-btn");
       btnInfo = dom.qs("#info-btn");
+      btnDownloadSample = dom.qs("#download-sample-btn");
       btnSubmit = dom.qs("#add-form")?.querySelector('button[type="submit"]');
       fileInputEl = dom.qs("#file-input");
       updatePaginationButtons();
@@ -258,6 +289,7 @@ function resetPage() {
       dom.addEvent(dom.qs("#export-btn"), "click", handleExport);
       dom.addEvent(btnLoad, "click", () => fileInputEl && fileInputEl.click());
       dom.addEvent(fileInputEl, "change", handleFileLoad);
+      dom.addEvent(btnDownloadSample, "click", handleDownloadSample);
       dom.addEvent(btnPrev, "click", () => {
         if (currentPage > 1) {
           currentPage--;
