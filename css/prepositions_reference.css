@@ -1,0 +1,206 @@
+/* Base grid/card styles moved to common.css */
+
+/* ===== Color-coded Borders for Pronouns Cards ===== */
+.prep-case-card.genitive {
+    border-top-color: #28a745;
+}
+
+.prep-case-card.accusative {
+    border-top-color: #ff4757;
+}
+
+.prep-case-card.locative {
+    border-top-color: #1e90ff;
+}
+
+.prep-case-card.instrumental {
+    border-top-color: #ffa502;
+}
+
+.prep-case-card.dative {
+    border-top-color: #6f42c1;
+}
+
+.prep-case-card.multiple-cases {
+    border-top-color: #20c997;
+}
+
+.prep-case-card.summary {
+    border-top-color: #e83e8c;
+}
+
+
+/* ===== Modal Titles by Pronoun Case ===== */
+.modal-content.genitive h2 {
+    color: #28a745;
+}
+
+.modal-content.genitive {
+    border-top-color: #28a745;
+}
+
+.modal-content.accusative h2 {
+    color: #ff4757;
+}
+
+.modal-content.accusative {
+    border-top-color: #ff4757;
+}
+
+.modal-content.locative h2 {
+    color: #1e90ff;
+}
+
+.modal-content.locative {
+    border-top-color: #1e90ff;
+}
+
+.modal-content.instrumental h2 {
+    color: #ffa502;
+}
+
+.modal-content.instrumental {
+    border-top-color: #ffa502;
+}
+
+.modal-content.dative h2 {
+    color: #6f42c1;
+}
+
+.modal-content.dative {
+    border-top-color: #6f42c1;
+}
+
+.modal-content.multiple-cases h2 {
+    color: #20c997;
+}
+
+.modal-content.multiple-cases {
+    border-top-color: #20c997;
+}
+
+.modal-content.summary h2 {
+    color: #e83e8c;
+}
+
+.modal-content.summary {
+    border-top-color: #e83e8c;
+}
+
+/* ===== Pronouns Tables Styling ===== */
+.prep-case-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+.prep-case-table th,
+.prep-case-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+/* Table Headers by Pronoun (match modal color) */
+.prep-case-table.genitive th {
+    background-color: #28a745;
+    color: white;
+}
+
+.prep-case-table.accusative th {
+    background-color: #ff4757;
+    color: white;
+}
+
+.prep-case-table.locative th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.prep-case-table.instrumental th {
+    background-color: #ffa502;
+    color: white;
+}
+
+.prep-case-table.dative th {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.prep-case-table.multiple-cases th {
+    background-color: #20c997;
+    color: white;
+}
+
+.prep-case-table.summary th {
+    background-color: #e83e8c;
+    color: white;
+}
+
+
+/* Alternating row colors per pronoun (light shades) */
+.prep-case-table.genitive tr:nth-child(even) {
+    background-color: #d4f7d4;
+}
+
+.prep-case-table.genitive tr:nth-child(odd) {
+    background-color: #f0fff0;
+}
+
+.prep-case-table.accusative tr:nth-child(even) {
+    background-color: #ffd6d6;
+}
+
+.prep-case-table.accusative tr:nth-child(odd) {
+    background-color: #fff0f0;
+}
+
+.prep-case-table.locative tr:nth-child(even) {
+    background-color: #cce5ff;
+}
+
+.prep-case-table.locative tr:nth-child(odd) {
+    background-color: #e6f2ff;
+}
+
+.prep-case-table.instrumental tr:nth-child(even) {
+    background-color: #ffe6b3;
+}
+
+.prep-case-table.instrumental tr:nth-child(odd) {
+    background-color: #fff7e6;
+}
+
+.prep-case-table.dative tr:nth-child(even) {
+    background-color: #d9ccff;
+}
+
+.prep-case-table.dative tr:nth-child(odd) {
+    background-color: #f2e6ff;
+}
+
+.prep-case-table.multiple-cases tr:nth-child(even) {
+    background-color: #b3f0e6;
+}
+
+.prep-case-table.multiple-cases tr:nth-child(odd) {
+    background-color: #e6fbf8;
+}
+
+.prep-case-table.summary tr:nth-child(even) {
+    background-color: #ffccf0;
+}
+
+.prep-case-table.summary tr:nth-child(odd) {
+    background-color: #ffe6f7;
+}
+
+/* Responsive tables */
+@media (max-width: 600px) {
+    .prep-case-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
