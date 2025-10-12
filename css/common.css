@@ -182,7 +182,7 @@ nav a:hover {
 .exercise-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 15px 0;
+  margin: 0;
   font-size: 0.95rem;
 }
 
@@ -467,6 +467,36 @@ nav a:hover {
   border-radius: 8px 8px 0 0;
 }
 
+/* Responsive Table Wrapper */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0;
+  background: #fff;
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Scrollbar styling for table wrapper */
+.table-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0 0 8px 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #DC143C;
+  border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #B91C3C;
+}
+
 /* Responsive tweaks */
 @media (max-width:768px) {
   header h1 {
@@ -482,10 +512,53 @@ nav a:hover {
     width: 98%;
   }
 
+  /* Table wrapper adjustments for mobile */
+  .table-wrapper {
+    margin-bottom: 25px;
+    position: relative;
+  }
+
+  .table-wrapper table {
+    min-width: 650px;
+  }
+
   .exercise-table th,
   .exercise-table td {
+    font-size: 0.85rem;
     padding: 10px 12px;
-    font-size: .9rem;
+    white-space: nowrap;
+  }
+
+  /* Add scroll indicator on mobile */
+  .table-wrapper::after {
+    content: '→';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(220, 20, 60, 0.9);
+    color: white;
+    padding: 6px 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    pointer-events: none;
+    border-radius: 4px;
+    opacity: 0.8;
+    animation: pulseArrow 2s infinite;
+  }
+
+  @keyframes pulseArrow {
+
+    0%,
+    100% {
+      opacity: 0.8;
+      transform: translateY(-50%) translateX(0);
+    }
+
+    50% {
+      opacity: 1;
+      transform: translateY(-50%) translateX(5px);
+    }
   }
 }
 
@@ -502,5 +575,15 @@ nav a:hover {
   .collapse-header {
     font-size: 1.1rem;
     padding: 12px 16px;
+  }
+
+  .table-wrapper table {
+    min-width: 600px;
+  }
+
+  .exercise-table th,
+  .exercise-table td {
+    font-size: 0.8rem;
+    padding: 8px 10px;
   }
 }

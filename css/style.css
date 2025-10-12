@@ -14,9 +14,9 @@ main {
 /* Exercise table specific embellishments (base table rules live in common.css) */
 .exercise-table {
     background: #fff;
-    border-radius: 0 0 8px 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    overflow: visible;
+    box-shadow: none;
 }
 
 .exercise-table th,
@@ -56,11 +56,9 @@ main {
     overflow: hidden;
     transition: max-height 0.3s ease-out;
 }
+
 .collapsible-section.active .collapsible-content {
     display: block;
 }
-
-/* Preserve optional override: exercise card square edges */
-.exercise { border-radius: 0; }
 
 /* END */
