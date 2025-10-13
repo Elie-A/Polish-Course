@@ -117,7 +117,8 @@ nav a:hover {
 .prep-case-card,
 .pronouns-case-card,
 .pref-mov-card,
-.gender-card {
+.gender-card,
+.colors-card {
   background: #fff;
   padding: 25px;
   border-radius: 15px;
@@ -136,7 +137,8 @@ nav a:hover {
 .verb-card:hover,
 .pronouns-case-card:hover,
 .pref-mov-card:hover,
-.gender-card:hover {
+.gender-card:hover,
+.colors-card:hover {
   transform: translateY(-6px) scale(1.02);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
 }
@@ -161,7 +163,8 @@ nav a:hover {
 .verb-card p,
 .pronouns-case-card .usage,
 .pref-mov-card p,
-.gender-card p {
+.gender-card p,
+.colors-card p {
   font-size: 0.95rem;
   color: #555;
   line-height: 1.5;

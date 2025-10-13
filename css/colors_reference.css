@@ -1,0 +1,54 @@
+/* Base grid/card styles moved to common.css; keep color & table styling */
+
+/* ===== Color-coded Variant ===== */
+.colors-class {
+    border-top-color: #1e90ff;
+    /* Purple tone for consistency */
+}
+
+/* Optional: Hover accent for purple variant */
+.colors-class:hover {
+    box-shadow: 0 10px 25px rgba(111, 66, 193, 0.25);
+}
+
+/* ===== Prefix Movements Modal Table ===== */
+.colors-class table,
+.colors-table.colors-class {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+/* Header styling */
+.colors-class th {
+    background-color: #1e90ff;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Row styling */
+.colors-class td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Zebra striping for clarity */
+.colors-class tr:nth-child(even) {
+    background-color: #f9f7ff;
+}
+
+/* Optional: subtle hover */
+.colors-class tr:hover {
+    background-color: #f0e8ff;
+}
+
+.colors-class h2 {
+    color: #1e90ff;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+}

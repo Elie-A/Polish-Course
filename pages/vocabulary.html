@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/navigation.css" />
     <link rel="stylesheet" href="../css/vocabulary.css" />
+    <link rel="stylesheet" href="../css/default_vocab.css" />
     <link rel="stylesheet" href="../css/popup.css" />
     <script defer src="../script/common.js"></script>
     <script defer src="../script/vocabulary.js"></script>
+    <script defer src="../script/default_vocab.js"></script>
     <script defer src="../script/script.js"></script>
 </head>
 
@@ -34,57 +36,104 @@
     </nav>
 
     <main>
-        <section id="vocab-section" class="exercise">
-            <h2>Polish Vocabulary List</h2>
-
-            <div class="controls">
-                <input type="text" id="search" placeholder="🔍 Search Polish or English..." />
-                <select id="category-filter"><!-- default populated by JS if empty -->
-                    <option value="">All Categories</option>
-                </select>
-                <button id="export-btn" class="btn">Export JSON</button>
-                <button id="download-sample-btn" class="btn">Download Sample File</button>
-                <input type="file" id="file-input" accept=".json" style="display:none;" />
-                <button id="load-btn" class="btn">Load Vocabulary</button>
-                <button id="clear-btn" class="btn">Clear Vocabulary</button>
-                <button id="info-btn" class="btn">💡 info</button>
+        <!-- Collapsible Section 1: Polish Vocab List -->
+        <div class="collapse">
+            <div class="collapse-header">
+                Polish Vocab List
+                <span class="toggle-btn">+</span>
             </div>
+            <div class="collapse-content">
+                <h2>📚 Polish Vocabulary Database</h2>
 
-            <div class="table-wrap">
-                <table id="vocabulary-table">
+                <div class="stats" id="stats"></div>
+
+                <div class="controls">
+                    <input type="text" id="searchInput" placeholder="🔍 Search Polish or English...">
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+                    <select id="itemsPerPage">
+                        <option value="10">10 per page</option>
+                        <option value="25" selected>25 per page</option>
+                        <option value="50">50 per page</option>
+                        <option value="100">100 per page</option>
+                    </select>
+                </div>
+
+                <table id="vocabTable">
                     <thead>
                         <tr>
-                            <th>Polish</th>
-                            <th>English</th>
-                            <th>Category</th>
+                            <th onclick="sortTable('polish')">Polish ↕</th>
+                            <th onclick="sortTable('english')">English ↕</th>
+                            <th onclick="sortTable('category')">Category ↕</th>
+                            <th>Details</th>
                         </tr>
                     </thead>
-                    <tbody></tbody>
+                    <tbody id="tableBody"></tbody>
                 </table>
+
+                <div class="pagination">
+                    <button onclick="changePage(-1)" id="prevBtn">← Previous</button>
+                    <span id="pageInfo"></span>
+                    <button onclick="changePage(1)" id="nextBtn">Next →</button>
+                </div>
             </div>
+        </div>
 
-            <div class="pagination-controls">
-                <button id="prev-page" class="btn">Previous</button>
-                <span id="page-info">Page 1 of 1</span>
-                <button id="next-page" class="btn">Next</button>
+        <!-- Collapsible Section 2: Create Your Own Vocab -->
+        <div class="collapse">
+            <div class="collapse-header">
+                Create Your Own Vocab
+                <span class="toggle-btn">+</span>
             </div>
+            <div class="collapse-content">
+                <div class="controls">
+                    <input type="text" id="search" placeholder="🔍 Search Polish or English..." />
+                    <select id="category-filter">
+                        <option value="">All Categories</option>
+                    </select>
+                    <button id="export-btn" class="btn">Export JSON</button>
+                    <button id="download-sample-btn" class="btn">Download Sample File</button>
+                    <input type="file" id="file-input" accept=".json" style="display:none;" />
+                    <button id="load-btn" class="btn">Load Vocabulary</button>
+                    <button id="clear-btn" class="btn">Clear Vocabulary</button>
+                    <button id="info-btn" class="btn">💡 info</button>
+                </div>
 
-            <form id="add-form" class="add-form">
-                <input type="text" id="polish" placeholder="Polish word" required />
-                <input type="text" id="english" placeholder="English meaning" required />
-                <input type="text" id="category" placeholder="Category (optional)" />
-                <button type="submit" class="btn">Add Word</button>
-            </form>
-            <hr />
-            <section id="json-format" class="json-format">
-                <h3>📘 JSON Format Guide</h3>
+                <div class="table-wrapper">
+                    <table id="vocabulary-table" class="exercise-table">
+                        <thead>
+                            <tr>
+                                <th>Polish</th>
+                                <th>English</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
 
-                <h4>Click the "Download Sample File" button to get a sample file to load.</h4>
-                <p>
-                    When exporting or importing your vocabulary, the JSON file should follow this structure:
-                </p>
+                <div class="pagination-controls">
+                    <button id="prev-page" class="btn">Previous</button>
+                    <span id="page-info">Page 1 of 1</span>
+                    <button id="next-page" class="btn">Next</button>
+                </div>
 
-                <pre><code>{
+                <form id="add-form" class="add-form">
+                    <input type="text" id="polish" placeholder="Polish word" required />
+                    <input type="text" id="english" placeholder="English meaning" required />
+                    <input type="text" id="category" placeholder="Category (optional)" />
+                    <button type="submit" class="btn">Add Word</button>
+                </form>
+
+                <hr />
+
+                <section id="json-format" class="json-format">
+                    <h3>📘 JSON Format Guide</h3>
+                    <h4>Click the "Download Sample File" button to get a sample file to load.</h4>
+                    <p>When exporting or importing your vocabulary, the JSON file should follow this structure:</p>
+
+                    <pre><code>{
   "vocab": [
     {
       "polish": "zima",
@@ -94,51 +143,40 @@
   ]
 }</code></pre>
 
-                <h4>🧩 Steps to Create Your Own JSON File</h4>
-                <ol>
-                    <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac),
-                        or <strong>VS Code</strong>.</li>
-                    <li>Copy the example above and replace the values with your own words.</li>
-                    <li>Make sure the structure stays the same — including curly brackets <code>{ }</code> and square
-                        brackets <code>[ ]</code>.</li>
-                    <li>Each word should be written inside <code>{ }</code> with the three keys:
-                        <ul>
-                            <li><code>"polish"</code>: Polish word (required)</li>
-                            <li><code>"english"</code>: English translation (required)</li>
-                            <li><code>"category"</code>: category or topic (optional)</li>
-                        </ul>
-                    </li>
-                    <li>Separate multiple words with commas, for example:</li>
-                </ol>
+                    <h4>🧩 Steps to Create Your Own JSON File</h4>
+                    <ol>
+                        <li>Open a text editor such as <strong>Notepad</strong>, <strong>TextEdit</strong>, or
+                            <strong>VS Code</strong>.
+                        </li>
+                        <li>Copy the example above and replace the values with your own words.</li>
+                        <li>Ensure the structure stays the same — including curly brackets <code>{ }</code> and
+                            square brackets <code>[ ]</code>.</li>
+                        <li>Each word should have three keys:
+                            <ul>
+                                <li><code>"polish"</code>: Polish word (required)</li>
+                                <li><code>"english"</code>: English translation (required)</li>
+                                <li><code>"category"</code>: category or topic (optional)</li>
+                            </ul>
+                        </li>
+                        <li>Separate multiple words with commas.</li>
+                    </ol>
 
-                <pre><code>{
+                    <pre><code>{
   "vocab": [
-    {
-      "polish": "zima",
-      "english": "winter",
-      "category": "time/seasons"
-    },
-    {
-      "polish": "jabłko",
-      "english": "apple",
-      "category": "food"
-    },
-    {
-      "polish": "dzień",
-      "english": "day",
-      "category": "time"
-    }
+    { "polish": "zima", "english": "winter", "category": "time/seasons" },
+    { "polish": "jabłko", "english": "apple", "category": "food" },
+    { "polish": "dzień", "english": "day", "category": "time" }
   ]
 }</code></pre>
 
-                <ol start="6">
-                    <li>Save your file as <strong>vocabulary.json</strong>.</li>
-                    <li>Click the <strong>"Load Vocabulary"</strong> button on this page and select your JSON file.</li>
-                    <li>To export your current list, use the <strong>"Export JSON"</strong> button — it will
-                        automatically download your vocabulary in the correct format.</li>
-                </ol>
-            </section>
-        </section>
+                    <ol start="6">
+                        <li>Save your file as <strong>vocabulary.json</strong>.</li>
+                        <li>Click <strong>"Load Vocabulary"</strong> and select your JSON file.</li>
+                        <li>To export your current list, use the <strong>"Export JSON"</strong> button.</li>
+                    </ol>
+                </section>
+            </div>
+        </div>
     </main>
 
     <div id="modal" class="modal">

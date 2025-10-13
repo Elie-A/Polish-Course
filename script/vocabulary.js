@@ -149,7 +149,7 @@ function renderVocabulary(data) {
     row.innerHTML = `
       <td>${entry.polish}</td>
       <td>${entry.english}</td>
-      <td>${entry.category || "—"}</td>
+      <td class="badge">${entry.category || "—"}</td>
     `;
     tableBody.appendChild(row);
     setTimeout(() => {

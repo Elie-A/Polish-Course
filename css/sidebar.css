@@ -1,5 +1,5 @@
 /* =======================
-   Sidebar Container
+   Quick Jump Sidebar
    ======================= */
 .quick-jump-sidebar {
     position: fixed;
@@ -7,60 +7,77 @@
     right: 20px;
     background: #fff;
     border: 2px solid #d81b3e;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 40px;
-    /* default collapsed width */
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 50px;
+    /* collapsed width */
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1000;
-    padding: 5px 0;
     overflow: hidden;
-    transition: width 0.3s ease, box-shadow 0.2s ease;
+    transition: all 0.3s ease;
 }
 
-/* =======================
-   Collapsed & Expanded States
-   ======================= */
-.quick-jump-sidebar.collapsed {
-    width: 40px;
-    /* only toggle button visible */
+/* Expanded Sidebar */
+.quick-jump-sidebar.expanded {
+    width: 180px;
+    height: 320px;
+    padding: 8px;
 }
 
 /* =======================
    Toggle Button
    ======================= */
 .toggle-btn {
-    font-size: 24px;
+    font-size: 26px;
     color: #d81b3e;
     cursor: pointer;
-    margin-bottom: 10px;
-    transition: transform 0.2s ease, color 0.2s ease;
+    transition: transform 0.3s ease, color 0.2s ease;
 }
 
 .toggle-btn:hover {
-    color: #b0172d;
     transform: scale(1.2);
+    color: #b0172d;
+}
+
+.toggle-btn.rotated {
+    transform: rotate(180deg);
 }
 
 /* =======================
-   Sidebar Menu
+   Sidebar Content
    ======================= */
-.quick-jump-sidebar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.sidebar-content {
+    flex: 1;
     width: 100%;
-    align-items: center;
-    /* center icons in compact width */
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #d81b3e #f5f5f5;
 }
 
-/* Hide menu items when collapsed */
-.quick-jump-sidebar.collapsed ul {
+.sidebar-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb {
+    background-color: #d81b3e;
+    border-radius: 4px;
+}
+
+/* Grid layout for icons */
+.quick-jump-sidebar.expanded .sidebar-content ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns */
+    gap: 10px;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Collapse menu */
+.quick-jump-sidebar.collapsed .sidebar-content {
     display: none;
 }
 
@@ -74,17 +91,13 @@
     font-size: 22px;
     color: #d81b3e;
     text-decoration: none;
-    position: relative;
-    padding: 5px;
-    /* compact padding */
-    border-radius: 8px;
+    padding: 6px;
+    border-radius: 10px;
     transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
 }
 
-/* Hover effect on icons */
 .quick-jump-sidebar ul li a:hover {
-    background: #f8d3da;
-    color: #b0172d;
+    background: #fbe6ea;
     transform: scale(1.1);
 }
 
@@ -105,6 +118,7 @@
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, transform 0.2s ease;
+    font-size: 13px;
 }
 
 .quick-jump-sidebar ul li a:hover::after {
@@ -113,8 +127,15 @@
 }
 
 /* =======================
-   Sidebar Hover Effect
+   Responsive
    ======================= */
-.quick-jump-sidebar:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+@media (max-width: 480px) {
+    .quick-jump-sidebar.expanded {
+        width: 120px;
+    }
+
+    .quick-jump-sidebar.expanded .sidebar-content ul {
+        grid-template-columns: 1fr;
+        /* 1 column on small screens */
+    }
 }
