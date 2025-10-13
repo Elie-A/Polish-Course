@@ -552,7 +552,7 @@ function populateCategoryFilter() {
 
 function updateStats() {
   const stats = document.getElementById("stats");
-  stats.textContent = `Total defaultVocab: ${defaultVocab.length} words | Showing: ${defaultVocabularyFilteredData.length} words`;
+  stats.textContent = `Total Default Vocab: ${defaultVocab.length} words | Showing: ${defaultVocabularyFilteredData.length} words`;
 }
 
 function handleSearch(e) {
