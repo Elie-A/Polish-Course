@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/navigation.css" />
     <script defer src="../script/common.js"></script>
     <script defer src="../script/script.js"></script>
+    <script defer src="../script/conjugation.js"></script>
 </head>
 
 <body>
@@ -275,53 +276,72 @@
                     <table class="verb-table">
                         <thead>
                             <tr>
-                                <th>Pronoun</th>
-                                <th>Masculine</th>
-                                <th>Feminine</th>
-                                <th>Neuter</th>
-                                <th>Plural (m/f)</th>
+                                <th scope="col">Pronoun</th>
+                                <th scope="col">Masculine</th>
+                                <th scope="col">Feminine</th>
+                                <th scope="col">Neuter</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>ja</td>
+                                <td scope="row">ja</td>
                                 <td class="ending">-łem</td>
                                 <td class="ending">-łam</td>
                                 <td>–</td>
-                                <td>–</td>
                             </tr>
                             <tr>
-                                <td>ty</td>
+                                <td scope="row">ty</td>
                                 <td class="ending">-łeś</td>
                                 <td class="ending">-łaś</td>
                                 <td>–</td>
-                                <td>–</td>
                             </tr>
                             <tr>
-                                <td>on/ona/ono</td>
+                                <td scope="row">on</td>
                                 <td class="ending">-ł</td>
-                                <td class="ending">-ła</td>
-                                <td class="ending">-ło</td>
+                                <td>–</td>
                                 <td>–</td>
                             </tr>
                             <tr>
-                                <td>my</td>
-                                <td colspan="2" class="ending">-liśmy</td>
-                                <td colspan="2" class="ending">-łyśmy</td>
+                                <td scope="row">ona</td>
+                                <td>–</td>
+                                <td class="ending">-ła</td>
+                                <td>–</td>
                             </tr>
                             <tr>
-                                <td>wy</td>
-                                <td colspan="2" class="ending">-liście</td>
-                                <td colspan="2" class="ending">-łyście</td>
+                                <td scope="row">ono</td>
+                                <td>–</td>
+                                <td>–</td>
+                                <td class="ending">-ło</td>
                             </tr>
                             <tr>
-                                <td>oni/one</td>
-                                <td colspan="2" class="ending">-li</td>
-                                <td colspan="2" class="ending">-ły</td>
+                                <td scope="row">my</td>
+                                <td class="ending">-liśmy</td>
+                                <td class="ending">-łyśmy</td>
+                                <td>–</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">wy</td>
+                                <td class="ending">-liście</td>
+                                <td class="ending">-łyście</td>
+                                <td>–</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">oni</td>
+                                <td class="ending">-li</td>
+                                <td>–</td>
+                                <td>–</td>
+                            </tr>
+                            <tr>
+                                <td scope="row">one</td>
+                                <td>–</td>
+                                <td class="ending">-ły</td>
+                                <td>–</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+
+
 
                 <h3>Examples</h3>
                 <ul>
@@ -577,6 +597,54 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Dynamic Verb Conjugator (Rule-Based) -->
+        <section class="collapse" style="visibility: hidden;">
+            <h2 class="collapse-header">
+                Dynamic Verb Conjugator (Rule-Based)
+                <span class="toggle-btn">+</span>
+            </h2>
+            <div class="collapse-content">
+                <div class="dynamic-conjugator">
+                    <div class="input-row">
+                        <label for="dynamicVerbInput">Enter Polish Verb:</label>
+                        <input type="text" id="dynamicVerbInput" placeholder="e.g. brać, spać, pisać" />
+                        <label for="dynamicTenseSelect">Select Tense:</label>
+                        <select id="dynamicTenseSelect">
+                            <option value="present">Present</option>
+                            <option value="past">Past</option>
+                            <option value="future">Future</option>
+                        </select>
+                        <button id="generateDynamicBtn">Generate</button>
+                    </div>
+
+                    <div class="rules-table">
+                        <h4>Transformation Rules</h4>
+                        <table class="exercise-table">
+                            <thead>
+                                <tr>
+                                    <th>Pattern</th>
+                                    <th>Replacement</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody id="rulesTableBody"></tbody>
+                        </table>
+                    </div>
+
+                    <div class="overrides-section">
+                        <h4>Optional Overrides</h4>
+                        <textarea id="overridesInput" rows="4" placeholder='{"brać": {"present": {...}}}'></textarea>
+                    </div>
+
+                    <div class="results-section">
+                        <h4>Conjugation Results</h4>
+                        <div id="dynamicResults"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
     </main>
     <footer>

@@ -1,36 +1,49 @@
-/* --- TABLE DESIGN --- */
-.table-group {
-    margin-top: 1.5rem;
+.dynamic-conjugator {
+    margin-top: 15px;
 }
 
-.verb-table {
+.dynamic-conjugator .input-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.dynamic-conjugator input,
+.dynamic-conjugator select,
+.dynamic-conjugator button,
+.dynamic-conjugator textarea {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    font-size: 15px;
+}
+
+.dynamic-conjugator button {
+    background-color: #e64980;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.dynamic-conjugator button:hover {
+    background-color: #c92a6a;
+}
+
+.dynamic-conjugator h4 {
+    margin-top: 25px;
+    color: #495057;
+}
+
+.overrides-section textarea {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5rem;
-    font-size: 1rem;
-    background: #fefefe;
-    border-radius: 10px;
-    overflow: hidden;
+    resize: vertical;
+    margin-top: 8px;
 }
 
-.verb-table thead {
-    background: #eef2ff;
-    color: #333;
-    text-align: left;
-}
-
-.verb-table th,
-.verb-table td {
-    padding: 0.8rem 1rem;
-    border-bottom: 1px solid #e5e7eb;
-}
-
-.verb-table tbody tr:nth-child(even) {
-    background: #fafafa;
-}
-
-.verb-table tbody tr:hover {
-    background: #f0f9ff;
+.results-section {
+    margin-top: 15px;
 }
 
 .ending {
@@ -48,18 +61,4 @@ h3 {
     margin-top: 1rem;
     color: #DC143C;
     font-weight: 600;
-}
-
-/* --- RESPONSIVENESS --- */
-@media (max-width: 600px) {
-
-    .verb-table th,
-    .verb-table td {
-        font-size: 0.9rem;
-        padding: 0.6rem;
-    }
-
-    header h1 {
-        font-size: 1.5rem;
-    }
 }
