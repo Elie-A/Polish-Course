@@ -20,7 +20,7 @@
 }
 
 .dynamic-conjugator button {
-    background-color: #e64980;
+    background-color: #DC143C;
     color: white;
     border: none;
     cursor: pointer;
@@ -28,7 +28,10 @@
 }
 
 .dynamic-conjugator button:hover {
-    background-color: #c92a6a;
+    background-color: #fff;
+    color: #DC143C;
+    border: 2px solid #DC143C;
+    border-radius: 3px;
 }
 
 .dynamic-conjugator h4 {

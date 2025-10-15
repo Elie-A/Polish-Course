@@ -1,174 +1,223 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Collapsible behavior
-  document.querySelectorAll(".collapsible-section").forEach((section) => {
-    const header = section.querySelector(".collapsible-header");
+  document.querySelectorAll(".collapse").forEach((section) => {
+    const header = section.querySelector(".collapse-header");
     header.addEventListener("click", () => {
       section.classList.toggle("active");
     });
   });
 
-  const persons = ["ja", "ty", "on/ona/ono", "my", "wy", "oni/one"];
+  const persons = ["ja", "ty", "on", "ona", "ono", "my", "wy", "oni", "one"];
 
-  // Regular endings (fallback)
-  const endings = {
-    present: ["ę", "esz", "e", "emy", "ecie", "ą"], // -ać/-ić verbs
-    pastMasculine: ["łem", "łeś", "ł", "liśmy", "liście", "li"],
-    pastFeminine: ["łam", "łaś", "ła", "łyśmy", "łyście", "ły"],
-    futureAux: ["będę", "będziesz", "będzie", "będziemy", "będziecie", "będą"], // for compound future
-  };
-
-  // Irregular or special verbs
-  const irregularVerbs = {
-    brać: {
-      type: "perfective",
-      present: [
-        "biorę",
-        "bierzesz",
-        "bierze",
-        "bierzemy",
-        "bierzecie",
-        "biorą",
-      ],
-      pastMasculine: [
-        "brałem",
-        "brałeś",
-        "brał",
-        "braliśmy",
-        "braliście",
-        "brali",
-      ],
-      pastFeminine: [
-        "brałam",
-        "brałaś",
-        "brała",
-        "brałyśmy",
-        "brałyście",
-        "brały",
-      ],
-      future: ["wezmę", "weźmiesz", "weźmie", "weźmiemy", "weźmiecie", "wezmą"], // simple future
-    },
-    pisać: {
-      type: "imperfective",
-      present: ["piszę", "piszesz", "pisze", "piszemy", "piszecie", "piszą"],
-      pastMasculine: [
-        "pisałem",
-        "pisałeś",
-        "pisał",
-        "pisaliśmy",
-        "pisaliście",
-        "pisali",
-      ],
-      pastFeminine: [
-        "pisałam",
-        "pisałaś",
-        "pisała",
-        "pisałyśmy",
-        "pisałyście",
-        "pisały",
-      ],
-      // future uses compound: będę + infinitive
-    },
-    spać: {
-      type: "imperfective",
-      present: ["śpię", "śpisz", "śpi", "śpimy", "śpicie", "śpią"],
-      pastMasculine: [
-        "spałem",
-        "spałeś",
-        "spał",
-        "spaliśmy",
-        "spaliście",
-        "spali",
-      ],
-      pastFeminine: [
-        "spałam",
-        "spałaś",
-        "spała",
-        "spałyśmy",
-        "spałyście",
-        "spały",
-      ],
-      // future uses compound
-    },
-    // add more irregulars here...
-  };
-
-  // Rules table
-  const rules = [
-    { pattern: /brać$/, replace: "bier", example: "brać → biorę" },
-    { pattern: /spać$/, replace: "śpi", example: "spać → śpię" },
-    { pattern: /pisać$/, replace: "pis", example: "pisać → piszę" },
-    { pattern: /wołać$/, replace: "woł", example: "wołać → wołam" },
-    { pattern: /lecieć$/, replace: "lec", example: "lecieć → lecę" },
-    { pattern: /stać$/, replace: "stoj", example: "stać → stoję" },
-    { pattern: /dać$/, replace: "daj", example: "dać → daję" },
-    { pattern: /chcieć$/, replace: "chc", example: "chcieć → chcę" },
-    { pattern: /jeść$/, replace: "je", example: "jeść → jem" },
-  ];
+  // Create rules display for the UI using imported patterns
+  const rules = CONJUGATION_PATTERNS.present.map(rule => ({
+    pattern: rule.pattern,
+    replace: rule.stemTransform("example").replace("example", "stem"),
+    example: rule.example
+  }));
 
   const rulesTableBody = document.getElementById("rulesTableBody");
-  rules.forEach((r) => {
-    const row = document.createElement("tr");
-    row.innerHTML = `<td>${r.pattern}</td><td>${r.replace}</td><td>${r.example}</td>`;
-    rulesTableBody.appendChild(row);
-  });
+  if (rulesTableBody) {
+    rules.forEach((r) => {
+      const row = document.createElement("tr");
+      row.innerHTML = `<td>${r.pattern}</td><td>${r.replace}</td><td>${r.example}</td>`;
+      rulesTableBody.appendChild(row);
+    });
+  }
 
   // Generate button
-  document
-    .getElementById("generateDynamicBtn")
-    .addEventListener("click", () => {
+  const generateBtn = document.getElementById("generateDynamicBtn");
+  if (generateBtn) {
+    generateBtn.addEventListener("click", () => {
       const verb = document.getElementById("dynamicVerbInput").value.trim();
       const tense = document.getElementById("dynamicTenseSelect").value;
       const results = document.getElementById("dynamicResults");
-      const overrides = JSON.parse(
-        document.getElementById("overridesInput").value || "{}"
-      );
-
-      results.innerHTML = generateConjugations(verb, tense, overrides);
+      
+      if (!results) {
+        console.error("Results element not found");
+        return;
+      }
+      
+      try {
+        const overridesInput = document.getElementById("overridesInput");
+        const overrides = JSON.parse(
+          (overridesInput ? overridesInput.value : "") || "{}"
+        );
+        results.innerHTML = generateConjugations(verb, tense, overrides);
+      } catch (e) {
+        results.innerHTML = `<div style="color: red;">Error: Invalid JSON in overrides</div>`;
+      }
     });
+  }
 
-  // Conjugation generator
-  function generateConjugations(verb, tense, overrides) {
-    // 1. Overrides first
+  // Main conjugation generator function
+  function generateConjugations(verb, tense, overrides = {}) {
+    if (!verb) return "<div>Please enter a verb</div>";
+
+    // 1. Check overrides first
     if (overrides[verb] && overrides[verb][tense]) {
       return createTable(persons, overrides[verb][tense], tense);
     }
 
-    // 2. Irregular verbs
-    if (irregularVerbs[verb]) {
-      const data = irregularVerbs[verb];
-      if (tense === "future") {
-        if (data.type === "perfective") {
-          return createTable(persons, data.future, tense); // simple future
-        } else {
-          // imperfective: compound future
-          const forms = persons.map(
-            (_, i) => endings.futureAux[i] + " " + verb
-          );
-          return createTable(persons, forms, tense);
-        }
-      }
-      if (tense === "past") {
-        // show masculine for simplicity; could add gender selection
-        return createTable(persons, data.pastMasculine, tense);
-      }
-      if (tense === "present") {
-        return createTable(persons, data.present, tense);
-      }
+    // 2. Check exception verbs (fully irregular)
+    if (EXCEPTION_VERBS[verb] && EXCEPTION_VERBS[verb][tense]) {
+      return createTable(persons, EXCEPTION_VERBS[verb][tense], tense);
     }
 
-    // 3. Regular verbs fallback
-    const stem = verb.replace(/ć$/, "");
-    let forms = [];
+    // 3. Use pattern-based rules
+    return conjugateWithRules(verb, tense);
+  }
 
+  // Pattern-based conjugation
+  function conjugateWithRules(verb, tense) {
     if (tense === "present") {
-      forms = persons.map((_, i) => stem + endings.present[i]);
+      return conjugatePresent(verb);
     } else if (tense === "past") {
-      forms = persons.map((_, i) => stem + endings.pastMasculine[i]); // default masculine
+      return conjugatePast(verb);
     } else if (tense === "future") {
-      forms = persons.map((_, i) => endings.futureAux[i] + " " + verb); // compound future
+      return conjugateFuture(verb);
     }
+    
+    return "<div>Unsupported tense</div>";
+  }
 
-    return createTable(persons, forms, tense);
+  function conjugatePresent(verb) {
+    // Find matching rule
+    for (let rule of CONJUGATION_PATTERNS.present) {
+      if (rule.pattern.test(verb)) {
+        const stem = rule.stemTransform(verb);
+        const baseEndings = rule.endings;
+        // Expand 6 endings to 9 persons: ja, ty, on, ona, ono, my, wy, oni, one
+        const expandedForms = [
+          stem + baseEndings[0], // ja
+          stem + baseEndings[1], // ty
+          stem + baseEndings[2], // on
+          stem + baseEndings[2], // ona (same as on)
+          stem + baseEndings[2], // ono (same as on)
+          stem + baseEndings[3], // my
+          stem + baseEndings[4], // wy
+          stem + baseEndings[5], // oni
+          stem + baseEndings[5]  // one (same as oni)
+        ];
+        return createTable(persons, expandedForms, "present");
+      }
+    }
+    
+    // Fallback to basic -ć removal
+    const stem = verb.replace(/ć$/, "");
+    const baseEndings = ["ę", "esz", "e", "emy", "ecie", "ą"];
+    const expandedForms = [
+      stem + baseEndings[0], // ja
+      stem + baseEndings[1], // ty
+      stem + baseEndings[2], // on
+      stem + baseEndings[2], // ona
+      stem + baseEndings[2], // ono
+      stem + baseEndings[3], // my
+      stem + baseEndings[4], // wy
+      stem + baseEndings[5], // oni
+      stem + baseEndings[5]  // one
+    ];
+    return createTable(persons, expandedForms, "present");
+  }
+
+  function conjugatePast(verb) {
+    // Find matching rule
+    for (let rule of CONJUGATION_PATTERNS.past) {
+      if (rule.pattern.test(verb)) {
+        const stem = rule.stemTransform(verb);
+        const baseMasculine = rule.endingsMasculine;
+        const baseFeminine = rule.endingsFeminine;
+        
+        // Create forms for all 9 persons with proper gender
+        const expandedForms = [
+          stem + baseMasculine[0] + "/" + stem + baseFeminine[0], // ja (m/f)
+          stem + baseMasculine[1] + "/" + stem + baseFeminine[1], // ty (m/f)
+          stem + baseMasculine[2], // on
+          stem + baseFeminine[2],  // ona
+          stem + baseMasculine[2].replace(/ł$/, "ło"), // ono
+          stem + baseMasculine[3] + "/" + stem + baseFeminine[3], // my (m/f)
+          stem + baseMasculine[4] + "/" + stem + baseFeminine[4], // wy (m/f)
+          stem + baseMasculine[5], // oni
+          stem + baseFeminine[5]   // one
+        ];
+        return createTable(persons, expandedForms, "past");
+      }
+    }
+    
+    // Fallback
+    const stem = verb.replace(/ć$/, "");
+    const baseMasculine = ["łem", "łeś", "ł", "liśmy", "liście", "li"];
+    const baseFeminine = ["łam", "łaś", "ła", "łyśmy", "łyście", "ły"];
+    
+    const expandedForms = [
+      stem + baseMasculine[0] + "/" + stem + baseFeminine[0], // ja
+      stem + baseMasculine[1] + "/" + stem + baseFeminine[1], // ty
+      stem + baseMasculine[2], // on
+      stem + baseFeminine[2],  // ona
+      stem + baseMasculine[2].replace(/ł$/, "ło"), // ono
+      stem + baseMasculine[3] + "/" + stem + baseFeminine[3], // my
+      stem + baseMasculine[4] + "/" + stem + baseFeminine[4], // wy
+      stem + baseMasculine[5], // oni
+      stem + baseFeminine[5]   // one
+    ];
+    return createTable(persons, expandedForms, "past");
+  }
+
+  function conjugateFuture(verb) {
+    // First check if it's a perfective verb (simple future)
+    for (let rule of CONJUGATION_PATTERNS.future) {
+      if (rule.pattern.test(verb) && rule.type === "perfective") {
+        const stem = rule.stemTransform(verb);
+        const baseEndings = rule.endings;
+        // Expand 6 endings to 9 persons
+        const expandedForms = [
+          stem + baseEndings[0], // ja
+          stem + baseEndings[1], // ty
+          stem + baseEndings[2], // on
+          stem + baseEndings[2], // ona
+          stem + baseEndings[2], // ono
+          stem + baseEndings[3], // my
+          stem + baseEndings[4], // wy
+          stem + baseEndings[5], // oni
+          stem + baseEndings[5]  // one
+        ];
+        return createTable(persons, expandedForms, "future (simple)");
+      }
+    }
+    
+    // Check for some common perfective patterns
+    if (isPerfectiveVerb(verb)) {
+      // Try to conjugate as perfective using present tense rules
+      const presentResult = conjugatePresent(verb);
+      return presentResult.replace("present", "future (simple)");
+    }
+    
+    // Default to compound future (imperfective)
+    const baseAux = CONJUGATION_PATTERNS.futureAux;
+    const expandedForms = [
+      baseAux[0] + " " + verb, // ja
+      baseAux[1] + " " + verb, // ty
+      baseAux[2] + " " + verb, // on
+      baseAux[2] + " " + verb, // ona
+      baseAux[2] + " " + verb, // ono
+      baseAux[3] + " " + verb, // my
+      baseAux[4] + " " + verb, // wy
+      baseAux[5] + " " + verb, // oni
+      baseAux[5] + " " + verb  // one
+    ];
+    return createTable(persons, expandedForms, "future (compound)");
+  }
+
+  // Helper function to detect perfective verbs
+  function isPerfectiveVerb(verb) {
+    // Common perfective prefixes
+    const perfectivePrefixes = [
+      /^po/, /^z[ae]?/, /^na/, /^od/, /^do/, /^przy/, /^wy/, /^u/, /^roz/, /^s/
+    ];
+    
+    return perfectivePrefixes.some(prefix => prefix.test(verb)) ||
+           verb.endsWith('nąć') || // most -nąć verbs are perfective
+           ['kupić', 'sprzedać', 'dać', 'wziąć', 'przyjść', 'wyjść'].includes(verb);
   }
 
   // Helper: build HTML table
