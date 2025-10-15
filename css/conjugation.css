@@ -65,3 +65,12 @@ h3 {
     color: #DC143C;
     font-weight: 600;
 }
+
+.notice {
+    background-color: #fff3cd;
+    border-left: 4px solid #ffc107;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    max-width: 600px;
+}
