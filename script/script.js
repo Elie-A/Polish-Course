@@ -36,6 +36,7 @@
         ".gender-card",
         ".prep-case-card",
         ".colors-card",
+        ".conj-type-card",
       ];
       modal && modal.bindCards(cardSelectors);
       modal && modal.bindDismiss();

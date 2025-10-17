@@ -1,0 +1,211 @@
+/* Base grid/card styles moved to common.css */
+
+/* ===== Color-coded Borders for Conjunction Cards ===== */
+.conj-type-card.coordinating {
+    border-top-color: #28a745;
+    /* Green */
+}
+
+.conj-type-card.subordinating {
+    border-top-color: #1e90ff;
+    /* Blue */
+}
+
+.conj-type-card.correlative {
+    border-top-color: #ff4757;
+    /* Red */
+}
+
+.conj-type-card.conjunctive-adverb {
+    border-top-color: #ffa502;
+    /* Orange */
+}
+
+.conj-type-card.contrast {
+    border-top-color: #6f42c1;
+    /* Purple */
+}
+
+.conj-type-card.cause-purpose {
+    border-top-color: #20c997;
+    /* Teal */
+}
+
+.conj-type-card.conj-summary {
+    border-top-color: #e83e8c;
+    /* Pink */
+}
+
+/* ===== Modal Titles by Conjunction Type ===== */
+.modal-content.coordinating h2 {
+    color: #28a745;
+}
+
+.modal-content.coordinating {
+    border-top-color: #28a745;
+}
+
+.modal-content.subordinating h2 {
+    color: #1e90ff;
+}
+
+.modal-content.subordinating {
+    border-top-color: #1e90ff;
+}
+
+.modal-content.correlative h2 {
+    color: #ff4757;
+}
+
+.modal-content.correlative {
+    border-top-color: #ff4757;
+}
+
+.modal-content.conjunctive-adverb h2 {
+    color: #ffa502;
+}
+
+.modal-content.conjunctive-adverb {
+    border-top-color: #ffa502;
+}
+
+.modal-content.contrast h2 {
+    color: #6f42c1;
+}
+
+.modal-content.contrast {
+    border-top-color: #6f42c1;
+}
+
+.modal-content.cause-purpose h2 {
+    color: #20c997;
+}
+
+.modal-content.cause-purpose {
+    border-top-color: #20c997;
+}
+
+.modal-content.conj-summary h2 {
+    color: #e83e8c;
+}
+
+.modal-content.conj-summary {
+    border-top-color: #e83e8c;
+}
+
+/* ===== Conjunction Tables Styling ===== */
+.conj-type-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 0.95rem;
+}
+
+.conj-type-table th,
+.conj-type-table td {
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    text-align: center;
+}
+
+/* Table Headers by Conjunction Type (match modal color) */
+.conj-type-table.coordinating th {
+    background-color: #28a745;
+    color: white;
+}
+
+.conj-type-table.subordinating th {
+    background-color: #1e90ff;
+    color: white;
+}
+
+.conj-type-table.correlative th {
+    background-color: #ff4757;
+    color: white;
+}
+
+.conj-type-table.conjunctive-adverb th {
+    background-color: #ffa502;
+    color: white;
+}
+
+.conj-type-table.contrast th {
+    background-color: #6f42c1;
+    color: white;
+}
+
+.conj-type-table.cause-purpose th {
+    background-color: #20c997;
+    color: white;
+}
+
+.conj-type-table.conj-summary th {
+    background-color: #e83e8c;
+    color: white;
+}
+
+/* Alternating row colors per conjunction type (light shades) */
+.conj-type-table.coordinating tr:nth-child(even) {
+    background-color: #d4f7d4;
+}
+
+.conj-type-table.coordinating tr:nth-child(odd) {
+    background-color: #f0fff0;
+}
+
+.conj-type-table.subordinating tr:nth-child(even) {
+    background-color: #cce5ff;
+}
+
+.conj-type-table.subordinating tr:nth-child(odd) {
+    background-color: #e6f2ff;
+}
+
+.conj-type-table.correlative tr:nth-child(even) {
+    background-color: #ffd6d6;
+}
+
+.conj-type-table.correlative tr:nth-child(odd) {
+    background-color: #fff0f0;
+}
+
+.conj-type-table.conjunctive-adverb tr:nth-child(even) {
+    background-color: #ffe6b3;
+}
+
+.conj-type-table.conjunctive-adverb tr:nth-child(odd) {
+    background-color: #fff7e6;
+}
+
+.conj-type-table.contrast tr:nth-child(even) {
+    background-color: #d9ccff;
+}
+
+.conj-type-table.contrast tr:nth-child(odd) {
+    background-color: #f2e6ff;
+}
+
+.conj-type-table.cause-purpose tr:nth-child(even) {
+    background-color: #b3f0e6;
+}
+
+.conj-type-table.cause-purpose tr:nth-child(odd) {
+    background-color: #e6fbf8;
+}
+
+.conj-type-table.conj-summary tr:nth-child(even) {
+    background-color: #ffccf0;
+}
+
+.conj-type-table.conj-summary tr:nth-child(odd) {
+    background-color: #ffe6f7;
+}
+
+/* Responsive tables */
+@media (max-width: 600px) {
+    .conj-type-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}

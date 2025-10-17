@@ -86,6 +86,7 @@ nav a:hover {
 .pref-mov-grid,
 .prep-cases-grid,
 .gender-grid,
+.conj-card-grid,
 .exercise-cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -97,6 +98,7 @@ nav a:hover {
 
 .pref-mov-grid,
 .prep-cases-grid,
+.conj-card-grid,
 .gender-grid {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -118,7 +120,8 @@ nav a:hover {
 .pronouns-case-card,
 .pref-mov-card,
 .gender-card,
-.colors-card {
+.colors-card,
+.conj-type-card {
   background: #fff;
   padding: 25px;
   border-radius: 15px;
