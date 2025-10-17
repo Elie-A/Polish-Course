@@ -35,172 +35,46 @@
   </nav>
 
   <main>
-    <div class="exercise-buttons">
-      <button onclick="loadExercise('grammar')">Grammar</button>
-      <button onclick="loadExercise('numbers')">Numbers & Ordinals</button>
-      <button onclick="loadExercise('cases')">Cases</button>
-      <button onclick="loadExercise('vocabulary')">Vocabulary</button>
-      <button onclick="loadExercise('flashcards')">Flashcards</button>
-    </div>
 
-    <div class="quiz-controls"
-      style="margin:10px auto; max-width:700px; display:flex; flex-wrap:wrap; gap:12px; align-items:center; justify-content:center;">
-      <label style="display:flex; align-items:center; gap:6px; font-size:0.9rem;">
-        <input type="checkbox" id="shuffle-toggle"> Shuffle
-      </label>
-      <label style="display:flex; align-items:center; gap:6px; font-size:0.9rem;">
-        Timer:
-        <select id="timer-select" style="padding:4px 6px;">
-          <option value="30" selected>30s</option>
-          <option value="15">15s</option>
-          <option value="45">45s</option>
-          <option value="60">60s</option>
-          <option value="0">No timer</option>
-        </select>
-      </label>
-    </div>
+    <body>
+      <div class="practice-container">
+        <div class="filter-section">
+          <div class="filter-grid" id="topicFilters"></div>
 
-    <div class="progress-wrapper"
-      style="max-width:700px; margin:5px auto 0; height:10px; background:#eee; border-radius:6px; overflow:hidden;">
-      <div id="progress-bar" style="height:100%; width:0%; background:#c61322; transition:width .35s ease;"></div>
-    </div>
+          <div class="settings-row">
+            <div class="setting">
+              <input type="checkbox" id="shuffleToggle">
+              <label for="shuffleToggle">Shuffle Questions</label>
+            </div>
 
-    <div>
-      <button id="load-btn">Load Exercises JSON</button>
-      <input type="file" id="file-input" accept=".json" style="display:none;">
-      <button id="reset-btn">Reset Exercises</button>
-      <button id="download-btn">Download Exercises JSON</button>
-      <button id="info-btn" class="btn">💡 info</button>
-    </div>
+            <div class="setting">
+              <label for="timerSelect">Timer:</label>
+              <select id="timerSelect">
+                <option value="0">No Timer</option>
+                <option value="15">15 seconds</option>
+                <option value="30" selected>30 seconds</option>
+                <option value="45">45 seconds</option>
+                <option value="60">60 seconds</option>
+              </select>
+            </div>
 
-    <div id="exercise-container" class="exercise">Load the exercises file to start</div>
+            <button class="btn" id="startBtn">Start Practice</button>
+            <button class="btn btn-secondary" id="resetBtn" style="display:none;">Reset Quiz</button>
+          </div>
+        </div>
 
-    <hr style="margin: 15px 0;">
-    <div class="add-exercise-section">
-      <h2>Add New Exercise</h2>
-      <label for="exercise-type">Exercise Type:</label>
-      <select id="exercise-type">
-        <option value="selectType">Select Exercise Type</option>
-        <option value="grammar">Grammar</option>
-        <option value="numbers">Numbers & Ordinals</option>
-        <option value="cases">Cases</option>
-        <option value="vocabulary">Vocabulary</option>
-        <option value="flashcards">Flashcards</option>
-      </select>
-      <br><br>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
 
-      <label for="exercise-polish">Polish / Question:</label>
-      <input type="text" id="exercise-polish" placeholder="Enter question or Polish word">
-      <br><br>
-
-      <label for="exercise-answer">Answer / English:</label>
-      <input type="text" id="exercise-answer" placeholder="Enter answer or English word">
-      <br><br>
-
-      <button id="add-exercise-btn">Add Exercise</button>
-
-      <p id="exercise-example" style="color:#c61322; font-style:italic;"></p>
-      <p id="recent-added" style="margin-top:6px; font-size:0.9rem; color:#444;"></p>
-    </div>
-
+        <div class="exercise-card" id="exerciseCard">
+          <div class="loading-state">
+            <p>📚 Loading exercises...</p>
+          </div>
+        </div>
+      </div>
   </main>
 
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span id="modal-close" class="modal-close">&times;</span>
-      <p id="modal-message"></p>
-      <button id="modal-ok">OK</button>
-    </div>
-  </div>
-
-  <div style="text-align:center; margin-top: 10px;">
-    <button id="info-guide-btn" class="btn">ℹ️ JSON Format Guide</button>
-  </div>
-
-  <!-- JSON Format Guide Section -->
-  <section id="json-format" class="json-format">
-    <h3>📘 Exercises JSON Format Guide</h3>
-    <p>
-      When exporting or importing your exercises, the JSON file should follow this structure:
-    </p>
-
-    <pre><code>{
-  "grammar": [
-    {
-      "question": "Ja ___ (to eat) jabłko.",
-      "answer": "jem"
-    }
-  ],
-  "numbers": [
-    {
-      "question": "23 in Polish",
-      "answer": "dwudziesty trzeci"
-    }
-  ],
-  "cases": [
-    {
-      "question": "I see a ___ (dog - accusative).",
-      "answer": "psa"
-    }
-  ],
-  "vocabulary": [
-    {
-      "polish": "kot",
-      "english": "cat"
-    }
-  ],
-  "flashcards": [
-    {
-      "polish": "dom",
-      "english": "house"
-    }
-  ]
-}</code></pre>
-
-    <h4>🧩 Steps to Create Your Own JSON File</h4>
-    <ol>
-      <li>Open a text editor such as <strong>Notepad</strong> (Windows), <strong>TextEdit</strong> (Mac), or
-        <strong>VS Code</strong>.
-      </li>
-      <li>Copy the example above and replace the values with your own exercises.</li>
-      <li>Keep the five main sections:
-        <ul>
-          <li><code>grammar</code>: fill-in-the-blank exercises.</li>
-          <li><code>numbers</code>: number and ordinal word questions.</li>
-          <li><code>cases</code>: noun declension and case practice.</li>
-          <li><code>vocabulary</code>: basic word translations.</li>
-          <li><code>flashcards</code>: quick Polish–English pairs for review.</li>
-        </ul>
-      </li>
-      <li>Each section is an array of <code>{ question, answer }</code> or <code>{ polish, english }</code>
-        objects.</li>
-      <li>Make sure every key is surrounded by quotes <code>" "</code> and commas are placed correctly.</li>
-      <li>Save your file as <strong>exercises.json</strong>.</li>
-      <li>Click the <strong>"Load Exercises JSON"</strong> button to import it.</li>
-      <li>Click <strong>"Download Exercises JSON"</strong> to export your current data.</li>
-    </ol>
-
-    <h4>💾 How Saving Works (localStorage)</h4>
-    <p>
-      Every exercise you add is immediately saved in your browser using <code>localStorage</code> under the key
-      <code>"exercises"</code>. This means:
-    </p>
-    <ul>
-      <li>Your added items will still be here after refreshing the page.</li>
-      <li>They are private to this browser & device (not uploaded anywhere).</li>
-      <li>Use <strong>Download Exercises JSON</strong> to back them up or transfer.</li>
-      <li>Use <strong>Reset Exercises</strong> to clear everything from storage.</li>
-    </ul>
-    <p>
-      If you clear browser data (cache/storage) or open the file on another device, your custom exercises will not be
-      there
-      unless you import the JSON you exported earlier.
-    </p>
-    <p style="font-size:0.9rem; color:#555;">Tip: After adding a few items, click Download to keep a backup copy.</p>
-
-    <h4>🆕 Recently Added</h4>
-    <p>The latest exercise you add will appear just below the Add Exercise form for quick confirmation.</p>
-  </section>
 
   <footer>
     <p>© 2025 Polish Grammar Companion — Practice Reference</p>

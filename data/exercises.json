@@ -2,175 +2,858 @@
     "grammar": [
         {
             "question": "Ja ___ (to eat) jabłko.",
-            "answer": "jem"
+            "answer": "jem",
+            "topic": "grammar"
         },
         {
-            "question": "Ty ___ (to go) do szkoły.",
-            "answer": "idziesz"
+            "question": "Ty ___ (to read) książkę.",
+            "answer": "czytasz",
+            "topic": "grammar"
         },
         {
-            "question": "On ___ (to read) książkę.",
-            "answer": "czyta"
+            "question": "On ___ (to write) list.",
+            "answer": "pisze",
+            "topic": "grammar"
         },
         {
-            "question": "My ___ (to write) list.",
-            "answer": "piszemy"
+            "question": "My ___ (to speak) po polsku.",
+            "answer": "mówimy",
+            "topic": "grammar"
         },
         {
-            "question": "Wy ___ (to speak) po polsku.",
-            "answer": "mówicie"
+            "question": "Oni ___ (to have) dom.",
+            "answer": "mają",
+            "topic": "grammar"
         },
         {
-            "question": "Oni ___ (to watch) film.",
-            "answer": "oglądają"
+            "question": "Ja ___ (to sleep) dobrze.",
+            "answer": "śpię",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ona ___ (to drink) wodę.",
+            "answer": "pije",
+            "topic": "grammar"
+        },
+        {
+            "question": "Wy ___ (to know) odpowiedź.",
+            "answer": "wiecie",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ja ___ (to love) muzykę.",
+            "answer": "kocham",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ty ___ (to work) w biurze.",
+            "answer": "pracujesz",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ona ___ (to study) medycynę.",
+            "answer": "studiuje",
+            "topic": "grammar"
+        },
+        {
+            "question": "My ___ (to go) do kina.",
+            "answer": "idziemy",
+            "topic": "grammar"
+        },
+        {
+            "question": "Oni ___ (to play) w piłkę.",
+            "answer": "grają",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ja ___ (to want) kawę.",
+            "answer": "chcę",
+            "topic": "grammar"
+        },
+        {
+            "question": "Ty ___ (to understand) to?",
+            "answer": "rozumiesz",
+            "topic": "grammar"
         }
     ],
     "numbers": [
         {
-            "question": "23 in Polish",
-            "answer": "dwudziesty trzeci"
+            "question": "Write 5 in Polish (ordinal)",
+            "answer": "piąty",
+            "topic": "numbers"
         },
         {
-            "question": "50 in Polish",
-            "answer": "pięćdziesiąty"
+            "question": "Write 10 in Polish (cardinal)",
+            "answer": "dziesięć",
+            "topic": "numbers"
         },
         {
-            "question": "12 in Polish",
-            "answer": "dwunasty"
+            "question": "Write 23 in Polish (cardinal)",
+            "answer": "dwadzieścia trzy",
+            "topic": "numbers"
         },
         {
-            "question": "7 in Polish",
-            "answer": "siódmy"
+            "question": "Write 1st in Polish",
+            "answer": "pierwszy",
+            "topic": "numbers"
         },
         {
-            "question": "100 in Polish",
-            "answer": "setny"
+            "question": "Write 100 in Polish",
+            "answer": "sto",
+            "topic": "numbers"
         },
         {
-            "question": "1 in Polish",
-            "answer": "pierwszy"
+            "question": "Write 3rd in Polish",
+            "answer": "trzeci",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 7 in Polish (cardinal)",
+            "answer": "siedem",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 2nd in Polish",
+            "answer": "drugi",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 15 in Polish (cardinal)",
+            "answer": "piętnaście",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 50 in Polish (cardinal)",
+            "answer": "pięćdziesiąt",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 4th in Polish",
+            "answer": "czwarty",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 12 in Polish (cardinal)",
+            "answer": "dwanaście",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 20 in Polish (cardinal)",
+            "answer": "dwadzieścia",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 6th in Polish",
+            "answer": "szósty",
+            "topic": "numbers"
+        },
+        {
+            "question": "Write 1000 in Polish",
+            "answer": "tysiąc",
+            "topic": "numbers"
         }
     ],
     "cases": [
         {
-            "question": "I see a ___ (dog - accusative).",
-            "answer": "psa"
+            "question": "I see a ___ (dog - accusative)",
+            "answer": "psa",
+            "topic": "cases"
         },
         {
-            "question": "She speaks with a ___ (friend - instrumental).",
-            "answer": "przyjacielem"
+            "question": "I give to ___ (mother - dative)",
+            "answer": "matce",
+            "topic": "cases"
         },
         {
-            "question": "I am going to the ___ (school - accusative).",
-            "answer": "szkołę"
+            "question": "With ___ (friend - instrumental)",
+            "answer": "przyjacielem",
+            "topic": "cases"
         },
         {
-            "question": "He is at the ___ (park - locative).",
-            "answer": "parku"
+            "question": "About ___ (book - locative)",
+            "answer": "książce",
+            "topic": "cases"
         },
         {
-            "question": "We have a ___ (car - nominative).",
-            "answer": "samochód"
+            "question": "Without ___ (water - genitive)",
+            "answer": "wody",
+            "topic": "cases"
         },
         {
-            "question": "They eat ___ (bread - accusative).",
-            "answer": "chleb"
+            "question": "___ (cat - nominative) is sleeping",
+            "answer": "kot",
+            "topic": "cases"
+        },
+        {
+            "question": "I see ___ (woman - accusative)",
+            "answer": "kobietę",
+            "topic": "cases"
+        },
+        {
+            "question": "I give to ___ (father - dative)",
+            "answer": "ojcu",
+            "topic": "cases"
+        },
+        {
+            "question": "With ___ (pen - instrumental)",
+            "answer": "długopisem",
+            "topic": "cases"
+        },
+        {
+            "question": "About ___ (city - locative)",
+            "answer": "mieście",
+            "topic": "cases"
+        },
+        {
+            "question": "Without ___ (money - genitive)",
+            "answer": "pieniędzy",
+            "topic": "cases"
+        },
+        {
+            "question": "I have ___ (brother - accusative)",
+            "answer": "brata",
+            "topic": "cases"
+        },
+        {
+            "question": "I write ___ (sister - dative)",
+            "answer": "siostrze",
+            "topic": "cases"
+        },
+        {
+            "question": "I eat with ___ (fork - instrumental)",
+            "answer": "widelcem",
+            "topic": "cases"
+        },
+        {
+            "question": "In ___ (school - locative)",
+            "answer": "szkole",
+            "topic": "cases"
         }
     ],
     "vocabulary": [
         {
-            "polish": "kot",
-            "english": "cat"
+            "question": "Translate: kot",
+            "answer": "cat",
+            "topic": "vocabulary"
         },
         {
-            "polish": "pies",
-            "english": "dog"
+            "question": "Translate: dom",
+            "answer": "house",
+            "topic": "vocabulary"
         },
         {
-            "polish": "dom",
-            "english": "house"
+            "question": "Translate: woda",
+            "answer": "water",
+            "topic": "vocabulary"
         },
         {
-            "polish": "szkoła",
-            "english": "school"
+            "question": "Translate: książka",
+            "answer": "book",
+            "topic": "vocabulary"
         },
         {
-            "polish": "jabłko",
-            "english": "apple"
+            "question": "Translate: dzień",
+            "answer": "day",
+            "topic": "vocabulary"
         },
         {
-            "polish": "książka",
-            "english": "book"
+            "question": "Translate: noc",
+            "answer": "night",
+            "topic": "vocabulary"
         },
         {
-            "polish": "samochód",
-            "english": "car"
+            "question": "Translate: miłość",
+            "answer": "love",
+            "topic": "vocabulary"
         },
         {
-            "polish": "miasto",
-            "english": "city"
+            "question": "Translate: przyjaźń",
+            "answer": "friendship",
+            "topic": "vocabulary"
         },
         {
-            "polish": "droga",
-            "english": "road"
+            "question": "Translate: pies",
+            "answer": "dog",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: okno",
+            "answer": "window",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: drzwi",
+            "answer": "door",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: stół",
+            "answer": "table",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: krzesło",
+            "answer": "chair",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: samochód",
+            "answer": "car",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: rower",
+            "answer": "bicycle",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: szkoła",
+            "answer": "school",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: praca",
+            "answer": "work",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: rodzina",
+            "answer": "family",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: matka",
+            "answer": "mother",
+            "topic": "vocabulary"
+        },
+        {
+            "question": "Translate: ojciec",
+            "answer": "father",
+            "topic": "vocabulary"
         }
     ],
-    "flashcards": [
+    "verbs": [
         {
-            "polish": "książka",
-            "english": "book"
+            "question": "Conjugate 'być' (to be) for 'ja'",
+            "answer": "jestem",
+            "topic": "verbs"
         },
         {
-            "polish": "samochód",
-            "english": "car"
+            "question": "Conjugate 'mieć' (to have) for 'ty'",
+            "answer": "masz",
+            "topic": "verbs"
         },
         {
-            "polish": "jabłko",
-            "english": "apple"
+            "question": "Conjugate 'iść' (to go) for 'on'",
+            "answer": "idzie",
+            "topic": "verbs"
         },
         {
-            "polish": "rower",
-            "english": "bicycle"
+            "question": "Conjugate 'robić' (to do) for 'my'",
+            "answer": "robimy",
+            "topic": "verbs"
         },
         {
-            "polish": "pies",
-            "english": "dog"
+            "question": "Conjugate 'wiedzieć' (to know) for 'wy'",
+            "answer": "wiecie",
+            "topic": "verbs"
         },
         {
-            "polish": "kot",
-            "english": "cat"
+            "question": "Conjugate 'chcieć' (to want) for 'oni'",
+            "answer": "chcą",
+            "topic": "verbs"
         },
         {
-            "polish": "szkoła",
-            "english": "school"
+            "question": "Conjugate 'móc' (can) for 'ja'",
+            "answer": "mogę",
+            "topic": "verbs"
         },
         {
-            "polish": "miasto",
-            "english": "city"
+            "question": "Conjugate 'musieć' (must) for 'ty'",
+            "answer": "musisz",
+            "topic": "verbs"
         },
         {
-            "polish": "droga",
-            "english": "road"
+            "question": "Conjugate 'jeść' (to eat) for 'ona'",
+            "answer": "je",
+            "topic": "verbs"
         },
         {
-            "polish": "krzesło",
-            "english": "chair"
+            "question": "Conjugate 'pić' (to drink) for 'my'",
+            "answer": "pijemy",
+            "topic": "verbs"
         },
         {
-            "polish": "stół",
-            "english": "table"
+            "question": "Conjugate 'spać' (to sleep) for 'ja'",
+            "answer": "śpię",
+            "topic": "verbs"
         },
         {
-            "polish": "okno",
-            "english": "window"
+            "question": "Conjugate 'czytać' (to read) for 'ty'",
+            "answer": "czytasz",
+            "topic": "verbs"
         },
         {
-            "polish": "drzewo",
-            "english": "tree"
+            "question": "Conjugate 'pisać' (to write) for 'on'",
+            "answer": "pisze",
+            "topic": "verbs"
         },
         {
-            "polish": "ptak",
-            "english": "bird"
+            "question": "Conjugate 'mówić' (to speak) for 'my'",
+            "answer": "mówimy",
+            "topic": "verbs"
+        },
+        {
+            "question": "Conjugate 'uczyć się' (to learn) for 'ja'",
+            "answer": "uczę się",
+            "topic": "verbs"
+        }
+    ],
+    "pronouns": [
+        {
+            "question": "What is 'I' in Polish?",
+            "answer": "ja",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'you' (informal) in Polish?",
+            "answer": "ty",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'he' in Polish?",
+            "answer": "on",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'she' in Polish?",
+            "answer": "ona",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'we' in Polish?",
+            "answer": "my",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'you' (plural/formal) in Polish?",
+            "answer": "wy",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'they' (masculine) in Polish?",
+            "answer": "oni",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'they' (feminine) in Polish?",
+            "answer": "one",
+            "topic": "pronouns"
+        },
+        {
+            "question": "What is 'it' in Polish?",
+            "answer": "ono",
+            "topic": "pronouns"
+        },
+        {
+            "question": "Translate 'my' (possessive) in Polish",
+            "answer": "mój",
+            "topic": "pronouns"
+        },
+        {
+            "question": "Translate 'your' (informal) in Polish",
+            "answer": "twój",
+            "topic": "pronouns"
+        },
+        {
+            "question": "Translate 'our' in Polish",
+            "answer": "nasz",
+            "topic": "pronouns"
+        },
+        {
+            "question": "Translate 'their' in Polish",
+            "answer": "ich",
+            "topic": "pronouns"
+        }
+    ],
+    "adjectives": [
+        {
+            "question": "Translate 'big' (masculine) in Polish",
+            "answer": "duży",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'small' (masculine) in Polish",
+            "answer": "mały",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'good' (masculine) in Polish",
+            "answer": "dobry",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'bad' (masculine) in Polish",
+            "answer": "zły",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'beautiful' (feminine) in Polish",
+            "answer": "piękna",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'new' (masculine) in Polish",
+            "answer": "nowy",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'old' (masculine) in Polish",
+            "answer": "stary",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'young' (masculine) in Polish",
+            "answer": "młody",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'happy' (masculine) in Polish",
+            "answer": "szczęśliwy",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'sad' (masculine) in Polish",
+            "answer": "smutny",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'hot' (masculine) in Polish",
+            "answer": "gorący",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'cold' (masculine) in Polish",
+            "answer": "zimny",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'fast' (masculine) in Polish",
+            "answer": "szybki",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'slow' (masculine) in Polish",
+            "answer": "wolny",
+            "topic": "adjectives"
+        },
+        {
+            "question": "Translate 'easy' (masculine) in Polish",
+            "answer": "łatwy",
+            "topic": "adjectives"
+        }
+    ],
+    "phrases": [
+        {
+            "question": "How do you say 'Hello' in Polish?",
+            "answer": "cześć",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Goodbye' in Polish?",
+            "answer": "do widzenia",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Please' in Polish?",
+            "answer": "proszę",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Thank you' in Polish?",
+            "answer": "dziękuję",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Yes' in Polish?",
+            "answer": "tak",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'No' in Polish?",
+            "answer": "nie",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Excuse me' in Polish?",
+            "answer": "przepraszam",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'I don't understand' in Polish?",
+            "answer": "nie rozumiem",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Good morning' in Polish?",
+            "answer": "dzień dobry",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Good night' in Polish?",
+            "answer": "dobranoc",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'How are you?' in Polish?",
+            "answer": "jak się masz",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'My name is...' in Polish?",
+            "answer": "nazywam się",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Nice to meet you' in Polish?",
+            "answer": "miło mi cię poznać",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'I love you' in Polish?",
+            "answer": "kocham cię",
+            "topic": "phrases"
+        },
+        {
+            "question": "How do you say 'Help!' in Polish?",
+            "answer": "pomocy",
+            "topic": "phrases"
+        }
+    ],
+    "prepositions": [
+        {
+            "question": "Translate 'in' (location) in Polish",
+            "answer": "w",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'on' in Polish",
+            "answer": "na",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'under' in Polish",
+            "answer": "pod",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'above' in Polish",
+            "answer": "nad",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'with' in Polish",
+            "answer": "z",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'without' in Polish",
+            "answer": "bez",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'to' (direction) in Polish",
+            "answer": "do",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'from' in Polish",
+            "answer": "z",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'for' in Polish",
+            "answer": "dla",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'about' in Polish",
+            "answer": "o",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'before' in Polish",
+            "answer": "przed",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'after' in Polish",
+            "answer": "po",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'between' in Polish",
+            "answer": "między",
+            "topic": "prepositions"
+        },
+        {
+            "question": "Translate 'near' in Polish",
+            "answer": "przy",
+            "topic": "prepositions"
+        }
+    ],
+    "food": [
+        {
+            "question": "Translate 'bread' in Polish",
+            "answer": "chleb",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'milk' in Polish",
+            "answer": "mleko",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'meat' in Polish",
+            "answer": "mięso",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'cheese' in Polish",
+            "answer": "ser",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'apple' in Polish",
+            "answer": "jabłko",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'egg' in Polish",
+            "answer": "jajko",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'fish' in Polish",
+            "answer": "ryba",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'chicken' in Polish",
+            "answer": "kurczak",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'potato' in Polish",
+            "answer": "ziemniak",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'tomato' in Polish",
+            "answer": "pomidor",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'carrot' in Polish",
+            "answer": "marchewka",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'soup' in Polish",
+            "answer": "zupa",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'salad' in Polish",
+            "answer": "sałatka",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'rice' in Polish",
+            "answer": "ryż",
+            "topic": "food"
+        },
+        {
+            "question": "Translate 'pasta' in Polish",
+            "answer": "makaron",
+            "topic": "food"
+        }
+    ],
+    "time": [
+        {
+            "question": "Translate 'today' in Polish",
+            "answer": "dzisiaj",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'yesterday' in Polish",
+            "answer": "wczoraj",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'tomorrow' in Polish",
+            "answer": "jutro",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'now' in Polish",
+            "answer": "teraz",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'later' in Polish",
+            "answer": "później",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'always' in Polish",
+            "answer": "zawsze",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'never' in Polish",
+            "answer": "nigdy",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'sometimes' in Polish",
+            "answer": "czasami",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'week' in Polish",
+            "answer": "tydzień",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'month' in Polish",
+            "answer": "miesiąc",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'year' in Polish",
+            "answer": "rok",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'hour' in Polish",
+            "answer": "godzina",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'minute' in Polish",
+            "answer": "minuta",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'morning' in Polish",
+            "answer": "rano",
+            "topic": "time"
+        },
+        {
+            "question": "Translate 'evening' in Polish",
+            "answer": "wieczór",
+            "topic": "time"
         }
     ]
 }
