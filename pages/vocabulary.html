@@ -61,18 +61,20 @@
                     </select>
                 </div>
 
-                <table id="vocabTable">
-                    <thead>
-                        <tr>
-                            <th onclick="sortTable('polish')">Polish ↕</th>
-                            <th onclick="sortTable('english')">English ↕</th>
-                            <th onclick="sortTable('category')">Category ↕</th>
-                            <th>Details</th>
-                        </tr>
-                    </thead>
-                    <tbody id="tableBody"></tbody>
-                </table>
 
+                <div class="table-wrapper">
+                    <table id="vocabTable">
+                        <thead>
+                            <tr>
+                                <th onclick="sortTable('polish')">Polish ↕</th>
+                                <th onclick="sortTable('english')">English ↕</th>
+                                <th onclick="sortTable('category')">Category ↕</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tableBody"></tbody>
+                    </table>
+                </div>
                 <div class="pagination">
                     <button onclick="changePage(-1)" id="prevBtn">← Previous</button>
                     <span id="pageInfo"></span>
