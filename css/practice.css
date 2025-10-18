@@ -245,6 +245,7 @@
 }
 
 /* ==================== Input Fields ==================== */
+
 .answer-input {
     padding: 14px 18px;
     font-size: 1.1rem;
@@ -256,6 +257,7 @@
     transition: all 0.3s ease;
     text-align: center;
     font-weight: 500;
+    box-sizing: border-box;
 }
 
 .answer-input:focus {
